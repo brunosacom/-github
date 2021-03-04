@@ -17,8 +17,8 @@ while( $row = mysqli_fetch_array($result) ){
 }
 
 // encoding array to json format
-//echo json_encode($uf_arr);
+echo json_encode($uf_arr);
 
-echo $uf_arr;
+//echo $uf_arr;
 
 ?>
