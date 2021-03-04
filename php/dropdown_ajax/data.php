@@ -13,7 +13,7 @@ while( $row = mysqli_fetch_array($result) ){
     $ufid = $row['uf_id'];
     $uf_nome = $row['uf_nome'];
 
-    $uf_arr[] = array("<option value=\"".$ufid."\" >".$uf_nome."</option>");
+    $uf_arr[] = array("<option value='".$ufid."'>".$uf_nome."</option>");
 }
 
 // encoding array to json format
