@@ -25,7 +25,7 @@ while( $row = mysqli_fetch_array($result) ){
     $uf_nome = $row['uf_nome'];
 
     //$uf_arr[] = array("<option value='".$ufid."'>".$uf_nome."</option>");
-    echo "<option value=\"" . "teste " . $ufid . "\">" . $uf_nome . "</option>";
+    echo "<option value=\"" . $ufid . "\">" . $uf_nome . "</option>";
 }
 
 //echo "<option value=\"" . "teste " . $ufid . "\">" . $uf_nome . "</option>";
