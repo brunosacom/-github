@@ -3,7 +3,7 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
 
 $paisid = $_GET['p'];   // pais id
 
-$sql = "SELECT uf_id, uf_alpha2, uf_nome FROM _uf WHERE pais_numero = ?";
+$sql = "SELECT uf_id, uf_alpha2, uf_nome FROM _uf WHERE pais_numero = $paisid";
 
 $result = mysqli_query($con,$sql);
 
