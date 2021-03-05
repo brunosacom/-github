@@ -1,3 +1,3 @@
 # uhgithub
 Integração com o UOLHost
-atualizado sabado
+Um playground de aprendizado de códigos.
