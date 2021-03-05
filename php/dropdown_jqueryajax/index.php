@@ -16,7 +16,7 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
         var psid = $(this).val();
 
         $.ajax({
-            url: 'getuf.php',
+            url: 'postuf.php',
             type: 'post',
             data: {ps:psid},
             dataType: 'json',

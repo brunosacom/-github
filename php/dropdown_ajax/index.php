@@ -49,7 +49,7 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
     document.getElementById("sel_uf").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "data.php?ps=" + str, true);
+  xhttp.open("GET", "getuf.php?ps=" + str, true);
   xhttp.send();
 }
 </script>
