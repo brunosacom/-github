@@ -1,15 +1,25 @@
 <?php 
 require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
 
-$paisid = $_POST['ps'];   // pais id
+//$paisid = $_POST['ps'];   // pais id
 
-$sql = "SELECT uf_id, uf_alpha2, uf_nome FROM _uf WHERE pais_numero = $paisid";
+$sql = "SELECT uf_id, uf_alpha2, uf_nome FROM _uf WHERE pais_numero = ?";
 
-$result = mysqli_query($con,$sql);
+//$result = mysqli_query($con,$sql);
+
+$stmt = $con->prepare($sql);
+$stmt->bind_param("s", $_GET['ps']);
+$stmt->execute();
+$stmt->store_result();
+$stmt->bind_result($uf_id, $uf_alpha2, $uf_nome);
+$stmt->fetch();
+$stmt->close();
+
+
 
 //$uf_arr = array();
 
-while( $row = mysqli_fetch_array($result) ){
+while( $row = mysqli_fetch_array($stmt) ){
     $ufid = $row['uf_id'];
     $uf_nome = $row['uf_nome'];
 
