@@ -7,7 +7,7 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
 <head>
 <meta charset="utf-8">
 <title>DropDown using JQuery Ajax</title>
-<script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" type="text/javascript"></script>
 
 <script type="text/javascript">  
    $(document).ready(function(){
