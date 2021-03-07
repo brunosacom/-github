@@ -51,17 +51,17 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 			<div class="col"><img src="<?php echo $empresa_logo; ?>" class="custom-logo" alt="<?php echo $empresa_nome; ?>" width="200"></div>
 			<div class="col"></div>
 		</div>
-		<div id="miolo">
-			<p><a href="pt-br/regulamento_ptbr.php" class="txt_corrido">INSCRIÇÕES FESTIVAL DE CINEMA</a><br />
+		<div class="row justify-content-md-center">
+			<p><a href="pt-br/regulamento_ptbr.php">REGULAMENTO FESTIVAL DE CINEMA</a><br />
 			</p>
 		</div>
 		<div class='row justify-content-center'>
-        <div>
-          <small>
-            <small>Desenvolvido por Bruno Sá - <a href='//www.bruno-sa.com' target='_blank'>www.bruno-sa.com</a></small>
-          </small>
-        </div>
-      </div>
+			<div>
+			<small>
+				<small>Desenvolvido por Bruno Sá - <a href='//www.bruno-sa.com' target='_blank'>www.bruno-sa.com</a></small>
+			</small>
+			</div>
+      	</div>
 	</div>
 	<!-- Optional JavaScript; choose one of the two! -->
 
