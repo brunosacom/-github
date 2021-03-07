@@ -114,7 +114,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">1.09 - Festivais e Prêmios</label>
-          <textarea class="form-control" name="premios" id="premios">
+          <textarea class="form-control" name="premios" id="premios" rows="5"></textarea>
           <div class="form-text">(limitado a 500 caracteres com espaço)</div>
         </div>
         <div class="input-group mb-3">
