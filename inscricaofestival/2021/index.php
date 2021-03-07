@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <link rel="shortcut icon" href="../favicon.png">
 <link href="../festatual.css" rel="stylesheet" type="text/css" />
-<title>Festival do Rio</title>
+<title>Inscrição Festival de Cinema</title>
 <style type="text/css">
 #rodape {
 	position:fixed;
@@ -49,7 +49,7 @@ body {
 </div>
 <div id="miolo">
   <p class="txt_corrido">de 07 a 17 de novembro de 2019</p>
-<p><a href="ptbr/regulamento_ptbr.php" class="txt_corrido">INSCRIÇÕES PREMIÈRE BRASIL 2019</a><br />
+<p><a href="pt-br/regulamento_ptbr.php" class="txt_corrido">INSCRIÇÕES PREMIÈRE BRASIL 2019</a><br />
   <span class="txt_corrido">inscrições até 16 de agosto de 2019</span></p>
 </div>
 <div id="rodape"><img src="footerbg.png" width="980" height="156" /></div>
