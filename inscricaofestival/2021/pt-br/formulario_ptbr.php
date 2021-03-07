@@ -113,10 +113,8 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <input type="text" class="form-control" name="filme_website" id="filme_website">
         </div>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text">1.09 - Festivais e Prêmios<br>
-            <small><small>(limitado a 500 caracteres com espaço)</small></small>
-          </label>
-          <textarea class="form-control" name="premios" id="premios" rows="5"></textarea>
+          <label class="input-group-text">1.09 - Festivais e Prêmios</label>
+          <textarea class="form-control" name="premios" id="premios" rows="5" placeholder="(limitado a 500 caracteres com espaço)"></textarea>
         </div>
         <div class="input-group mb-3">
           <label class="input-group-text text-danger">1.10 - Categoria</label>
