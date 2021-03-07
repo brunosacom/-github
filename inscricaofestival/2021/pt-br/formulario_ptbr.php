@@ -52,7 +52,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <div class="col"></div>
       </div>
 			<h1>Formulário de Inscrição - pt-br</h1>
-      <form action="../php/enviarauthinsertcheck_action.php" method="post" name="festival_inscricao" id="festival_inscricao" onsubmit="return formvalidation(this)">
+      <form action="../php/enviarauthinsertcheck_action.php" method="post" name="festival_inscricao" id="festival_inscricao">
         <input name="inscricao_charset" type="hidden" id="inscricao_charset" value="utf-8">
         <input name="inscricao" type="hidden"  value="pt-br">
         <p class="text-danger">Em vermelho os campos obrigatórios</p>
