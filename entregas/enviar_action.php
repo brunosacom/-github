@@ -41,7 +41,7 @@
             $whatsapp_recebimento = "https://wa.me/55".$clientecelular_numeros."?text=Foi%20deixado%20com%20".$entrega_onde.",%20recebido%20por%20".$quemoutro_convert.".";
 
             // pegar infos do banco de dados
-            $sql_empresa = "SELECT * FROM bembos_entregaempresa WHERE empresa_sigla = '$empresa_sigla'";
+            $sql_empresa = "SELECT * FROM bembos_empresa WHERE empresa_sigla = '$empresa_sigla'";
             $result_empresa = mysqli_query($con, $sql_empresa);
             while( $row_empresa = mysqli_fetch_array($result_empresa) ) {
               $empresa_logo = $row_empresa['empresa_logo'];

@@ -7,7 +7,7 @@
     $entregadata = $_POST['entregadata'];
   };
 
-  $sql_empresa = "SELECT * FROM bembos_entregaempresa WHERE empresa_sigla = '$emp_sigla'";
+  $sql_empresa = "SELECT * FROM bembos_empresa WHERE empresa_sigla = '$emp_sigla'";
   $result_empresa = mysqli_query($con, $sql_empresa);
   while ($row_empresa = mysqli_fetch_array($result_empresa)) {
     $empresa_logo = $row_empresa['empresa_logo'];
