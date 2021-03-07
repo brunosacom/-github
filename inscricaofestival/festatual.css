@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.txt_corrido {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+.form_required {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: #F00;
+}
+.resumo_regulamento {
+	font-size: xx-small;
+	color: #666;
+	text-decoration: none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.datacapa {
+	color: #FFF;
+	font-size: medium;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
