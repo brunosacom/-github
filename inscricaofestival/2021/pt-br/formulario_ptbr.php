@@ -113,15 +113,15 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <input type="text" class="form-control" name="filme_website" id="filme_website">
         </div>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text">1.09 - Festivais e Prêmios
-            <small>(limitado a 500 caracteres com espaço)</small>
+          <label class="input-group-text">1.09 - Festivais e Prêmios<br>
+            <small><small>(limitado a 500 caracteres com espaço)</small></small>
           </label>
           <textarea class="form-control" name="premios" id="premios" rows="5"></textarea>
         </div>
         <div class="input-group mb-3">
           <label class="input-group-text text-danger">1.10 - Categoria</label>
-          <div><input class="form-check-input mt-0" name="categoria" type="radio" value="pb lg70 - fic" required>Longa-Metragem (acima de 70 min.) - Ficção</div>
-          <div><input class="form-check-input mt-0" name="categoria" type="radio" value="pb lg70 - doc"  required>Longa-Metragem (acima de 70 min.) - Documentário</div>
+          <div><input class="form-check-input" name="categoria" type="radio" value="pb lg70 - fic" required>Longa-Metragem (acima de 70 min.) - Ficção</div>
+          <div><input class="form-check-input" name="categoria" type="radio" value="pb lg70 - doc"  required>Longa-Metragem (acima de 70 min.) - Documentário</div>
           <div><input class="form-check-input mt-0" name="categoria" type="radio" value="pb lg60 - fic"  required>Longa-Metragem (entre 60 e 70 min.) - Ficção</div>
           <div><input class="form-check-input mt-0" name="categoria" type="radio" value="pb lg60 - doc" required>Longa-Metragem (entre 60 e 70 min.) - Documentário</div>
           <div><input class="form-check-input mt-0" name="categoria" type="radio" value="pb ct15 - fic" required>Curta-Metragem (até 15 min.) - Ficção</div>
