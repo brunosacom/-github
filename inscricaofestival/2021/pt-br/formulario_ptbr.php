@@ -118,16 +118,15 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <div class="form-text">(limitado a 500 caracteres com espaço)</div>
         </div>
         <div class="input-group mb-3">
-          <div class="input-group-text">
-            <input class="form-check-input mt-0" name="categoria" type="radio" value="pb lg70 - fic" required>Longa-Metragem (acima de 70 min.) - Ficção<br>
-            <input class="form-check-input mt-0" name="categoria" type="radio" value="pb lg70 - doc"  required>Longa-Metragem (acima de 70 min.) - Documentário<br>
-            <input class="form-check-input mt-0" name="categoria" type="radio" value="pb lg60 - fic"  required>Longa-Metragem (entre 60 e 70 min.) - Ficção<br>
-            <input class="form-check-input mt-0" name="categoria" type="radio" value="pb lg60 - doc" required>Longa-Metragem (entre 60 e 70 min.) - Documentário<br>
-            <input class="form-check-input mt-0" name="categoria" type="radio" value="pb ct15 - fic" required>Curta-Metragem (até 15 min.) - Ficção<br>
-            <input class="form-check-input mt-0" name="categoria" type="radio" value="pb ct15 - doc" required>Curta-Metragem (até 15 min.) - Documentário <br>
-            <input class="form-check-input mt-0" name="categoria" type="radio" value="pb ct30 - fic"  required>Curta-Metragem (entre 15 e 30 min.) - Ficção<br>
-            <input class="form-check-input mt-0" name="categoria" type="radio" value="pb ct30 - doc"  required>Curta-Metragem (entre 15 e 30 min.) - Documentário<br>
-          </div>
+          <label class="input-group-text text-danger">1.10 - Categoria</label>
+          <input class="form-check-input mt-0" name="categoria" type="radio" value="pb lg70 - fic" required>Longa-Metragem (acima de 70 min.) - Ficção<br>
+          <input class="form-check-input mt-0" name="categoria" type="radio" value="pb lg70 - doc"  required>Longa-Metragem (acima de 70 min.) - Documentário<br>
+          <input class="form-check-input mt-0" name="categoria" type="radio" value="pb lg60 - fic"  required>Longa-Metragem (entre 60 e 70 min.) - Ficção<br>
+          <input class="form-check-input mt-0" name="categoria" type="radio" value="pb lg60 - doc" required>Longa-Metragem (entre 60 e 70 min.) - Documentário<br>
+          <input class="form-check-input mt-0" name="categoria" type="radio" value="pb ct15 - fic" required>Curta-Metragem (até 15 min.) - Ficção<br>
+          <input class="form-check-input mt-0" name="categoria" type="radio" value="pb ct15 - doc" required>Curta-Metragem (até 15 min.) - Documentário <br>
+          <input class="form-check-input mt-0" name="categoria" type="radio" value="pb ct30 - fic"  required>Curta-Metragem (entre 15 e 30 min.) - Ficção<br>
+          <input class="form-check-input mt-0" name="categoria" type="radio" value="pb ct30 - doc"  required>Curta-Metragem (entre 15 e 30 min.) - Documentário<br>
         </div>
 
         <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
