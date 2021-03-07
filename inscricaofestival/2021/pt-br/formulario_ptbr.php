@@ -52,7 +52,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <div class="col"></div>
       </div>
 			<h1>Formulário de Inscrição</h1>
-      <form action="../../php/enviarauthinsertcheck_action.php" method="post" name="festrio_inscricao" class="txt_corrido" id="festrio_inscricao" onsubmit="return formvalidation(this)">
+      <form action="../php/enviarauthinsertcheck_action.php" method="post" name="festival_inscricao" id="festival_inscricao" onsubmit="return formvalidation(this)">
         <p>FICHA DE INSCRIÇÃO PREMIÈRE BRASIL</p>
         <input name="inscricao_charset" type="hidden" id="inscricao_charset" value="utf-8">
         <input name="inscricao" type="hidden"  value="pbrasil">
@@ -728,8 +728,17 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           </tr>
         </table>
       </form>
-      <p><img src="../footerbg.png" width="980" height="156"></p>
+
+      <div class='row justify-content-center'>
+        <div>
+        <small>
+          <small>Desenvolvido por Bruno Sá - <a href='//www.bruno-sa.com' target='_blank'>www.bruno-sa.com</a></small>
+        </small>
+        </div>
+      </div>
     </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src='https://code.jquery.com/jquery-3.6.0.js' integrity='sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=' crossorigin='anonymous'></script>
     <script type="text/javascript">
 
             $("#distribuidora_cep").focusout(function(){
