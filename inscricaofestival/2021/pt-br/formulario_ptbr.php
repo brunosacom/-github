@@ -58,16 +58,16 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <div class="text-danger">Em vermelho os campos obrigatórios</div>
         <label for="filme" class="form-label">1 - FILME</label>
         <div class="input-group input-group-sm mb-3">
-          <span class="input-group-text">1.01 - Título Original</span>
+          <span class="input-group-text text-danger">1.01 - Título Original</span>
           <input type="text" class="form-control" name="titulo_original" id="titulo_original" required>
         </div>
         <div class="input-group input-group-sm mb-3">
-          <span class="input-group-text">1.02 - Título Inglês</span>
+          <span class="input-group-text text-danger">1.02 - Título Inglês</span>
           <input type="text" class="form-control" name="titulo_ingles" id="titulo_ingles" required>
         </div>
         <div class="input-group input-group-sm mb-3">
-          <span class="input-group-text">1.03 - Direção</span>
-          <input type="text" class="form-control form-control-sm" name="diretor" id="diretor" placeholder="direção" required>
+          <span class="input-group-text text-danger">1.03 - Direção</span>
+          <input type="text" class="form-control" name="diretor" id="diretor" required>
         </div>
 
 
@@ -77,20 +77,6 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <tr bgcolor="#cccccc">
             <td width="50%">1 - FILME</td>
             <td width="50%">&nbsp;</td>
-          </tr>
-          <tr class="text-danger">
-          
-            <td>1.01 - Título Original</td>
-            <td>
-              <input class="form-control form-control-sm" name="titulo_original" type="text" id="titulo_original" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            
-
-          </tr>
-          <tr class="text-danger">
-          
           </tr>
           <tr>
             <td><p>1.04 - País de produção</p>
