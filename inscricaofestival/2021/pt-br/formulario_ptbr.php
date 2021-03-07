@@ -75,10 +75,10 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
           </tr>
           <tr class="text-danger">
-            <td>1.03 - Direção</td>
-            <td>
-              <input name="diretor" type="text" id="diretor"  size="50" maxlength="100" required>
-            </td>
+          <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">1.02 - Direção</span>
+              <input type="text" class="form-control form-control-sm" name="diretor" id="diretor" placeholder="direção" required>
+            </div>
           </tr>
           <tr>
             <td><p>1.04 - País de produção</p>
