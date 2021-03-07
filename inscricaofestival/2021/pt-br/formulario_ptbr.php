@@ -55,31 +55,42 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
       <form action="../php/enviarauthinsertcheck_action.php" method="post" name="festival_inscricao" id="festival_inscricao">
         <input name="inscricao_charset" type="hidden" id="inscricao_charset" value="utf-8">
         <input name="inscricao" type="hidden"  value="pt-br">
-        <p class="text-danger">Em vermelho os campos obrigatórios</p>
+        <div class="text-danger">Em vermelho os campos obrigatórios</div>
+        <label for="filme" class="form-label">1 - FILME</label>
+        <div class="input-group input-group-sm mb-3">
+          <span class="input-group-text">1.01 - Título Original</span>
+          <input type="text" class="form-control" name="titulo_original" id="titulo_original" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <span class="input-group-text">1.02 - Título Inglês</span>
+          <input type="text" class="form-control" name="titulo_ingles" id="titulo_ingles" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <span class="input-group-text">1.03 - Direção</span>
+          <input type="text" class="form-control form-control-sm" name="diretor" id="diretor" placeholder="direção" required>
+        </div>
+
+
+
+
         <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
           <tr bgcolor="#cccccc">
             <td width="50%">1 - FILME</td>
             <td width="50%">&nbsp;</td>
           </tr>
           <tr class="text-danger">
-          <label for="filme" class="form-label">1 - FILME</label>
+          
             <td>1.01 - Título Original</td>
             <td>
               <input class="form-control form-control-sm" name="titulo_original" type="text" id="titulo_original" required>
             </td>
           </tr>
           <tr class="text-danger">
-            <div class="input-group input-group-sm mb-3">
-              <span class="input-group-text" id="basic-addon1">1.02 - Título Inglês</span>
-              <input type="text" class="form-control" name="titulo_ingles" id="titulo_ingles" required>
-            </div>
+            
 
           </tr>
           <tr class="text-danger">
-          <div class="input-group mb-3">
-              <span class="input-group-text-danger" id="basic-addon1">1.03 - Direção</span>
-              <input type="text" class="form-control form-control-sm" name="diretor" id="diretor" placeholder="direção" required>
-            </div>
+          
           </tr>
           <tr>
             <td><p>1.04 - País de produção</p>
