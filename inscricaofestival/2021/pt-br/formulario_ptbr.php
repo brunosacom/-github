@@ -71,7 +71,8 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <span class="input-group-text text-danger">1.04 - País de produção</span>
-          <input type="text" class="form-control" name="pais1_alpha3" id="pais1_alpha3" value="BRA" placeholder="Brasil" required disabled>
+          <input type="text" class="form-control" placeholder="Brasil" disabled>
+          <input name="pais1_alpha3" type="hidden" id="pais1_alpha3"  value="BRA">
         </div>
 
 
@@ -84,7 +85,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <tr>
             <td><p>1.04 - País de produção</p>
             </td>
-            <td><input name="pais1_alpha3" type="hidden" id="pais1_alpha3"  value="BRA">
+            <td>
               Brasil </td>
           </tr>
           <tr>
