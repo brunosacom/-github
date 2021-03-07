@@ -51,9 +51,8 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <div class="col"><img src="<?php echo $empresa_logo; ?>" class="custom-logo" alt="<?php echo $empresa_nome; ?>" width="200"></div>
         <div class="col"></div>
       </div>
-			<h1>Formulário de Inscrição</h1>
+			<h1>Formulário de Inscrição - pt-br</h1>
       <form action="../php/enviarauthinsertcheck_action.php" method="post" name="festival_inscricao" id="festival_inscricao" onsubmit="return formvalidation(this)">
-        <p>FICHA DE INSCRIÇÃO - PORTUGUÊS</p>
         <input name="inscricao_charset" type="hidden" id="inscricao_charset" value="utf-8">
         <input name="inscricao" type="hidden"  value="pt-br">
         <p class="text-danger">Em vermelho os campos obrigatórios</p>
@@ -65,7 +64,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <tr class="text-danger">
             <td>1.01 - Título Original</td>
             <td>
-              <input name="titulo_original" type="text" id="titulo_original" size="50" maxlength="100" required>
+              <input class="form-control form-control-sm" name="titulo_original" type="text" id="titulo_original" required>
             </td>
           </tr>
           <tr class="text-danger">
