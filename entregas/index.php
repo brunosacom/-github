@@ -14,6 +14,7 @@ $sql_empresa = "SELECT * FROM bembos_entregaempresa WHERE empresa_sigla = $emp_s
 $result_empresa = mysqli_query($con, $sql_empresa);
 while ($row_empresa = mysqli_fetch_array($result_empresa)) {
   $empresa_logo = $row_empresa['empresa_logo'];
+  $empresa_favicon = $row_empresa['empresa_favicon'];
   $empresa_nome = $row_empresa['empresa_nome'];
   $empresa_sigla = $row_empresa['empresa_sigla'];
   $empresa_whatsapp = $row_empresa['empresa_whatsapp'];
@@ -36,6 +37,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $empresa_nome; ?> - Entrega</title>
+    <link rel="shortcut icon" href="<?php echo $empresa_favicon; ?>">
     <link href="https://fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
 
     <!-- Bootstrap CSS -->

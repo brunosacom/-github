@@ -45,6 +45,7 @@
             $result_empresa = mysqli_query($con, $sql_empresa);
             while( $row_empresa = mysqli_fetch_array($result_empresa) ) {
               $empresa_logo = $row_empresa['empresa_logo'];
+              $empresa_favicon = $row_empresa['empresa_favicon'];
               $empresa_nome = $row_empresa['empresa_nome'];
               $empresa_whatsapp = $row_empresa['empresa_whatsapp'];
               $empresa_emailto = $row_empresa['empresa_emailto'];
@@ -68,9 +69,9 @@
 
 
             // inclui os arquivos
-            require '../../_PHPMailer-master/src/PHPMailer.php';
-            require '../../_PHPMailer-master/src/SMTP.php';
-            require '../../_PHPMailer-master/src/Exception.php';
+            require $_SERVER['DOCUMENT_ROOT'].'/_PHPMailer-master/src/PHPMailer.php';
+            require $_SERVER['DOCUMENT_ROOT'].'/_PHPMailer-master/src/SMTP.php';
+            require $_SERVER['DOCUMENT_ROOT'].'/_PHPMailer-master/src/Exception.php';
 
             // inicia a classe PHPMailer habilitando o disparo de exceções
             $mail = new PHPMailer(true);
@@ -158,6 +159,7 @@
       
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?php echo $empresa_nome ?> - Entrega</title>
+        <link rel="shortcut icon" href="<?php echo $empresa_favicon; ?>">
         <link href="https://fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
 
         <!-- Bootstrap CSS -->
