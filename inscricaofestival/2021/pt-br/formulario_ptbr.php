@@ -62,15 +62,16 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <td width="50%">&nbsp;</td>
           </tr>
           <tr class="text-danger">
+          <label for="filme" class="form-label">1 - FILME</label>
             <td>1.01 - Título Original</td>
             <td>
               <input class="form-control form-control-sm" name="titulo_original" type="text" id="titulo_original" required>
             </td>
           </tr>
           <tr class="text-danger">
-            <div class="input-group mb-3">
+            <div class="input-group input-group-sm mb-3">
               <span class="input-group-text" id="basic-addon1">1.02 - Título Inglês</span>
-              <input type="text" class="form-control form-control-sm" name="titulo_ingles" id="titulo_ingles" placeholder="tílulo em inglês" aria-label="Username" aria-describedby="basic-addon1" required>
+              <input type="text" class="form-control" name="titulo_ingles" id="titulo_ingles" required>
             </div>
 
           </tr>
