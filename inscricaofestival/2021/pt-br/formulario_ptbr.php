@@ -56,17 +56,17 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <input name="inscricao_charset" type="hidden" id="inscricao_charset" value="utf-8">
         <input name="inscricao" type="hidden"  value="pt-br">
         <div class="text-danger">Em vermelho os campos obrigatórios</div>
-        <label for="filme" class="form-label">1 - FILME</label>
+        <div for="filme" class="form-label">1 - FILME</div>
         <div class="input-group input-group-sm mb-3">
-          <span class="input-group-text text-danger">1.01 - Título Original</span>
+          <label class="input-group-text text-danger">1.01 - Título Original</label>
           <input type="text" class="form-control" name="titulo_original" id="titulo_original" required>
         </div>
         <div class="input-group input-group-sm mb-3">
-          <span class="input-group-text text-danger">1.02 - Título Inglês</span>
+          <label class="input-group-text text-danger">1.02 - Título Inglês</label>
           <input type="text" class="form-control" name="titulo_ingles" id="titulo_ingles" required>
         </div>
         <div class="input-group input-group-sm mb-3">
-          <span class="input-group-text text-danger">1.03 - Direção</span>
+          <label class="input-group-text text-danger">1.03 - Direção</label>
           <input type="text" class="form-control" name="diretor" id="diretor" required>
         </div>
         <div class="input-group input-group-sm mb-3">
@@ -83,6 +83,25 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <select class="form-select" name="pais3_alpha3" id="pais3_alpha3">
             <option value="" selected="selected">selecione</option>
             <?php include '../../../../php/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
+          </select>
+          <select class="form-select" name="pais4_alpha3" id="pais4_alpha3">
+            <option value="" selected="selected">selecione</option>
+            <?php include '../../../../php/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
+          </select>
+          <select class="form-select" name="pais5_alpha3" id="pais5_alpha3">
+            <option value="" selected="selected">selecione</option>
+            <?php include '../../../../php/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
+          </select>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">1.06 - Ano</label>
+          <select class="form-select" name="ano" id="ano" required>
+            <option value=""selected="selected">Selecione</option>
+              <!-- Calculo para ano atual e anterior -->
+              <option value="<?php echo date("Y"); ?>"><?php echo date("Y"); ?></option>
+              <option value="<?php $y=strtotime("-1 year"); echo date("Y", $y) ?>">
+                <?php $y=strtotime("-1 year"); echo date("Y", $y) ?>
+              </option>
           </select>
         </div>
 
