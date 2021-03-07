@@ -68,10 +68,11 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             </td>
           </tr>
           <tr class="text-danger">
-            <td>1.02 - Título Inglês</td>
-            <td>
-              <input name="titulo_ingles" type="text" id="titulo_ingles"  size="50" maxlength="100" required>
-            </td>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">1.02 - Título Inglês</span>
+              <input type="text" class="form-control form-control-sm" name="titulo_ingles" id="titulo_ingles" placeholder="tílulo em inglês" aria-label="Username" aria-describedby="basic-addon1" required>
+            </div>
+
           </tr>
           <tr class="text-danger">
             <td>1.03 - Direção</td>
