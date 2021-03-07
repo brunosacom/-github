@@ -76,7 +76,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           </tr>
           <tr class="text-danger">
           <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1">1.02 - Direção</span>
+              <span class="input-group-text-danger" id="basic-addon1">1.03 - Direção</span>
               <input type="text" class="form-control form-control-sm" name="diretor" id="diretor" placeholder="direção" required>
             </div>
           </tr>
