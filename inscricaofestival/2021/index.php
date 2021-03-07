@@ -1,57 +1,73 @@
+<?php require $_SERVER['DOCUMENT_ROOT'].'/php/mysqli_connect.php'; //MySqlDB connect brunosacom ?>
+
+<?php
+
+// URL EXEMPLO
+//https://www.bruno-sa.com/bembos/festivalinscricao/index.php?emp_sigla='BMB'
+
+$emp_sigla = $_GET['emp_sigla'];
+
+$today = date('Y-m-d');
+
+
+$sql_empresa = "SELECT * FROM bembos_entregaempresa WHERE empresa_sigla = $emp_sigla";
+$result_empresa = mysqli_query($con, $sql_empresa);
+while ($row_empresa = mysqli_fetch_array($result_empresa)) {
+  $empresa_logo = $row_empresa['empresa_logo'];
+  $empresa_favicon = $row_empresa['empresa_favicon'];
+  $empresa_nome = $row_empresa['empresa_nome'];
+  $empresa_sigla = $row_empresa['empresa_sigla'];
+  $empresa_whatsapp = $row_empresa['empresa_whatsapp'];
+  $empresa_emailto = $row_empresa['empresa_emailto'];
+  $empresa_emailtonome = $row_empresa['empresa_emailtonome'];
+  $empresa_smtp = $row_empresa['empresa_smtp'];
+  $empresa_username = $row_empresa['empresa_username'];
+  $empresa_password = $row_empresa['empresa_password'];
+  $empresa_emailfrom = $row_empresa['empresa_emailfrom'];
+  $empresa_emailfromnome = $row_empresa['empresa_emailfromnome'];
+}
+?>
+
 <!DOCTYPE HTML>
-<html>
+<html lang="pt-br">
 <head>
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php' ?> <!-- Google Analytics Track brunosacom -->
-<meta charset="utf-8">
-<link rel="shortcut icon" href="../favicon.png">
-<link href="../festatual.css" rel="stylesheet" type="text/css" />
-<title>Inscrição Festival de Cinema</title>
-<style type="text/css">
-#rodape {
-	position:fixed;
-	left:0px;
-	width:100%;
-	height:156px;
-	z-index:1;
-	bottom: 0px;
-	background-color: #000;
-	text-align: center;
-}
-#logofest {
-	position:relative;
-	width:100%;
-	height:360px;
-	z-index:2;
-	text-align: center;
-	vertical-align: middle;
-}
-#miolo {
-	position:relative;
-	width:100%;
-	height:73px;
-	z-index:3;
-	text-align: center;
-	vertical-align: middle;
-}
-body {
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
-</style>
+	<?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php' ?> <!-- Google Analytics Track brunosacom -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Festival de Cinema</title>
+	<link rel="shortcut icon" href="../favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
 </head>
 
-<body>
-<div id="logofest">
-  <p>&nbsp;</p>
-  <p><img src="../festivaldorio_pb495.png" width="495" height="321" /></p>
-</div>
-<div id="miolo">
-  <p class="txt_corrido">de 07 a 17 de novembro de 2019</p>
-<p><a href="pt-br/regulamento_ptbr.php" class="txt_corrido">INSCRIÇÕES PREMIÈRE BRASIL 2019</a><br />
-  <span class="txt_corrido">inscrições até 16 de agosto de 2019</span></p>
-</div>
-<div id="rodape"><img src="footerbg.png" width="980" height="156" /></div>
+<body style="font-family: Didact Gothic;">
+    <div class="container">
+    	<!-- Content here -->
+		<div class="row justify-content-md-center">
+			<div class="col"></div>
+			<div class="col"><img src="<?php echo $empresa_logo; ?>" class="custom-logo" alt="<?php echo $empresa_nome; ?>" width="200"></div>
+			<div class="col"></div>
+		</div>
+		<div id="miolo">
+			<p><a href="pt-br/regulamento_ptbr.php" class="txt_corrido">INSCRIÇÕES FESTIVAL DE CINEMA</a><br />
+			</p>
+		</div>
+		<div class='row justify-content-center'>
+        <div>
+          <small>
+            <small>Desenvolvido por Bruno Sá - <a href='//www.bruno-sa.com' target='_blank'>www.bruno-sa.com</a></small>
+          </small>
+        </div>
+      </div>
+	</div>
+	<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 </body>
 </html>
+<?php mysqli_close($con); ?>
