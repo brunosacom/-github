@@ -56,25 +56,25 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <p>FICHA DE INSCRIÇÃO PREMIÈRE BRASIL</p>
         <input name="inscricao_charset" type="hidden" id="inscricao_charset" value="utf-8">
         <input name="inscricao" type="hidden"  value="pbrasil">
-        <p class="form_required">Em vermelho os campos obrigatórios</p>
+        <p class="text-danger">Em vermelho os campos obrigatórios</p>
         <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
           <tr bgcolor="#cccccc">
             <td width="50%">1 - FILME</td>
             <td width="50%">&nbsp;</td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>1.01 - Título Original</td>
             <td>
               <input name="titulo_original" type="text" id="titulo_original" size="50" maxlength="100" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>1.02 - Título Inglês</td>
             <td>
               <input name="titulo_ingles" type="text" id="titulo_ingles"  size="50" maxlength="100" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>1.03 - Direção</td>
             <td>
               <input name="diretor" type="text" id="diretor"  size="50" maxlength="100" required>
@@ -82,8 +82,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           </tr>
           <tr>
             <td><p>1.04 - País de produção</p>
-            <p class="resumo_regulamento">REGULAMENTO ITEM:<br>
-            Para fins deste regulamento, considera-se filme brasileiro todo aquele que tenha Certificado de Produto Brasileiro, registrado junto à Agência Nacional do Cinema (Ancine), ou, aquele que em caso de ser objeto de co-produção internacional, a empresa produtora majorit&aacute;ria seja brasileira.</p></td>
+            </td>
             <td><input name="pais1_alpha3" type="hidden" id="pais1_alpha3"  value="BRA">
               Brasil </td>
           </tr>
@@ -109,7 +108,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
                 <?php include '../../../../php/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
                 </select></td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>1.06 - Ano</td>
             <td><select name="ano" required>
                 <option value=""selected="selected">Selecione</option>
@@ -122,7 +121,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               </select>
               (aaaa) </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>1.07 - Duração </td>
             <td><input name="duracao" type="number" id="duracao"  size="3" max="999" required>
               min</td>
@@ -136,49 +135,8 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               (limitado a 500 caracteres com espaço) </td>
             <td><textarea name="premios" cols="50" rows="5" ></textarea></td>
           </tr>
-          <tr class="form_required">
-            <td>1.10 - Categoria 
-              <p class="resumo_regulamento">REGULAMENTO ITEM:<br></p>
-              <p class="resumo_regulamento"><strong>DAS CONDIÇÕES DE PARTICIPAÇÃO NA MOSTRA COMPETITIVA PRINCIPAL DA PREMIÈRE BRASIL 2019:</strong></p>
-              <p class="resumo_regulamento">Para participarem da <strong>Mostra Competitiva Principal da Première Brasil </strong>e estarem aptos a concorrer aos prêmios, os filmes deverão atender às seguintes condições:<br>
-                <strong>Filmes Longas-Metragens de Ficção</strong></p>
-              <ol>
-                <li class="resumo_regulamento">não terem sido recusados em edições anteriores do&nbsp;<strong>Festival do Rio</strong>;</li>
-                <li class="resumo_regulamento">terem duração superior a 70 minutos;</li>
-                <li class="resumo_regulamento">serem inéditos no Rio de Janeiro e não explorados comercialmente por qualquer mídia em todo território brasileiro;</li>
-                <li class="resumo_regulamento">apresentarem cópia para o processo de seleção (preferencialmente legendada em inglês) <strong>EXCLUSIVAMENTE por meio de sites de compartilhamento de vídeo em streaming</strong>. Cópias enviadas em DVD e por meio de serviços de download <strong>não</strong> serão aceitas.</li>
-                <li class="resumo_regulamento">se selecionados, apresentarem cópia final em <strong>DCP aberto</strong>;</li>
-                <li class="resumo_regulamento">filmes falados em outro idioma que não o português devem - obrigatoriamente - entregar cópia legendada em português para exibição.</li>
-              </ol>
-              <p class="resumo_regulamento"><strong>Filmes Longas-Metragens Documentários</strong></p>
-              <ol>
-                <li class="resumo_regulamento">não terem sido recusados em edições anteriores do <strong>Festival do Rio</strong>;</li>
-                <li class="resumo_regulamento">terem duração superior a 70 minutos;</li>
-                <li class="resumo_regulamento">serem inéditos no Rio de Janeiro e não explorados comercialmente por qualquer mídia em todo território brasileiro;</li>
-                <li class="resumo_regulamento">apresentarem cópia para o processo de seleção (preferencialmente legendada em inglês) <strong>EXCLUSIVAMENTE por meio de sites de compartilhamento de vídeo em streaming</strong>. Cópias enviadas em DVD e por meio de serviços de download <strong>não</strong> serão aceitas.</li>
-                <li class="resumo_regulamento">caso selecionados, apresentarem cópia final em <strong>DCP aberto</strong>;</li>
-                <li class="resumo_regulamento">filmes falados em outro idioma que não o português, devem - obrigatoriamente - entregar cópia legendada em português para exibição.</li>
-              </ol>
-              <p class="resumo_regulamento"><strong>Filmes Curtas-Metragens</strong></p>
-              <ol>
-                <li class="resumo_regulamento">não terem sido inscritos em edições anteriores do <strong>Festival do Rio</strong>;</li>
-                <li class="resumo_regulamento">terem sido finalizados em 2019 ou 2018;</li>
-                <li class="resumo_regulamento">não terem sido explorados comercialmente por qualquer mídia em todo território brasileiro;</li>
-                <li class="resumo_regulamento">terem duração de no máximo 15 minutos;</li>
-                <li class="resumo_regulamento">apresentarem cópia para o processo de seleção (preferencialmente legendada em inglês) <strong>EXCLUSIVAMENTE por meio de sites de compartilhamento de vídeo em streaming</strong>. Cópias enviadas em DVD e por meio de serviços de download <strong>não</strong> serão aceitas.</li>
-                <li class="resumo_regulamento">caso selecionados, apresentarem cópia final em <strong>DCP aberto</strong>;</li>
-                <li class="resumo_regulamento">filmes falados em outro idioma que não o português, devem - obrigatoriamente - entregar cópia legendada em português para exibição.</li>
-              </ol>
-              <p class="resumo_regulamento"><strong>DAS CONDIÇÕES DE PARTICIPAÇÃO DE FILMES PARA MOSTRAS ESPECIAIS NÃO COMPETITIVAS E MOSTRA COMPETITIVA NOVOS RUMOS</strong>:<br>
-                <br>
-                a) terem duração superior a 60 minutos para longas-metragens;<br>
-                b) terem duração inferior a 30 minutos para curtas-metragens;<br>
-                c) não terem sido explorados comercialmente por qualquer mídia em todo território brasileiro;<br>
-                d) terem sido finalizados em 2020 ou 2019;<br>
-                e) apresentarem cópia para o processo de seleção (preferencialmente legendada em inglês) <strong>EXCLUSIVAMENTE por meio de sites de compartilhamento de vídeo em streaming</strong>. Cópias enviadas em DVD e por meio de serviços de download <strong>não</strong> serão aceitas.<br>
-                f) caso selecionados, apresentarem cópia final em DCP aberto;<br>
-                g) filmes falados em outro idioma que não o português, devem - obrigatoriamente - entregar cópia legendada em português para exibição.</p>
-            </td>
+          <tr class="text-danger">
+            <td>1.10 - Categoria</td>
             <td>
             <input name="categoria" type="radio" value="pb lg70 - fic" required>Longa-Metragem (acima de 70 min.) - Ficção<br>
             <input name="categoria" type="radio" value="pb lg70 - doc"  required>Longa-Metragem (acima de 70 min.) - Documentário<br>
@@ -190,7 +148,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <input name="categoria" type="radio" value="pb ct30 - doc"  required>Curta-Metragem (entre 15 e 30 min.) - Documentário<br>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>1.11 - Classificação Indicativa</td>
             <td><p>
               <input name="classificacao" type="radio" value="ER" required>Especialmente Recomendado<br>
@@ -209,14 +167,10 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <td width="50%">2 - INFORMAÇÃO TÉCNICA </td>
             <td width="50%">&nbsp;</td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td><p>2.01 - Bitola de exibição final</p>
-              <p class="resumo_regulamento">REGULAMENTO ITEM:</p>
-              <p class="resumo_regulamento"><strong>DAS CÓPIAS DE EXIBIÇÃO:</strong></p>
-              <p class="resumo_regulamento">Todas as cópias de exibição deverão ser entregues na sede do <strong>Festival do Rio </strong>já tendo sido revisadas integralmente, ao menos uma vez, pela produção do filme.</p>
-              <p class="resumo_regulamento"> Filmes selecionados que apresentarem cópia final em DCP aberto, devem entregá-la em perfeito estado até o dia<strong> 27 de setembro</strong>. <strong>Não serão aceitas cópias fechadas para as mostras competitivas da Première Brasil. </strong></p>
             </td>
-            <td bordercolor="#CCCCCC"><span class="form_required">
+            <td bordercolor="#CCCCCC"><span class="text-danger">
               <input name="bitola_inscricao" type="radio" value="DCP-aberto" required>DCP aberto <br>
               <input name="bitola_inscricao" type="radio" value="DCP-3Daberto" required>DCP-3D aberto <br>
               <input name="bitola_inscricao" type="radio" value="DCP-encriptado" required>DCP encriptado <br>
@@ -225,7 +179,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               <input name="bitola_inscricao" type="radio" value="DCP-3D+chave" required>DCP-3D + chave <br>
               <input name="bitola_inscricao" type="radio" value="DCP naodefinido" required>DCP n&atilde;o definido </span></td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>2.02 - Definição Digital de exibição final</td>
             <td>
               <input name="definicaodigital" type="radio" value="4K" required>4K (4096x2160)<br>
@@ -234,7 +188,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               <input name="definicaodigital" type="radio" value="HD" required>HD (1280x720)<br>
               <input name="definicaodigital" type="radio" value="SD" required>SD (720x480)</td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>2.03 - Janela de exibição final</td>
             <td>
               <input name="janela" type="radio" value="1.78 (scopeinflat)" required>1.78 (Digital HD - Scope dentro do Flat/16:9)<br>
@@ -249,14 +203,14 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               <input name="janela" type="radio" value="1.78 (DIG_hd - 16:9)" required>1.78 (Digital HD - 16:9)<br>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>2.04 - Cor  de exibição final</td>
             <td>
               <input name="cor" type="radio" value="Cor" required>Cor<br>
               <input name="cor" type="radio" value="P&B" required>P&B <br>
               <input name="cor" type="radio" value="Cor e P&B" required>Cor / P&B </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>2.05 - Som  de exibição final</td>
             <td>
               <input name="som" type="radio" value="Dolby Atmos" required>Dolby Atmos<br>
@@ -271,7 +225,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               <input name="som" type="radio" value="Mudo" required>Mudo
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>2.06 - Idioma  de exibição final</td>
             <td>
               <select name="idioma1_dci" id="idioma1_dci" size="1" required>
@@ -283,7 +237,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <input name="idioma2" id="idioma2" type="text" size="30" maxlength="100">
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>2.07 - Idioma da legenda na cópia de exibição</td>
             <td>
               <select name="leg_copia_dci" id="leg_copia_dci" required>
@@ -292,7 +246,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
                 </select>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>2.08 - Idioma da legenda na cópia de seleção</td>
             <td>
               <select name="leg_copiaselecao_dci" id="leg_copiaselecao_dci" required>
@@ -309,7 +263,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               <input name="acessibilidade_libras" type="checkbox" value="LIBRAS">libras 
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>2.10 - Cópia para Seleção</td>
             <td>
               <input name="copia_selecao" type="radio"  required value="link" checked>link - url? 
@@ -354,19 +308,19 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <td>3.1.06 - Email </td>
             <td><input name="distribuidora_email" type="text" id="distribuidora_email"></td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.07 - CEP</td>
             <td>
               <input name="distribuidora_cep" id="distribuidora_cep" type="text"  size="20" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.08 - Logradouro</td>
             <td>
               <input name="distribuidora_logradouro" id="distribuidora_logradouro" type="text"  value="" size="50" maxlength="200" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.08 - Número</td>
             <td>
               <input name="distribuidora_numero" id="distribuidora_numero" type="text"  value="" size="50" maxlength="200" required>
@@ -376,19 +330,19 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <td>3.2.08 - Complemento</td>
             <td><input name="distribuidora_complemento" id="distribuidora_complemento" type="text"  value="" size="50" maxlength="200"></td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.08 - Bairro</td>
             <td>
               <input name="distribuidora_bairro" id="distribuidora_bairro" type="text"  value="" size="50" maxlength="200" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.08 - Cidade</td>
             <td>
               <input name="distribuidora_cidade" id="distribuidora_cidade" type="text"  value="" size="50" maxlength="200" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.08 - UF</td>
             <td>
               <input name="distribuidora_uf" id="distribuidora_uf" type="text"  value="" size="50" maxlength="200" required>
@@ -406,25 +360,25 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <td>3.2 - Contato Produtora </td>
             <td>&nbsp;</td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.01 - Empresa Produtora</td>
             <td>
               <input name="produtora_empresa" type="text" id="produtora_empresa"  size="50" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.02 - Nome do Contato</td>
             <td>
               <input name="produtora_contatonome" type="text" id="produtora_contatonome"  size="30" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.03 - Telefone</td>
             <td>
               <input name="produtora_telefone" type="text" id="produtora_telefone"  size="20" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.1.04 - Celular</td>
             <td><input name="produtora_celular" type="text"  size="20" required></td>
           </tr>
@@ -432,25 +386,25 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <td>3.2.05 - Fax </td>
             <td><input name="produtora_fax" type="text" size="20"></td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.06 - Email</td>
             <td>
               <input name="produtora_email" type="email" id="produtora_email" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.07 - CEP</td>
             <td>
               <input name="produtora_cep" id="produtora_cep" type="text"  size="20" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.08 - Logradouro</td>
             <td>
               <input name="produtora_logradouro" id="produtora_logradouro" type="text"  value="" size="50" maxlength="200" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.08 - Número</td>
             <td>
               <input name="produtora_numero" id="produtora_numero" type="text"  value="" size="50" maxlength="200" required>
@@ -460,19 +414,19 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <td>3.2.08 - Complemento </td>
             <td><input name="produtora_complemento" id="produtora_complemento" type="text"  value="" size="50" maxlength="200"></td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.08 - Bairro</td>
             <td>
               <input name="produtora_bairro" id="produtora_bairro" type="text"  value="" size="50" maxlength="200" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.08 - Cidade</td>
             <td>
               <input name="produtora_cidade" id="produtora_cidade" type="text"  value="" size="50" maxlength="200" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.2.08 - UF</td>
             <td>
               <input name="produtora_uf" id="produtora_uf" type="text"  value="" size="50" maxlength="200" required>
@@ -506,7 +460,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <td>3.3.02 - Fax Direto </td>
             <td><input name="diretor_fax" type="text"  size="20"></td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>3.3.03 - Email </td>
             <td><input name="diretor_email" type="email" id="diretor_email" required></td>
           </tr>
@@ -528,83 +482,83 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <td width="50%">4 - CRÉDITOS</td>
             <td width="50%">&nbsp;</td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>4.01 - Roteiro</td>
             <td>
               <input name="roteiro" type="text" id="roteiro" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>4.03 - Empresa Co-Produtora <br>
             (caso o filme não tenha empresas co-produtoras colocar: NÃO HÁ)</td>
             <td>
               <input name="coproducao" type="text" id="coproducao" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>4.04 - Produção <br>
             (pessoa física responsável pelo filme)</td>
             <td>
               <input name="producao" type="text" id="producao" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>4.05 - Fotografia</td>
             <td>
               <input name="fotografia" type="text" id="fotografia" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>4.06 - Montagem</td>
             <td>
               <input name="montagem" type="text" id="montagem" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>4.07 - Direção de Arte<br>
             (caso o filme não tenha empresas co-produtoras colocar: NÃO HÁ)</td>
             <td>
               <input name="arte" type="text" id="arte" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>4.08 - Edição de Som</td>
             <td>
               <input name="somedicao" type="text" id="somedicao" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>4.09 - Música</td>
             <td>
               <input name="musica" type="text" id="musica" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>4.10 - Figurino<br>
             (caso o filme não tenha trabalho de figurino colocar: NÃO HÁ)</td>
             <td>
               <input name="figurino" type="text" id="figurino" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>4.11 - Elenco (máximo de 5 atores) (caso documentário, preencha "documentário")</td>
             <td>
               <textarea name="elenco" cols="50" rows="5" id="elenco" required></textarea>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>4.12 - Sinopse (limitado a 580 [longa] ou 210 [curta] caracteres com espaços)</td>
             <td>
               <textarea name="sinopse_br" cols="50" rows="5" id="sinopse_br" maxlength="580" required></textarea>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>4.13 - Direção Biografia (limitado a 430 [longa] ou 180 [curta] caracteres com espaços)</td>
             <td>
               <textarea name="diretor_biografia_br" cols="50" rows="5" id="diretor_biografia_br" maxlength="430" required></textarea>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>4.14 - Filmografia (limitado a 500 caracteres com espaços)</td>
             <td>
               <textarea name="diretor_filmografia" cols="50" rows="5" id="diretor_filmografia" maxlength="500" required></textarea>
@@ -621,25 +575,25 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <td>5.2 - Devolução da cópia</td>
             <td>&nbsp;</td>
           </tr>
-              <tr class="form_required">
+              <tr class="text-danger">
                 <td>5.2.01 - Contato</td>
                 <td>
                   <input name="destino_contato" type="text"  size="30" required>
                 </td>
             </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>5.2.02 - CEP</td>
             <td>
               <input name="destino_cep" id="destino_cep" type="text"  size="20" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>5.2.03 - Logradouro</td>
             <td>
               <input name="destino_logradouro" id="destino_logradouro" type="text"  value="" size="50" maxlength="200" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>5.2.03 - Número</td>
             <td>
               <input name="destino_numero" id="destino_numero" type="text"  value="" size="50" maxlength="200" required>
@@ -649,13 +603,13 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <td>5.2.03 - Complemento </td>
             <td>
           <input name="destino_complemento" id="destino_complemento" type="text"  value="" size="50" maxlength="200"></td></tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>5.2.03 - Bairro</td>
             <td>
               <input name="destino_bairro" id="destino_bairro" type="text"  value="" size="50" maxlength="200" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>5.2.03 - Cidade</td>
             <td>
               <input name="destino_cidade" id="destino_cidade" type="text"  value="" size="50" maxlength="200" required>
@@ -667,7 +621,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               <input name="destino_uf" id="destino_uf" type="text"  value="" size="50" maxlength="200" required>
             </td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>5.2.04 - Telefone</td>
             <td>
               <input name="destino_telefone" type="text"  size="20" required>
@@ -681,7 +635,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <td>5.2.06 - Fax </td>
             <td><input name="destino_fax" type="text"  size="20"></td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td>5.2.07 - Email </td>
             <td><input name="destino_email" type="email" required></td>
           </tr>
@@ -711,10 +665,9 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <td>7.1 - Regulamento </td>
             <td width="50%"><a href="regulamento_pbrasil.php" target="_blank">ver regulamento</a> | <a href="../../regrasDCP_festrio_01.pdf">regras técnicas para DCP (pdf)</a></td>
           </tr>
-          <tr class="form_required">
+          <tr class="text-danger">
             <td><p>7.1.01 - Aprovação</p>
-            <p class="resumo_regulamento">REGULAMENTO ITEM:<br></p>
-            <p class="resumo_regulamento">A participação na <strong>Première Brasil </strong>implica na aceitação e cumprimento de todos os termos e condições estabelecidos no presente Regulamento.</p></td>
+            </td>
             <td><input name="regulamento" type="checkbox" value="concordo" required>
               li e concordo com o regulamento</td>
           </tr>
