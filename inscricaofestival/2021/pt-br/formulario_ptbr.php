@@ -94,7 +94,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           </select>
         </div>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text">1.06 - Ano</label>
+          <label class="input-group-text text-danger">1.06 - Ano</label>
           <select class="form-select" name="ano" id="ano" required>
             <option value=""selected="selected">Selecione</option>
               <!-- Calculo para ano atual e anterior -->
@@ -104,47 +104,15 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               </option>
           </select>
         </div>
-
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">1.07 - Duração</label>
+          <input type="number" class="form-control" name="duracao" id="duracao"  size="3" max="999" required>
+        </div>
 
         <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
           <tr bgcolor="#cccccc">
             <td width="50%">1 - FILME</td>
             <td width="50%">&nbsp;</td>
-          </tr>
-          <tr>
-            <td>1.05 - Países de Co-Produção</td>
-            <td><select name="pais2_alpha3" id="pais2_alpha3">
-                <option value="" selected="selected">selecione</option>
-                <?php include '../../../../php/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
-                </select>
-              <br>
-              <select name="pais3_alpha3" id="pais3_alpha3">
-                <option value="" selected="selected">selecione</option>
-                <?php include '../../../../php/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
-                </select>
-              <br>
-              <select name="pais4_alpha3" id="pais4_alpha3">
-                <option value="" selected="selected">selecione</option>
-                <?php include '../../../../php/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
-                </select>
-              <br>
-              <select name="pais5_alpha3" id="pais5_alpha3">
-                <option value="" selected="selected">selecione</option>
-                <?php include '../../../../php/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
-                </select></td>
-          </tr>
-          <tr class="text-danger">
-            <td>1.06 - Ano</td>
-            <td><select name="ano" required>
-                <option value=""selected="selected">Selecione</option>
-                <!-- Calculo para ano atual e anterior -->
-                <option value="<?php echo date("Y"); ?>"><?php echo date("Y"); ?></option>
-                <option value="<?php $y=strtotime("-1 year");
-                              echo date("Y", $y) ?>">
-                  <?php $y=strtotime("-1 year");
-                              echo date("Y", $y) ?></option>
-              </select>
-              (aaaa) </td>
           </tr>
           <tr class="text-danger">
             <td>1.07 - Duração </td>
