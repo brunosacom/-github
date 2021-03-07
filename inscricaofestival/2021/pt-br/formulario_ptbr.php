@@ -75,8 +75,12 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <input name="pais1_alpha3" type="hidden" id="pais1_alpha3"  value="BRA">
         </div>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text text-danger">1.05 - Países de Co-Produção</label>
+          <label class="input-group-text">1.05 - Países de Co-Produção</label>
           <select class="form-select" name="pais2_alpha3" id="pais2_alpha3">
+            <option value="" selected="selected">selecione</option>
+            <?php include '../../../../php/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
+          </select>
+          <select class="form-select" name="pais3_alpha3" id="pais3_alpha3">
             <option value="" selected="selected">selecione</option>
             <?php include '../../../../php/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
           </select>
