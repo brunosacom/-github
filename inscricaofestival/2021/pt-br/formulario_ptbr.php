@@ -70,23 +70,23 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <input type="text" class="form-control" name="diretor" id="diretor" required>
         </div>
         <div class="input-group input-group-sm mb-3">
-          <span class="input-group-text text-danger">1.04 - País de produção</span>
+          <label class="input-group-text text-danger">1.04 - País de produção</label>
           <input type="text" class="form-control" placeholder="Brasil" disabled>
           <input name="pais1_alpha3" type="hidden" id="pais1_alpha3"  value="BRA">
         </div>
-
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">1.05 - Países de Co-Produção</label>
+          <select class="form-select" name="pais2_alpha3" id="pais2_alpha3">
+            <option value="" selected="selected">selecione</option>
+            <?php include '../../../../php/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
+          </select>
+        </div>
 
 
         <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
           <tr bgcolor="#cccccc">
             <td width="50%">1 - FILME</td>
             <td width="50%">&nbsp;</td>
-          </tr>
-          <tr>
-            <td><p>1.04 - País de produção</p>
-            </td>
-            <td>
-              Brasil </td>
           </tr>
           <tr>
             <td>1.05 - Países de Co-Produção</td>
