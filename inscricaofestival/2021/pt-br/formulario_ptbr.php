@@ -69,7 +69,10 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <span class="input-group-text text-danger">1.03 - Direção</span>
           <input type="text" class="form-control" name="diretor" id="diretor" required>
         </div>
-
+        <div class="input-group input-group-sm mb-3">
+          <span class="input-group-text text-danger">1.04 - País de produção</span>
+          <input type="text" class="form-control" name="pais1_alpha3" id="pais1_alpha3" value="BRA" placeholder="Brasil" required disabled>
+        </div>
 
 
 
