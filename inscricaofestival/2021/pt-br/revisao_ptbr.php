@@ -5,8 +5,15 @@
 <head>
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php'; ?> <!-- Google Analytics Track brunosacom -->
 <meta charset="utf-8">
-<title>Festival do Rio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revisão Festival de Cinema</title>
 <link rel="shortcut icon" href="../../favicon.png">
+
+<link href="https://fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
 <link href="../../festatual.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 body {

@@ -51,7 +51,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 				<div class="col"></div>
 			</div>
 			<div class="row justify-content-md-center">
-				<p><a href="pt-br/regulamento_ptbr.php">REGULAMENTO FESTIVAL DE CINEMA</a><br />
+				<p><a href="pt-br/regulamento_ptbr.php?emp_sigla='<?php echo $empresa_sigla; ?>'">REGULAMENTO FESTIVAL DE CINEMA</a><br />
 				</p>
 			</div>
 			<div class='row justify-content-center'>

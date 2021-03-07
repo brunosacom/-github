@@ -53,7 +53,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 			<h1>Regulamento</h1>
       <div class='row justify-content-center'>
 			  <div>Texto do regulamento</div>
-        <div><a href="formulario_ptbr.php">INSCREVA-SE</a></div>
+        <div><a href="formulario_ptbr.php?emp_sigla='<?php echo $empresa_sigla; ?>'">INSCREVA-SE</a></div>
       </div>
       <div class='row justify-content-center'>
         <div>
