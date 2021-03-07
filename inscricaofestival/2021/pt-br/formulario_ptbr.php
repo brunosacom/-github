@@ -43,7 +43,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
   </head>
 
-  <body style="font-family: Didact Gothic;">
+  <body style="font-family:Didact Gothic; color:#FFF; background-color:#333;">
     <div class="container">
     	<!-- Content here -->
       <div class="row justify-content-md-center">
@@ -53,9 +53,9 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
       </div>
 			<h1>Formulário de Inscrição</h1>
       <form action="../php/enviarauthinsertcheck_action.php" method="post" name="festival_inscricao" id="festival_inscricao" onsubmit="return formvalidation(this)">
-        <p>FICHA DE INSCRIÇÃO PREMIÈRE BRASIL</p>
+        <p>FICHA DE INSCRIÇÃO - PORTUGUÊS</p>
         <input name="inscricao_charset" type="hidden" id="inscricao_charset" value="utf-8">
-        <input name="inscricao" type="hidden"  value="pbrasil">
+        <input name="inscricao" type="hidden"  value="pt-br">
         <p class="text-danger">Em vermelho os campos obrigatórios</p>
         <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
           <tr bgcolor="#cccccc">
