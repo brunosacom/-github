@@ -1,5 +1,33 @@
 <?php require $_SERVER['DOCUMENT_ROOT'].'/php/mysqli_connect.php'; ?> <!-- MySqlDB connect brunosacom -->
 
+<?php
+
+// URL EXEMPLO
+//https://www.bruno-sa.com/bembos/festivalinscricao/index.php?emp_sigla='BMB'
+
+$emp_sigla = $_GET['emp_sigla'];
+
+$today = date('Y-m-d');
+
+
+$sql_empresa = "SELECT * FROM bembos_empresa WHERE empresa_sigla = $emp_sigla";
+$result_empresa = mysqli_query($con, $sql_empresa);
+while ($row_empresa = mysqli_fetch_array($result_empresa)) {
+  $empresa_logo = $row_empresa['empresa_logo'];
+  $empresa_favicon = $row_empresa['empresa_favicon'];
+  $empresa_nome = $row_empresa['empresa_nome'];
+  $empresa_sigla = $row_empresa['empresa_sigla'];
+  $empresa_whatsapp = $row_empresa['empresa_whatsapp'];
+  $empresa_emailto = $row_empresa['empresa_emailto'];
+  $empresa_emailtonome = $row_empresa['empresa_emailtonome'];
+  $empresa_smtp = $row_empresa['empresa_smtp'];
+  $empresa_username = $row_empresa['empresa_username'];
+  $empresa_password = $row_empresa['empresa_password'];
+  $empresa_emailfrom = $row_empresa['empresa_emailfrom'];
+  $empresa_emailfromnome = $row_empresa['empresa_emailfromnome'];
+}
+?>
+
 <!DOCTYPE HTML>
 <html lang="pt-br">
 	<head>
@@ -15,13 +43,13 @@
 	</head>
 
 	<body style="font-family:Didact Gothic; color:#FFF; background-color:#333;">
-    <div class="container">
+    	<div class="container">
     	<!-- Content here -->
-      <div class="row justify-content-md-center">
-        <div class="col"></div>
-        <div class="col"><img src="<?php echo $empresa_logo; ?>" class="custom-logo" alt="<?php echo $empresa_nome; ?>" width="200"></div>
-        <div class="col"></div>
-      </div>
+			<div class="row justify-content-md-center">
+				<div class="col"></div>
+				<div class="col"><img src="<?php echo $empresa_logo; ?>" class="custom-logo" alt="<?php echo $empresa_nome; ?>" width="200"></div>
+				<div class="col"></div>
+			</div>
 
 <?php 
 // inclui as classes do PHPMailer
@@ -155,9 +183,6 @@ $headers .= "Reply-To: ".$produtora_email."\r\n";
 //$headers .= "Cc: copia@seudominio\r\n"; //CAMPO COPIA OPCIONAL
 //$headers .= "Bcc: copiaoculta@seudominio\r\n"; //CAMPO COPIA OCULTA OPCIONAL
 $headers .= "From: ".$remetente."\r\n";
-
-echo '<p class="txt_corrido"><img src="../../festivaldorioint_pb.png" width="213" height="107" alt="Festival do Rio" /></p>
-<p class="txt_corrido">FICHA DE INSCRIÇÃO PREMIÈRE BRASIL</p>';
 
 //SMTP needs accurate times, and the PHP time zone MUST be set
 //This should be done in your php.ini, but this is how to do it if you don't have access to that
@@ -450,8 +475,7 @@ while($row_inscricao = mysqli_fetch_array($result_inscricao))
 <h1>Formulário de Inscrição - pt-br</h1>
 </br>
 </br>
-<p><strong>Premiére Brasil</br>
-sugerimos que salve esta página (com print screen, ou copie e salve em documento de word) para seu conforto e segurança.</br>Número de inscrição: </strong><?php echo $idmysql_inscricao; ?></br>
+<p><strong>sugerimos que salve esta página (com print screen, ou copie e salve em documento de word) para seu conforto e segurança.</br></br>Número de inscrição: </strong><?php echo $idmysql_inscricao; ?></br>
 </br>
 <strong>Título Original: </strong><?php echo $titulo_original; ?></br>
 </br>
