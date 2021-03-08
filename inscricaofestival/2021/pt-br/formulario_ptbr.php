@@ -95,7 +95,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">1.06 - Ano</label>
-          <select class="form-select" name="ano" id="ano" required>
+          <select class="form-select text-danger" name="ano" id="ano" required>
             <option value=""selected="selected">Selecione</option>
               <!-- Calculo para ano atual e anterior -->
               <option value="<?php echo date("Y"); ?>"><?php echo date("Y"); ?></option>
