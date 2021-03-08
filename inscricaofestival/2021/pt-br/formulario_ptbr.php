@@ -519,21 +519,11 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           </div>
         </div>
         <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="submit" class="btn btn-primary" name="submit" id="submit" value="Enviar">Left</button>
-          <button type="reset" class="btn btn-outline-secondary" name="reset" id="reset" value="Limpar">>Middle</button>
+          <button type="submit" class="btn btn-primary" name="submit" id="submit" value="Enviar">enviar</button>
+          <button type="reset" class="btn btn-outline-secondary" name="reset" id="reset" value="Limpar">limpar</button>
         </div>
-
-        <p>&nbsp;</p>
-        <table width="80%"  border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td width="50%">&nbsp;</td>
-            <td width="50%"><input type="submit" name="submit" id="submit" value="Enviar">
-              <input type="reset" name="Reset" value="Limpar"></td>
-          </tr>
-        </table>
       </form>
-
-      <div class='row justify-content-center'>
+      <div class="justify-content-center">
         <div>
         <small>
           <small>Desenvolvido por Bruno Sá - <a href='//www.bruno-sa.com' target='_blank'>www.bruno-sa.com</a></small>
