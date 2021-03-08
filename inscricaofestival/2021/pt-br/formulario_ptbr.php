@@ -119,36 +119,28 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">1.10 - Categoria</label>
-          <div class="form-control">
-            <input class="form-check-input" name="categoria" type="radio" value="pb lg70 - fic" required>Longa-Metragem (acima de 70 min.) - Ficção<br>
-            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg70 - doc"  required><label class="text-danger">Longa-Metragem (acima de 70 min.) - Documentário</label><br>
-            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg60 - fic"  required>Longa-Metragem (entre 60 e 70 min.) - Ficção<br>
-            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg60 - doc" required>Longa-Metragem (entre 60 e 70 min.) - Documentário<br>
-            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct15 - fic" required>Curta-Metragem (até 15 min.) - Ficção<br>
-            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct15 - doc" required>Curta-Metragem (até 15 min.) - Documentário <br>
-            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct30 - fic"  required>Curta-Metragem (entre 15 e 30 min.) - Ficção<br>
-            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct30 - doc"  required>Curta-Metragem (entre 15 e 30 min.) - Documentário<br>
+          <div class="form-control text-danger">
+            <input class="form-check-input" name="categoria" type="radio" value="pb lg70 - fic" required> Longa-Metragem (acima de 70 min.) - Ficção<br>
+            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg70 - doc"  required> Longa-Metragem (acima de 70 min.) - Documentário<br>
+            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg60 - fic"  required> Longa-Metragem (entre 60 e 70 min.) - Ficção<br>
+            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg60 - doc" required> Longa-Metragem (entre 60 e 70 min.) - Documentário<br>
+            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct15 - fic" required> Curta-Metragem (até 15 min.) - Ficção<br>
+            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct15 - doc" required> Curta-Metragem (até 15 min.) - Documentário <br>
+            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct30 - fic"  required> Curta-Metragem (entre 15 e 30 min.) - Ficção<br>
+            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct30 - doc"  required> Curta-Metragem (entre 15 e 30 min.) - Documentário
           </div>
         </div>
-
-        <div class="input-group">
-          <div class="input-group-text">
-            <input class="form-check-input mt-0" type="radio" value="" placeholder="radio 1" aria-label="Radio button for following text input">
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">1.11 - Classificação Indicativa</label>
+          <div class="form-control text-danger">
+            <input name="classificacao" type="radio" value="ER" required>Especialmente Recomendado<br>
+              <input name="classificacao" type="radio" value="L" required> Livre<br>
+              <input name="classificacao" type="radio" value="10" required> 10 anos<br>
+              <input name="classificacao" type="radio" value="12" required> 12 anos<br>
+              <input name="classificacao" type="radio" value="14" required> 14 anos<br>
+              <input name="classificacao" type="radio" value="16" required> 16 anos<br>
+              <input name="classificacao" type="radio" value="18" required> 18 anos
           </div>
-          <input class="form-check-input mt-0" type="radio" aria-label="Radio button for following text input">
-          <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="radio 1" disabled>
-        </div>
-
-        <div class="input-group mb-3">
-          <label class="input-group-text text-danger">1.10 - Categoria</label>
-          <div><input class="form-check-input" name="categoria" type="radio" value="pb lg70 - fic" required>Longa-Metragem (acima de 70 min.) - Ficção</div>
-          <div><input class="form-check-input" name="categoria" type="radio" value="pb lg70 - doc"  required>Longa-Metragem (acima de 70 min.) - Documentário</div>
-          <div><input class="form-check-input mt-0" name="categoria" type="radio" value="pb lg60 - fic"  required>Longa-Metragem (entre 60 e 70 min.) - Ficção</div>
-          <div><input class="form-check-input mt-0" name="categoria" type="radio" value="pb lg60 - doc" required>Longa-Metragem (entre 60 e 70 min.) - Documentário</div>
-          <div><input class="form-check-input mt-0" name="categoria" type="radio" value="pb ct15 - fic" required>Curta-Metragem (até 15 min.) - Ficção</div>
-          <div><input class="form-check-input mt-0" name="categoria" type="radio" value="pb ct15 - doc" required>Curta-Metragem (até 15 min.) - Documentário </div>
-          <div><input class="form-check-input mt-0" name="categoria" type="radio" value="pb ct30 - fic"  required>Curta-Metragem (entre 15 e 30 min.) - Ficção</div>
-          <div><input class="form-check-input mt-0" name="categoria" type="radio" value="pb ct30 - doc"  required>Curta-Metragem (entre 15 e 30 min.) - Documentário</div>
         </div>
 
         <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
