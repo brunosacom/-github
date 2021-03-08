@@ -242,7 +242,125 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <hr style="height:5px;">
         <h6>3 - CONTATOS</h6>
-         
+        <h7>3.1 - Contatos Distribuidora</h7>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.1.01 - Empresa Distribuidora</label>
+          <input type="text" class="form-control" name="distribuidora_empresa" id="distribuidora_empresa">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.1.02 - Nome do Contato</label>
+          <input type="text" class="form-control" name="distribuidora_contatonome" id="distribuidora_contatonome">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.1.03 - Telefone</label>
+          <input type="text" class="form-control" name="distribuidora_telefone" id="distribuidora_telefone">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.1.04 - Celular</label>
+          <input type="text" class="form-control" name="distribuidora_celular" id="distribuidora_celular">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.1.05 - Fax</label>
+          <input type="text" class="form-control" name="distribuidora_fax" id="distribuidora_fax">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.1.06 - Email</label>
+          <input type="email" class="form-control" name="distribuidora_email" id="distribuidora_email">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.1.07 - CEP</label>
+          <input type="email" class="form-control" name="distribuidora_cep" id="distribuidora_cep">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.1.07.1 - Logradouro</label>
+          <input type="email" class="form-control" name="distribuidora_logradouro" id="distribuidora_logradouro">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.1.07.2 - Número</label>
+          <input type="email" class="form-control" name="distribuidora_numero" id="distribuidora_numero">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.1.07.3 - Complemento</label>
+          <input type="email" class="form-control" name="distribuidora_complemento" id="distribuidora_complemento">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.1.07.4 - Bairro</label>
+          <input type="email" class="form-control" name="distribuidora_bairro" id="distribuidora_bairro">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.1.07.5 - Cidade</label>
+          <input type="email" class="form-control" name="distribuidora_cidade" id="distribuidora_cidade">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.1.07.6 - UF</label>
+          <input type="email" class="form-control" name="distribuidora_uf" id="distribuidora_uf">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.1.08 - Website</label>
+          <input type="email" class="form-control" name="distribuidora_website" id="distribuidora_website">
+        </div>
+        <hr>
+        <h7>3.2 - Contatos Produtora</h7>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.2.01 - Empresa Produtora</label>
+          <input type="text" class="form-control" name="produtora_empresa" id="produtora_empresa">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">3.2.02 - Nome do Contato</label>
+          <input type="text" class="form-control text-danger" name="produtora_contatonome" id="produtora_contatonome">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">3.2.03 - Telefone</label>
+          <input type="text" class="form-control text-danger" name="produtora_telefone" id="produtora_telefone">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">3.2.04 - Celular</label>
+          <input type="text" class="form-control text-danger" name="produtora_celular" id="produtora_celular">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.2.05 - Fax</label>
+          <input type="text" class="form-control" name="produtora_fax" id="produtora_fax">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">3.2.06 - Email</label>
+          <input type="email" class="form-control text-danger" name="produtora_email" id="produtora_email">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">3.2.07 - CEP</label>
+          <input type="email" class="form-control text-danger" name="produtora_cep" id="produtora_cep">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">3.2.07.1 - Logradouro</label>
+          <input type="email" class="form-control text-danger" name="produtora_logradouro" id="produtora_logradouro">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">3.2.07.2 - Número</label>
+          <input type="email" class="form-control text-danger" name="produtora_numero" id="produtora_numero">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.2.07.3 - Complemento</label>
+          <input type="email" class="form-control" name="produtora_complemento" id="produtora_complemento">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">3.2.07.4 - Bairro</label>
+          <input type="email" class="form-control text-danger" name="produtora_bairro" id="produtora_bairro">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">3.2.07.5 - Cidade</label>
+          <input type="email" class="form-control text-danger" name="produtora_cidade" id="produtora_cidade">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">3.2.07.6 - UF</label>
+          <input type="email" class="form-control text-danger" name="produtora_uf" id="produtora_uf">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.2.08 - Website</label>
+          <input type="email" class="form-control" name="produtora_website" id="produtora_website">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.2.09 - Currículo da empresa produtora</label>
+          <textarea class="form-control" name="produtora_curriculo" id="produtora_curriculo" rows="5" placeholder="(limitado a 500 caracteres com espaço)"></textarea>
+        </div>
         
         <table width="80%"  border="3" cellpadding="5" cellspacing="0" bordercolor="#cccccc">
           <tr bgcolor="#cccccc">
