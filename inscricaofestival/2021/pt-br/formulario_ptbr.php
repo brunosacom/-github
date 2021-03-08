@@ -142,7 +142,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <input name="classificacao" type="radio" value="18" required> 18 anos
           </div>
         </div>
-        <hr>
+        <hr style="height:5px;">
         <h6>2 - INFORMAÇÃO TÉCNICA</h6>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.01 - Bitola de exibição final</label>
@@ -192,83 +192,40 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.05 - Som  de exibição final</label>
           <div class="form-control text-danger">
-            <input name="som" type="radio" value="Dolby Atmos" required>Dolby Atmos<br>
-            <input name="som" type="radio" value="Barco Auro3D 11.1" required>Barco Auro3D 11.1<br>
-            <input name="som" type="radio" value="Dolby Digital EX 7.1" required>Dolby Digital EX 7.1<br>
-            <input name="som" type="radio" value="Dolby Digital EX 6.1" required>Dolby Digital EX 6.1<br>
-            <input name="som" type="radio" value="Digital 5.1" required>Digital 5.1<br>
-            <input name="som" type="radio" value="Digital 5.0" required>Digital 5.0 <br>
-            <input name="som" type="radio" value="Dolby SR 5.1" required>Dolby SR 5.1<br>
-            <input name="som" type="radio" value="Stereo 2.0" required>Stereo 2.0 <br>
-            <input name="som" type="radio" value="Mono 1.0" required>Mono 1.0<br>
-            <input name="som" type="radio" value="Mudo" required>Mudo
+            <input name="som" type="radio" value="Dolby Atmos" required> Dolby Atmos<br>
+            <input name="som" type="radio" value="Barco Auro3D 11.1" required> Barco Auro3D 11.1<br>
+            <input name="som" type="radio" value="Dolby Digital EX 7.1" required> Dolby Digital EX 7.1<br>
+            <input name="som" type="radio" value="Dolby Digital EX 6.1" required> Dolby Digital EX 6.1<br>
+            <input name="som" type="radio" value="Digital 5.1" required> Digital 5.1<br>
+            <input name="som" type="radio" value="Digital 5.0" required> Digital 5.0 <br>
+            <input name="som" type="radio" value="Dolby SR 5.1" required> Dolby SR 5.1<br>
+            <input name="som" type="radio" value="Stereo 2.0" required> Stereo 2.0 <br>
+            <input name="som" type="radio" value="Mono 1.0" required> Mono 1.0<br>
+            <input name="som" type="radio" value="Mudo" required> Mudo
           </div>
         </div>
-
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">2.06 - Idioma  de exibição final</label>
+          <select class="form-select" name="idioma1_dci" id="idioma1_dci" required>
+            <option value="" selected="selected">selecione</option>
+            <?php include '../../../../php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
+          </select>
+          <input name="idioma2" id="idioma2" type="text" size="30" maxlength="100" placeholder="mais de um idioma? especifique">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">2.07 - Idioma da legenda na cópia de exibição</label>
+          <select class="form-select" name="leg_copia_dci" id="leg_copia_dci" required>
+            <option value="" selected="selected">selecione</option>
+            <?php include '../../../../php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
+          </select>
+        </div>
          
         <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
           <tr bgcolor="#cccccc">
             <td width="50%">2 - INFORMAÇÃO TÉCNICA </td>
             <td width="50%">&nbsp;</td>
           </tr>
-          <tr class="text-danger">
-            <td><p>2.01 - Bitola de exibição final</p>
-            </td>
-            <td bordercolor="#CCCCCC"><span class="text-danger">
-              <input name="bitola_inscricao" type="radio" value="DCP-aberto" required>DCP aberto <br>
-              <input name="bitola_inscricao" type="radio" value="DCP-3Daberto" required>DCP-3D aberto <br>
-              <input name="bitola_inscricao" type="radio" value="DCP-encriptado" required>DCP encriptado <br>
-              <input name="bitola_inscricao" type="radio" value="DCP-3Dencriptado" required>DCP-3D encriptado <br>
-              <input name="bitola_inscricao" type="radio" value="DCP-+chave" required>DCP + chave <br>
-              <input name="bitola_inscricao" type="radio" value="DCP-3D+chave" required>DCP-3D + chave <br>
-              <input name="bitola_inscricao" type="radio" value="DCP naodefinido" required>DCP n&atilde;o definido </span></td>
-          </tr>
-          <tr class="text-danger">
-            <td>2.02 - Definição Digital de exibição final</td>
-            <td>
-              <input name="definicaodigital" type="radio" value="4K" required>4K (4096x2160)<br>
-              <input name="definicaodigital" type="radio" value="2K" required>2K (2048x1080)<br>
-              <input name="definicaodigital" type="radio" value="FullHD" required>FullHD (1920x1080)<br>
-              <input name="definicaodigital" type="radio" value="HD" required>HD (1280x720)<br>
-              <input name="definicaodigital" type="radio" value="SD" required>SD (720x480)</td>
-          </tr>
-          <tr class="text-danger">
-            <td>2.03 - Janela de exibição final</td>
-            <td>
-              <input name="janela" type="radio" value="1.78 (scopeinflat)" required>1.78 (Digital HD - Scope dentro do Flat/16:9)<br>
-              <input name="janela" type="radio" value="2.39 (DCP_scope)" required>2.39 (DCP scope)<br>
-              <input name="janela" type="radio" value="1.85 (DCP_flat)" required>1.85 (DCP flat)<br>
-              <input name="janela" type="radio" value="1.90 (DCP_full)" required>1.90 (DCP full)<br>
-              <input name="janela" type="radio" value="1.33 (35_planoantigo)" required>1.33 (35mm antigo)<br>
-              <input name="janela" type="radio" value="1.66 (35_plano)" required>1.66 (35mm)<br>
-              <input name="janela" type="radio" value="1.85 (35_panoramico)" required>1.85 (35mm)<br>
-              <input name="janela" type="radio" value="2.35 (35_scope)" required>2.35 (35mm scope)<br>
-              <input name="janela" type="radio" value="1.33 (DIG_sd - 4:3)" required>1.33 (Digital SD - 4:3)<br>
-              <input name="janela" type="radio" value="1.78 (DIG_hd - 16:9)" required>1.78 (Digital HD - 16:9)<br>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>2.04 - Cor  de exibição final</td>
-            <td>
-              <input name="cor" type="radio" value="Cor" required>Cor<br>
-              <input name="cor" type="radio" value="P&B" required>P&B <br>
-              <input name="cor" type="radio" value="Cor e P&B" required>Cor / P&B </td>
-          </tr>
-          <tr class="text-danger">
-            <td>2.05 - Som  de exibição final</td>
-            <td>
-              <input name="som" type="radio" value="Dolby Atmos" required>Dolby Atmos<br>
-              <input name="som" type="radio" value="Barco Auro3D 11.1" required>Barco Auro3D 11.1<br>
-              <input name="som" type="radio" value="Dolby Digital EX 7.1" required>Dolby Digital EX 7.1<br>
-              <input name="som" type="radio" value="Dolby Digital EX 6.1" required>Dolby Digital EX 6.1<br>
-              <input name="som" type="radio" value="Digital 5.1" required>Digital 5.1<br>
-              <input name="som" type="radio" value="Digital 5.0" required>Digital 5.0 <br>
-              <input name="som" type="radio" value="Dolby SR 5.1" required>Dolby SR 5.1<br>
-              <input name="som" type="radio" value="Stereo 2.0" required>Stereo 2.0 <br>
-              <input name="som" type="radio" value="Mono 1.0" required>Mono 1.0<br>
-              <input name="som" type="radio" value="Mudo" required>Mudo
-            </td>
-          </tr>
+          
           <tr class="text-danger">
             <td>2.06 - Idioma  de exibição final</td>
             <td>
