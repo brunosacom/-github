@@ -364,22 +364,36 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <hr>
         <h7>3.3 - Contato Direção</h7>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text text-danger">3.3.01 - Direção</label>
-          <input type="text" class="form-control text-danger" name="diretor" id="diretor">
+          <label class="input-group-text text-danger">3.3.01 - Telefone</label>
+          <input type="text" class="form-control text-danger" name="diretor_telefone" id="diretor_telefone">
         </div>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text text-danger">3.2.03 - Telefone</label>
-          <input type="text" class="form-control text-danger" name="produtora_telefone" id="produtora_telefone">
+          <label class="input-group-text text-danger">3.3.02 - Celular</label>
+          <input type="text" class="form-control text-danger" name="diretor_celular" id="diretor_celular">
         </div>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text text-danger">3.2.04 - Celular</label>
-          <input type="text" class="form-control text-danger" name="produtora_celular" id="produtora_celular">
+          <label class="input-group-text">3.3.03 - Fax</label>
+          <input type="text" class="form-control" name="diretor_fax" id="diretor_fax">
         </div>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text">3.2.05 - Fax</label>
-          <input type="text" class="form-control" name="produtora_fax" id="produtora_fax">
+          <label class="input-group-text text-danger">3.3.04 - Email</label>
+          <input type="email" class="form-control text-danger" name="diretor_email" id="diretor_email">
         </div>
-        
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.3.05 - Website</label>
+          <input type="email" class="form-control" name="diretor_website" id="diretor_website">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.3.06 - Estará disponível para entrevistas por telefone ou email?</label>
+          <div class="form-control">
+            <input name="diretor_disponivel" type="radio" value="sim"> Sim<br>
+            <input name="diretor_disponivel" type="radio" value="não"> Não
+          </div>
+        </div>
+        <hr style="height:5px;">
+        <h6>4 - CRÉDITOS</h6>
+
+
         <table width="80%"  border="3" cellpadding="5" cellspacing="0" bordercolor="#cccccc">
           <tr bgcolor="#cccccc">
             <td width="50%">3 - CONTATOS</td>
