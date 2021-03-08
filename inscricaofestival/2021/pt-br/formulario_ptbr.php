@@ -206,7 +206,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.06 - Idioma  de exibição final</label>
-          <select class="form-select" name="idioma1_dci" id="idioma1_dci" required>
+          <select class="form-select text-danger" name="idioma1_dci" id="idioma1_dci" required>
             <option value="" selected="selected">selecione</option>
             <?php include '../../../../php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
           </select>
@@ -214,23 +214,25 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.07 - Idioma da legenda na cópia de exibição</label>
-          <select class="form-select" name="leg_copia_dci" id="leg_copia_dci" required>
+          <select class="form-select text-danger" name="leg_copia_dci" id="leg_copia_dci" required>
             <option value="" selected="selected">selecione</option>
             <?php include '../../../../php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
           </select>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.08 - Idioma da legenda na cópia de seleção</label>
-          <select class="form-select" name="leg_copiaselecao_dci" id="leg_copiaselecao_dci" required>
+          <select class="form-select text-danger" name="leg_copiaselecao_dci" id="leg_copiaselecao_dci" required>
             <option value="" selected="selected">selecione</option>
             <?php include '../../../../php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
           </select>
         </div>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text text-danger">2.09 - Acessibilidadde</label>
-          <input class="form-check-input" name="acessibilidade_ad" type="checkbox" value="AD"> audio descrição<br>
-          <input class="form-check-input" name="acessibilidade_ccap" type="checkbox" value="CCAP"> leg. descritiva<br>
-          <input class="form-check-input" name="acessibilidade_libras" type="checkbox" value="LIBRAS"> libras 
+            <label class="input-group-text">2.09 - Acessibilidadde</label>
+            <div class="form-control">
+              <input class="form-check-input" name="acessibilidade_ad" type="checkbox" value="AD"> audio descrição<br>
+              <input class="form-check-input" name="acessibilidade_ccap" type="checkbox" value="CCAP"> leg. descritiva<br>
+              <input class="form-check-input" name="acessibilidade_libras" type="checkbox" value="LIBRAS"> libras
+            </div>
         </div>
          
         <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
