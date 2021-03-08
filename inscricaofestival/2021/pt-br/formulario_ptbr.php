@@ -116,6 +116,14 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <label class="input-group-text">1.09 - Festivais e Prêmios</label>
           <textarea class="form-control" name="premios" id="premios" rows="5" placeholder="(limitado a 500 caracteres com espaço)"></textarea>
         </div>
+
+        <div class="input-group">
+          <div class="input-group-text">
+            <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with radio button">
+        </div>
+
         <div class="input-group mb-3">
           <label class="input-group-text text-danger">1.10 - Categoria</label>
           <div><input class="form-check-input" name="categoria" type="radio" value="pb lg70 - fic" required>Longa-Metragem (acima de 70 min.) - Ficção</div>
