@@ -121,7 +121,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <label class="input-group-text text-danger">1.10 - Categoria</label>
           <div class="form-control">
             <input class="form-check-input" name="categoria" type="radio" value="pb lg70 - fic" required>Longa-Metragem (acima de 70 min.) - Ficção<br>
-            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg70 - doc"  required>Longa-Metragem (acima de 70 min.) - Documentário<br>
+            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg70 - doc"  required><label class="text-danger">Longa-Metragem (acima de 70 min.) - Documentário</label><br>
             <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg60 - fic"  required>Longa-Metragem (entre 60 e 70 min.) - Ficção<br>
             <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg60 - doc" required>Longa-Metragem (entre 60 e 70 min.) - Documentário<br>
             <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct15 - fic" required>Curta-Metragem (até 15 min.) - Ficção<br>
