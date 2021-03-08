@@ -117,9 +117,23 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <textarea class="form-control" name="premios" id="premios" rows="5" placeholder="(limitado a 500 caracteres com espaço)"></textarea>
         </div>
 
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">1.10 - Categoria</label>
+          <div>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Default radio
+            </label>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Default radio
+            </label>
+          </div>
+        </div>
+
         <div class="input-group">
           <div class="input-group-text">
-            <input class="form-check-input mt-0" type="radio" value="" placeholder="radio 1" aria-label="Radio button for following text input" disabled>
+            <input class="form-check-input mt-0" type="radio" value="" placeholder="radio 1" aria-label="Radio button for following text input">
           </div>
           <input class="form-check-input mt-0" type="radio" aria-label="Radio button for following text input">
           <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="radio 1" disabled>
