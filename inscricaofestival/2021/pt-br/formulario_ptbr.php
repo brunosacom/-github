@@ -119,9 +119,10 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
         <div class="input-group">
           <div class="input-group-text">
-            <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
+            <input class="form-check-input mt-0" type="radio" value="" placeholder="radio 1" aria-label="Radio button for following text input" disabled>
           </div>
-          <input type="text" class="form-control" aria-label="Text input with radio button">
+          <input class="form-check-input mt-0" type="radio" aria-label="Radio button for following text input">
+          <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="radio 1" disabled>
         </div>
 
         <div class="input-group mb-3">
