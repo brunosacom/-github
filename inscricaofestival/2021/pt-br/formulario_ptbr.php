@@ -227,12 +227,12 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           </select>
         </div>
         <div class="input-group input-group-sm mb-3">
-            <label class="input-group-text">2.09 - Acessibilidadde</label>
-            <div class="form-control">
-              <input class="form-check-input" name="acessibilidade_ad" type="checkbox" value="AD"> audio descrição<br>
-              <input class="form-check-input" name="acessibilidade_ccap" type="checkbox" value="CCAP"> leg. descritiva<br>
-              <input class="form-check-input" name="acessibilidade_libras" type="checkbox" value="LIBRAS"> libras
-            </div>
+          <label class="input-group-text">2.09 - Acessibilidade</label>
+          <div class="form-control">
+            <input class="form-check-input" name="acessibilidade_ad" type="checkbox" value="AD"> audio descrição<br>
+            <input class="form-check-input" name="acessibilidade_ccap" type="checkbox" value="CCAP"> leg. descritiva<br>
+            <input class="form-check-input" name="acessibilidade_libras" type="checkbox" value="LIBRAS"> libras
+          </div>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.10 - Cópia para Seleção</label>
@@ -508,188 +508,16 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
         <hr style="height:5px;">
         <h6>7 - REGULAMENTO</h6>
+        <h7>7.1 - Regulamento</h7>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">7.1.1 - Aprovação</label>
+          <div class="form-control">
+            <input class="form-check-input" name="regulamento" type="checkbox" value="concordo"> li e concordo com o regulamento
+          </div>
+        </div>
 
         
-        <p>&nbsp;</p>
-        <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
-          <tr bgcolor="#cccccc">
-            <td width="50%">4 - CRÉDITOS</td>
-            <td width="50%">&nbsp;</td>
-          </tr>
-          <tr class="text-danger">
-            <td>4.01 - Roteiro</td>
-            <td>
-              <input name="roteiro" type="text" id="roteiro" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>4.03 - Empresa Co-Produtora <br>
-            (caso o filme não tenha empresas co-produtoras colocar: NÃO HÁ)</td>
-            <td>
-              <input name="coproducao" type="text" id="coproducao" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>4.04 - Produção <br>
-            (pessoa física responsável pelo filme)</td>
-            <td>
-              <input name="producao" type="text" id="producao" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>4.05 - Fotografia</td>
-            <td>
-              <input name="fotografia" type="text" id="fotografia" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>4.06 - Montagem</td>
-            <td>
-              <input name="montagem" type="text" id="montagem" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>4.07 - Direção de Arte<br>
-            (caso o filme não tenha empresas co-produtoras colocar: NÃO HÁ)</td>
-            <td>
-              <input name="arte" type="text" id="arte" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>4.08 - Edição de Som</td>
-            <td>
-              <input name="somedicao" type="text" id="somedicao" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>4.09 - Música</td>
-            <td>
-              <input name="musica" type="text" id="musica" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>4.10 - Figurino<br>
-            (caso o filme não tenha trabalho de figurino colocar: NÃO HÁ)</td>
-            <td>
-              <input name="figurino" type="text" id="figurino" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>4.11 - Elenco (máximo de 5 atores) (caso documentário, preencha "documentário")</td>
-            <td>
-              <textarea name="elenco" cols="50" rows="5" id="elenco" required></textarea>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>4.12 - Sinopse (limitado a 580 [longa] ou 210 [curta] caracteres com espaços)</td>
-            <td>
-              <textarea name="sinopse_br" cols="50" rows="5" id="sinopse_br" maxlength="580" required></textarea>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>4.13 - Direção Biografia (limitado a 430 [longa] ou 180 [curta] caracteres com espaços)</td>
-            <td>
-              <textarea name="diretor_biografia_br" cols="50" rows="5" id="diretor_biografia_br" maxlength="430" required></textarea>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>4.14 - Filmografia (limitado a 500 caracteres com espaços)</td>
-            <td>
-              <textarea name="diretor_filmografia" cols="50" rows="5" id="diretor_filmografia" maxlength="500" required></textarea>
-            </td>
-          </tr>
-        </table>
-        <p>&nbsp;</p>
-        <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
-          <tr bgcolor="#cccccc">
-            <td width="50%">5 - TRÁFEGO DE CÓPIAS</td>
-            <td width="50%">&nbsp;</td>
-          </tr>
-          <tr bordercolor="#FFCC00" bgcolor="#FFCC00">
-            <td>5.2 - Devolução da cópia</td>
-            <td>&nbsp;</td>
-          </tr>
-              <tr class="text-danger">
-                <td>5.2.01 - Contato</td>
-                <td>
-                  <input name="destino_contato" type="text"  size="30" required>
-                </td>
-            </tr>
-          <tr class="text-danger">
-            <td>5.2.02 - CEP</td>
-            <td>
-              <input name="destino_cep" id="destino_cep" type="text"  size="20" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>5.2.03 - Logradouro</td>
-            <td>
-              <input name="destino_logradouro" id="destino_logradouro" type="text"  value="" size="50" maxlength="200" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>5.2.03 - Número</td>
-            <td>
-              <input name="destino_numero" id="destino_numero" type="text"  value="" size="50" maxlength="200" required>
-            </td>
-          </tr>
-          <tr>
-            <td>5.2.03 - Complemento </td>
-            <td>
-          <input name="destino_complemento" id="destino_complemento" type="text"  value="" size="50" maxlength="200"></td></tr>
-          <tr class="text-danger">
-            <td>5.2.03 - Bairro</td>
-            <td>
-              <input name="destino_bairro" id="destino_bairro" type="text"  value="" size="50" maxlength="200" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>5.2.03 - Cidade</td>
-            <td>
-              <input name="destino_cidade" id="destino_cidade" type="text"  value="" size="50" maxlength="200" required>
-            </td>
-          </tr>
-          <tr>
-            <td>5.2.03 - UF</td>
-            <td>
-              <input name="destino_uf" id="destino_uf" type="text"  value="" size="50" maxlength="200" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>5.2.04 - Telefone</td>
-            <td>
-              <input name="destino_telefone" type="text"  size="20" required>
-            </td>
-          </tr>
-          <tr>
-            <td>5.2.05 - Celular</td>
-            <td><input name="destino_celular" type="text"  size="20"></td>
-          </tr>
-          <tr>
-            <td>5.2.06 - Fax </td>
-            <td><input name="destino_fax" type="text"  size="20"></td>
-          </tr>
-          <tr class="text-danger">
-            <td>5.2.07 - Email </td>
-            <td><input name="destino_email" type="email" required></td>
-          </tr>
-          <tr>
-            <td>5.2.08 - Observações específicas </td>
-            <td><textarea name="destino_shippinginstruction" cols="50" rows="5" ></textarea></td>
-          </tr>
-        </table>
-        <p>&nbsp;</p>
-        <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
-          <tr bgcolor="#cccccc">
-            <td width="50%">6 - OBSERVAÇÕES </td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <td width="50%">6.1 - Observações </td>
-            <td width="50%"><textarea name="observacoes" cols="50" rows="5" ></textarea></td>
-          </tr>
-        </table>
-        <p>&nbsp;</p>
+        
         <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
           <tr bgcolor="#cccccc">
             <td width="50%">7 - REGULAMENTO </td>
