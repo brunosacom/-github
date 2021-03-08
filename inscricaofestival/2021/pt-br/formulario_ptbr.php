@@ -237,7 +237,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.10 - Cópia para Seleção</label>
           <input name="copia_selecao" type="hidden"  required value="link"> 
-          <input class="form-control text-danger" name="link_selecao" type="text" id="link_selecao" size="30" maxlength="100" placeholder="link - url?" required>
+          <input class="input-text text-danger" name="link_selecao" type="text" id="link_selecao" size="30" maxlength="100" placeholder="link - url?" required>
           <input class="form-control" name="link_password" type="password" id="link_password" size="30" maxlength="100" placeholder="password">
         </div>
         <hr style="height:5px;">
