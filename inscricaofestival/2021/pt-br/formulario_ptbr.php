@@ -118,16 +118,16 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
 
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text">1.10 - Categoria</label>
-          <div>
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-              Default radio
-            </label>
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-            <label class="form-check-label" for="flexRadioDefault2">
-              Default radio
-            </label>
+          <label class="input-group-text text-danger">1.10 - Categoria</label>
+          <div class="form-control">
+            <input class="form-check-input" name="categoria" type="radio" value="pb lg70 - fic" required>Longa-Metragem (acima de 70 min.) - Ficção<br>
+            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg70 - doc"  required>Longa-Metragem (acima de 70 min.) - Documentário<br>
+            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg60 - fic"  required>Longa-Metragem (entre 60 e 70 min.) - Ficção<br>
+            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg60 - doc" required>Longa-Metragem (entre 60 e 70 min.) - Documentário<br>
+            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct15 - fic" required>Curta-Metragem (até 15 min.) - Ficção<br>
+            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct15 - doc" required>Curta-Metragem (até 15 min.) - Documentário <br>
+            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct30 - fic"  required>Curta-Metragem (entre 15 e 30 min.) - Ficção<br>
+            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct30 - doc"  required>Curta-Metragem (entre 15 e 30 min.) - Documentário<br>
           </div>
         </div>
 
