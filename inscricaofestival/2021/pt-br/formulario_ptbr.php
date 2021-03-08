@@ -56,7 +56,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <input name="inscricao_charset" type="hidden" id="inscricao_charset" value="utf-8">
         <input name="inscricao" type="hidden"  value="pt-br">
         <div class="text-danger">Em vermelho os campos obrigatórios</div>
-        <div for="filme" class="form-label">1 - FILME</div>
+        <h4>1 - FILME</h4>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">1.01 - Título Original</label>
           <input type="text" class="form-control" name="titulo_original" id="titulo_original" required>
@@ -133,7 +133,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">1.11 - Classificação Indicativa</label>
           <div class="form-control text-danger">
-            <input name="classificacao" type="radio" value="ER" required>Especialmente Recomendado<br>
+            <input name="classificacao" type="radio" value="ER" required> Especialmente Recomendado<br>
               <input name="classificacao" type="radio" value="L" required> Livre<br>
               <input name="classificacao" type="radio" value="10" required> 10 anos<br>
               <input name="classificacao" type="radio" value="12" required> 12 anos<br>
@@ -142,6 +142,8 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               <input name="classificacao" type="radio" value="18" required> 18 anos
           </div>
         </div>
+        <hr>
+        <h4>2 - INFORMAÇÃO TÉCNICA</h4>
 
         <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
           <tr bgcolor="#cccccc">
