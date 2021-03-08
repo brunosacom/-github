@@ -518,12 +518,14 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <input class="form-check-input" name="regulamento" type="checkbox" value="concordo" required> li e concordo com o regulamento
           </div>
         </div>
+        <hr style="height:5px;">
         <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="submit" class="btn btn-primary" name="submit" id="submit" value="Enviar">enviar</button>
-          <button type="reset" class="btn btn-outline-secondary" name="reset" id="reset" value="Limpar">limpar</button>
+          <button type="submit" class="btn btn-primary btn-sm" name="submit" id="submit" value="Enviar">enviar</button>
+          <button type="reset" class="btn btn-outline-secondary btn-sm" name="reset" id="reset" value="Limpar">limpar</button>
         </div>
       </form>
-      <div class="row justify-content-center">
+      <hr>
+      <div class="d-flex justify-content-center">
         <small>
           <small>Desenvolvido por Bruno Sá - <a href='//www.bruno-sa.com' target='_blank'>www.bruno-sa.com</a></small>
         </small>
