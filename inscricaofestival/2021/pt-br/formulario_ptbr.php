@@ -302,8 +302,8 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <hr>
         <h7>3.2 - Contatos Produtora</h7>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text">3.2.01 - Empresa Produtora</label>
-          <input type="text" class="form-control" name="produtora_empresa" id="produtora_empresa">
+          <label class="input-group-text text-danger">3.2.01 - Empresa Produtora</label>
+          <input type="text" class="form-control text-danger" name="produtora_empresa" id="produtora_empresa">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.02 - Nome do Contato</label>
@@ -360,6 +360,24 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.2.09 - Currículo da empresa produtora</label>
           <textarea class="form-control" name="produtora_curriculo" id="produtora_curriculo" rows="5" placeholder="(limitado a 500 caracteres com espaço)"></textarea>
+        </div>
+        <hr>
+        <h7>3.3 - Contato Direção</h7>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">3.3.01 - Direção</label>
+          <input type="text" class="form-control text-danger" name="diretor" id="diretor">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">3.2.03 - Telefone</label>
+          <input type="text" class="form-control text-danger" name="produtora_telefone" id="produtora_telefone">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">3.2.04 - Celular</label>
+          <input type="text" class="form-control text-danger" name="produtora_celular" id="produtora_celular">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3.2.05 - Fax</label>
+          <input type="text" class="form-control" name="produtora_fax" id="produtora_fax">
         </div>
         
         <table width="80%"  border="3" cellpadding="5" cellspacing="0" bordercolor="#cccccc">
