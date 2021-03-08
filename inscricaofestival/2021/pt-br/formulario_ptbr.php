@@ -513,8 +513,8 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <a href="regulamento_ptbr.php?emp_sigla='<?php echo $empresa_sigla; ?>'" target="_blank">ver regulamento</a> | <a href="../../regrasDCP_01.pdf">regras técnicas para DCP (pdf)</a>
         </div>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text">7.1.1 - Aprovação</label>
-          <div class="form-control">
+          <label class="input-group-text text-danger">7.1.1 - Aprovação</label>
+          <div class="form-control text-danger">
             <input class="form-check-input" name="regulamento" type="checkbox" value="concordo" required> li e concordo com o regulamento
           </div>
         </div>
