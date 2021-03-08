@@ -234,6 +234,12 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               <input class="form-check-input" name="acessibilidade_libras" type="checkbox" value="LIBRAS"> libras
             </div>
         </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">2.10 - Cópia para Seleção</label>
+          <input name="copia_selecao" type="hidden"  required value="link"> 
+          <input name="link_selecao" type="text" id="link_selecao" size="30" maxlength="100" placeholder="link - url?">
+          <input name="link_password" type="password" id="link_password" size="30" maxlength="100" placeholder="password">
+        </div>
          
         <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
           <tr bgcolor="#cccccc">
