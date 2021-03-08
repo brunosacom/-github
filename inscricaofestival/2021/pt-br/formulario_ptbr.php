@@ -396,6 +396,54 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <label class="input-group-text text-danger">4.01 - Roteiro</label>
           <input type="text" class="form-control text-danger" name="roteiro" id="roteiro" required>
         </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">4.02 - Empresa Co-Produtora</label>
+          <input type="text" class="form-control text-danger" name="coproducao" id="coproducao" placeholder="(caso o filme não tenha empresas co-produtoras colocar: NÃO HÁ)" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">4.03 - Produção</label>
+          <input type="text" class="form-control text-danger" name="producao" id="producao" placeholder="(pessoa física responsável pelo filme)" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">4.04 - Fotografia</label>
+          <input type="text" class="form-control text-danger" name="fotografia" id="fotografia" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">4.05 - Montagem</label>
+          <input type="text" class="form-control text-danger" name="montagem" id="montagem" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">4.06 - Direção de Arte</label>
+          <input type="text" class="form-control text-danger" name="arte" id="arte" placeholder="(caso o filme não tenha trabalho de arte colocar: NÃO HÁ)" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">4.07 - Edição de Som</label>
+          <input type="text" class="form-control text-danger" name="somedicao" id="somedicao" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">4.08 - Música</label>
+          <input type="text" class="form-control text-danger" name="musica" id="musica" placeholder="(caso o filme não músicas colocar: NÃO HÁ)" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">4.09 - Figurino</label>
+          <input type="text" class="form-control text-danger" name="figurino" id="figurino" placeholder="(caso o filme não tenha trabalho de figurino colocar: NÃO HÁ)" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">4.10 - Elenco (máx. 5 atores)</label>
+          <textarea class="form-control text-danger" name="elenco" id="elenco" rows="5" placeholder="(caso documentário, preencha: documentário)"></textarea>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">4.11 - Sinopse</label>
+          <textarea class="form-control text-danger" name="sinopse_br" id="sinopse_br" rows="5" placeholder="(limitado a 580 [longa] ou 210 [curta] caracteres com espaços)"></textarea>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">4.12 - Direção Biografia</label>
+          <textarea class="form-control text-danger" name="diretor_biografia_br" id="diretor_biografia_br" rows="5" placeholder="(limitado a 430 [longa] ou 180 [curta] caracteres com espaços)"></textarea>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">4.13 - Direção Filmografia</label>
+          <textarea class="form-control text-danger" name="diretor_filmografia_br" id="diretor_filmografia_br" rows="5" placeholder="(limitado a 500 caracteres com espaço)"></textarea>
+        </div>
 
 
         
