@@ -524,11 +524,9 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
       </form>
       <div class="justify-content-center">
-        <div>
         <small>
           <small>Desenvolvido por Bruno Sá - <a href='//www.bruno-sa.com' target='_blank'>www.bruno-sa.com</a></small>
         </small>
-        </div>
       </div>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
