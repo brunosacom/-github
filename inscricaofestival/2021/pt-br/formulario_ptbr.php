@@ -510,7 +510,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <h6>7 - REGULAMENTO</h6>
         <h7>7.1 - Regulamento</h7>
         <div class="form-control">
-          <a href="regulamento_ptbr.php" target="_blank">ver regulamento</a> | <a href="../../regrasDCP_festrio_01.pdf">regras técnicas para DCP (pdf)</a>
+          <a href="regulamento_ptbr.php?emp_sigla='<?php echo $empresa_sigla; ?>'" target="_blank">ver regulamento</a> | <a href="../../regrasDCP_01.pdf">regras técnicas para DCP (pdf)</a>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">7.1.1 - Aprovação</label>
@@ -518,25 +518,11 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
             <input class="form-check-input" name="regulamento" type="checkbox" value="concordo" required> li e concordo com o regulamento
           </div>
         </div>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="submit" class="btn btn-primary" name="submit" id="submit" value="Enviar">Left</button>
+          <button type="reset" class="btn btn-outline-secondary" name="reset" id="reset" value="Limpar">>Middle</button>
+        </div>
 
-        
-        
-        <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
-          <tr bgcolor="#cccccc">
-            <td width="50%">7 - REGULAMENTO </td>
-            <td width="50%">&nbsp;</td>
-          </tr>
-          <tr bordercolor="#FFCC00" bgcolor="#FFCC00">
-            <td>7.1 - Regulamento </td>
-            <td width="50%"><a href="regulamento_pbrasil.php" target="_blank">ver regulamento</a> | <a href="../../regrasDCP_festrio_01.pdf">regras técnicas para DCP (pdf)</a></td>
-          </tr>
-          <tr class="text-danger">
-            <td><p>7.1.01 - Aprovação</p>
-            </td>
-            <td><input name="regulamento" type="checkbox" value="concordo" required>
-              li e concordo com o regulamento</td>
-          </tr>
-        </table>
         <p>&nbsp;</p>
         <table width="80%"  border="0" cellpadding="0" cellspacing="0">
           <tr>
