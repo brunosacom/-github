@@ -269,35 +269,35 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07 - CEP</label>
-          <input type="email" class="form-control" name="distribuidora_cep" id="distribuidora_cep">
+          <input type="number" class="form-control" name="distribuidora_cep" id="distribuidora_cep">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.1 - Logradouro</label>
-          <input type="email" class="form-control" name="distribuidora_logradouro" id="distribuidora_logradouro">
+          <input type="text" class="form-control" name="distribuidora_logradouro" id="distribuidora_logradouro">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.2 - Número</label>
-          <input type="email" class="form-control" name="distribuidora_numero" id="distribuidora_numero">
+          <input type="text" class="form-control" name="distribuidora_numero" id="distribuidora_numero">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.3 - Complemento</label>
-          <input type="email" class="form-control" name="distribuidora_complemento" id="distribuidora_complemento">
+          <input type="text" class="form-control" name="distribuidora_complemento" id="distribuidora_complemento">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.4 - Bairro</label>
-          <input type="email" class="form-control" name="distribuidora_bairro" id="distribuidora_bairro">
+          <input type="text" class="form-control" name="distribuidora_bairro" id="distribuidora_bairro">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.5 - Cidade</label>
-          <input type="email" class="form-control" name="distribuidora_cidade" id="distribuidora_cidade">
+          <input type="text" class="form-control" name="distribuidora_cidade" id="distribuidora_cidade">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.6 - UF</label>
-          <input type="email" class="form-control" name="distribuidora_uf" id="distribuidora_uf">
+          <input type="text" class="form-control" name="distribuidora_uf" id="distribuidora_uf">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.08 - Website</label>
-          <input type="email" class="form-control" name="distribuidora_website" id="distribuidora_website">
+          <input type="text" class="form-control" name="distribuidora_website" id="distribuidora_website">
         </div>
         <hr>
         <h7>3.2 - Contatos Produtora</h7>
@@ -327,35 +327,35 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.07 - CEP</label>
-          <input type="email" class="form-control text-danger" name="produtora_cep" id="produtora_cep">
+          <input type="number" class="form-control text-danger" name="produtora_cep" id="produtora_cep">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.07.1 - Logradouro</label>
-          <input type="email" class="form-control text-danger" name="produtora_logradouro" id="produtora_logradouro">
+          <input type="text" class="form-control text-danger" name="produtora_logradouro" id="produtora_logradouro">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.07.2 - Número</label>
-          <input type="email" class="form-control text-danger" name="produtora_numero" id="produtora_numero">
+          <input type="text" class="form-control text-danger" name="produtora_numero" id="produtora_numero">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.2.07.3 - Complemento</label>
-          <input type="email" class="form-control" name="produtora_complemento" id="produtora_complemento">
+          <input type="text" class="form-control" name="produtora_complemento" id="produtora_complemento">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.07.4 - Bairro</label>
-          <input type="email" class="form-control text-danger" name="produtora_bairro" id="produtora_bairro">
+          <input type="text" class="form-control text-danger" name="produtora_bairro" id="produtora_bairro">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.07.5 - Cidade</label>
-          <input type="email" class="form-control text-danger" name="produtora_cidade" id="produtora_cidade">
+          <input type="text" class="form-control text-danger" name="produtora_cidade" id="produtora_cidade">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.07.6 - UF</label>
-          <input type="email" class="form-control text-danger" name="produtora_uf" id="produtora_uf">
+          <input type="text" class="form-control text-danger" name="produtora_uf" id="produtora_uf">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.2.08 - Website</label>
-          <input type="email" class="form-control" name="produtora_website" id="produtora_website">
+          <input type="text" class="form-control" name="produtora_website" id="produtora_website">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.2.09 - Currículo da empresa produtora</label>
@@ -364,12 +364,12 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <hr>
         <h7>3.3 - Contato Direção</h7>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text text-danger">3.3.01 - Telefone</label>
-          <input type="text" class="form-control text-danger" name="diretor_telefone" id="diretor_telefone">
+          <label class="input-group-text">3.3.01 - Telefone</label>
+          <input type="text" class="form-control" name="diretor_telefone" id="diretor_telefone">
         </div>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text text-danger">3.3.02 - Celular</label>
-          <input type="text" class="form-control text-danger" name="diretor_celular" id="diretor_celular">
+          <label class="input-group-text">3.3.02 - Celular</label>
+          <input type="text" class="form-control" name="diretor_celular" id="diretor_celular">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.3.03 - Fax</label>
@@ -377,11 +377,11 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.3.04 - Email</label>
-          <input type="email" class="form-control text-danger" name="diretor_email" id="diretor_email">
+          <input type="email" class="form-control text-danger" name="diretor_email" id="diretor_email" required>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.3.05 - Website</label>
-          <input type="email" class="form-control" name="diretor_website" id="diretor_website">
+          <input type="text" class="form-control" name="diretor_website" id="diretor_website">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.3.06 - Estará disponível para entrevistas por telefone ou email?</label>
@@ -392,209 +392,13 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <hr style="height:5px;">
         <h6>4 - CRÉDITOS</h6>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">4.01 - Roteiro</label>
+          <input type="text" class="form-control text-danger" name="roteiro" id="roteiro" required>
+        </div>
 
 
-        <table width="80%"  border="3" cellpadding="5" cellspacing="0" bordercolor="#cccccc">
-          <tr bgcolor="#cccccc">
-            <td width="50%">3 - CONTATOS</td>
-            <td width="50%">&nbsp;</td>
-          </tr>
-          <tr bordercolor="#FFCC00" bgcolor="#FFCC00">
-            <td>3.1 - Contato Distribuidora</td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <td>3.1.01 - Empresa Distribuidora </td>
-            <td><input name="distribuidora_empresa" type="text"  size="50" maxlength="100"></td>
-          </tr>
-          <tr>
-            <td>3.1.02 - Nome do Contato </td>
-            <td><input name="distribuidora_contatonome" type="text"  size="50" maxlength="100"></td>
-          </tr>
-          <tr>
-            <td>3.1.03 - Telefone </td>
-            <td><input name="distribuidora_telefone" type="text"  size="20"></td>
-          </tr>
-          <tr>
-            <td>3.1.04 - Celular </td>
-            <td><input name="distribuidora_celular" type="text"  size="20"></td>
-          </tr>
-          <tr>
-            <td>3.1.05 - Fax </td>
-            <td><input name="distribuidora_fax" type="text"  size="20"></td>
-          </tr>
-          <tr>
-            <td>3.1.06 - Email </td>
-            <td><input name="distribuidora_email" type="text" id="distribuidora_email"></td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.07 - CEP</td>
-            <td>
-              <input name="distribuidora_cep" id="distribuidora_cep" type="text"  size="20" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.08 - Logradouro</td>
-            <td>
-              <input name="distribuidora_logradouro" id="distribuidora_logradouro" type="text"  value="" size="50" maxlength="200" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.08 - Número</td>
-            <td>
-              <input name="distribuidora_numero" id="distribuidora_numero" type="text"  value="" size="50" maxlength="200" required>
-            </td>
-          </tr>
-          <tr>
-            <td>3.2.08 - Complemento</td>
-            <td><input name="distribuidora_complemento" id="distribuidora_complemento" type="text"  value="" size="50" maxlength="200"></td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.08 - Bairro</td>
-            <td>
-              <input name="distribuidora_bairro" id="distribuidora_bairro" type="text"  value="" size="50" maxlength="200" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.08 - Cidade</td>
-            <td>
-              <input name="distribuidora_cidade" id="distribuidora_cidade" type="text"  value="" size="50" maxlength="200" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.08 - UF</td>
-            <td>
-              <input name="distribuidora_uf" id="distribuidora_uf" type="text"  value="" size="50" maxlength="200" required>
-            </td>
-          </tr>
-          <tr>
-            <td>3.1.08 - Website</td>
-            <td><input name="distribuidora_website" type="text"></td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr bordercolor="#FFCC00" bgcolor="#FFCC00">
-            <td>3.2 - Contato Produtora </td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.01 - Empresa Produtora</td>
-            <td>
-              <input name="produtora_empresa" type="text" id="produtora_empresa"  size="50" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.02 - Nome do Contato</td>
-            <td>
-              <input name="produtora_contatonome" type="text" id="produtora_contatonome"  size="30" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.03 - Telefone</td>
-            <td>
-              <input name="produtora_telefone" type="text" id="produtora_telefone"  size="20" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.1.04 - Celular</td>
-            <td><input name="produtora_celular" type="text"  size="20" required></td>
-          </tr>
-          <tr>
-            <td>3.2.05 - Fax </td>
-            <td><input name="produtora_fax" type="text" size="20"></td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.06 - Email</td>
-            <td>
-              <input name="produtora_email" type="email" id="produtora_email" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.07 - CEP</td>
-            <td>
-              <input name="produtora_cep" id="produtora_cep" type="text"  size="20" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.08 - Logradouro</td>
-            <td>
-              <input name="produtora_logradouro" id="produtora_logradouro" type="text"  value="" size="50" maxlength="200" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.08 - Número</td>
-            <td>
-              <input name="produtora_numero" id="produtora_numero" type="text"  value="" size="50" maxlength="200" required>
-            </td>
-          </tr>
-          <tr>
-            <td>3.2.08 - Complemento </td>
-            <td><input name="produtora_complemento" id="produtora_complemento" type="text"  value="" size="50" maxlength="200"></td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.08 - Bairro</td>
-            <td>
-              <input name="produtora_bairro" id="produtora_bairro" type="text"  value="" size="50" maxlength="200" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.08 - Cidade</td>
-            <td>
-              <input name="produtora_cidade" id="produtora_cidade" type="text"  value="" size="50" maxlength="200" required>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.2.08 - UF</td>
-            <td>
-              <input name="produtora_uf" id="produtora_uf" type="text"  value="" size="50" maxlength="200" required>
-            </td>
-          </tr>
-          <tr>
-            <td>3.2.09 - Website </td>
-            <td><input name="produtora_website" type="text" size="50" maxlength="100"></td>
-          </tr>
-          <tr>
-            <td>3.2.10 - Currículo da empresa produtora (limitado a 500 caracteres com espaço) </td>
-            <td><textarea name="produtora_curriculo" cols="50" rows="5" ></textarea></td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr bordercolor="#FFCC00" bgcolor="#FFCC00">
-            <td>3.3 - Contato Direção</td>
-            <td>&nbsp;</td>
-          </tr>
-          <tr>
-            <td>3.3.01 - Telefone Direto </td>
-            <td><input name="diretor_telefone" type="text"  size="20"></td>
-          </tr>
-          <tr>
-            <td>3.1.03 - Celular Direto</td>
-            <td><input name="diretor_celular" type="text"  size="20"></td>
-          </tr>
-          <tr>
-            <td>3.3.02 - Fax Direto </td>
-            <td><input name="diretor_fax" type="text"  size="20"></td>
-          </tr>
-          <tr class="text-danger">
-            <td>3.3.03 - Email </td>
-            <td><input name="diretor_email" type="email" id="diretor_email" required></td>
-          </tr>
-          <tr>
-            <td>3.3.04 - Website </td>
-            <td><input name="diretor_website" type="text" size="50" maxlength="100"></td>
-          </tr>
-          <tr>
-            <td>3.3.05 - Estará disponível para entrevistas por telefone ou email? </td>
-            <td><input name="diretor_disponivel" type="radio" value="sim">
-              Sim <br>
-              <input name="diretor_disponivel" type="radio" value="não">
-              Não</td>
-          </tr>
-        </table>
+        
         <p>&nbsp;</p>
         <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
           <tr bgcolor="#cccccc">
