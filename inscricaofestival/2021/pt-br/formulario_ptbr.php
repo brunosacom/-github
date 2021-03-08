@@ -243,62 +243,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <hr style="height:5px;">
         <h6>3 - CONTATOS</h6>
          
-        <table width="80%"  border="3" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
-          <tr bgcolor="#cccccc">
-            <td width="50%">2 - INFORMAÇÃO TÉCNICA </td>
-            <td width="50%">&nbsp;</td>
-          </tr>
-          
-          <tr class="text-danger">
-            <td>2.06 - Idioma  de exibição final</td>
-            <td>
-              <select name="idioma1_dci" id="idioma1_dci" size="1" required>
-                <option value="" selected="selected">selecione</option>
-                <?php include '../../../../php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
-                </select>
-            mais de um idioma? <br>
-            especifique todos
-            <input name="idioma2" id="idioma2" type="text" size="30" maxlength="100">
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>2.07 - Idioma da legenda na cópia de exibição</td>
-            <td>
-              <select name="leg_copia_dci" id="leg_copia_dci" required>
-                <option value="" selected="selected">selecione</option>
-              <?php include '../../../../php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
-                </select>
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>2.08 - Idioma da legenda na cópia de seleção</td>
-            <td>
-              <select name="leg_copiaselecao_dci" id="leg_copiaselecao_dci" required>
-                <option value="" selected="selected">selecione</option>
-                <?php include '../../../../php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
-                </select>
-            </td>
-          </tr>
-          <tr>
-            <td>2.09 - Acessibilidade</span></td>
-            <td>
-              <input name="acessibilidade_ad" type="checkbox" value="AD">audio descrição| 
-              <input name="acessibilidade_ccap" type="checkbox" value="CCAP">leg. descritiva | 
-              <input name="acessibilidade_libras" type="checkbox" value="LIBRAS">libras 
-            </td>
-          </tr>
-          <tr class="text-danger">
-            <td>2.10 - Cópia para Seleção</td>
-            <td>
-              <input name="copia_selecao" type="radio"  required value="link" checked>link - url? 
-              <input name="link_selecao" type="text" id="link_selecao" size="30" maxlength="100">
-              <br>password
-              <input name="link_password" type="text" id="link_password" size="30" maxlength="100">
-              </td>
-          </tr>
-        </table>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
+        
         <table width="80%"  border="3" cellpadding="5" cellspacing="0" bordercolor="#cccccc">
           <tr bgcolor="#cccccc">
             <td width="50%">3 - CONTATOS</td>
