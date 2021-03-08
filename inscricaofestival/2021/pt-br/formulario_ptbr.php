@@ -237,7 +237,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.10 - Cópia para Seleção</label>
           <input name="copia_selecao" type="hidden"  required value="link"> 
-          <input class="input-text text-danger" name="link_selecao" type="text" id="link_selecao" size="30" maxlength="100" placeholder="link - url?" required>
+          <input class="input-text" name="link_selecao" type="text" id="link_selecao" size="30" maxlength="100" placeholder="link - url?" required>
           <input class="form-control" name="link_password" type="password" id="link_password" size="30" maxlength="100" placeholder="password">
         </div>
         <hr style="height:5px;">
@@ -303,19 +303,19 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <h7>3.2 - Contatos Produtora</h7>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.01 - Empresa Produtora</label>
-          <input type="text" class="form-control text-danger" name="produtora_empresa" id="produtora_empresa">
+          <input type="text" class="form-control" name="produtora_empresa" id="produtora_empresa">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.02 - Nome do Contato</label>
-          <input type="text" class="form-control text-danger" name="produtora_contatonome" id="produtora_contatonome">
+          <input type="text" class="form-control" name="produtora_contatonome" id="produtora_contatonome">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.03 - Telefone</label>
-          <input type="text" class="form-control text-danger" name="produtora_telefone" id="produtora_telefone">
+          <input type="text" class="form-control" name="produtora_telefone" id="produtora_telefone">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.04 - Celular</label>
-          <input type="text" class="form-control text-danger" name="produtora_celular" id="produtora_celular">
+          <input type="text" class="form-control" name="produtora_celular" id="produtora_celular">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.2.05 - Fax</label>
@@ -323,19 +323,19 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.06 - Email</label>
-          <input type="email" class="form-control text-danger" name="produtora_email" id="produtora_email">
+          <input type="email" class="form-control" name="produtora_email" id="produtora_email">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.07 - CEP</label>
-          <input type="number" class="form-control text-danger" name="produtora_cep" id="produtora_cep">
+          <input type="number" class="form-control" name="produtora_cep" id="produtora_cep">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.07.1 - Logradouro</label>
-          <input type="text" class="form-control text-danger" name="produtora_logradouro" id="produtora_logradouro">
+          <input type="text" class="form-control" name="produtora_logradouro" id="produtora_logradouro">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.07.2 - Número</label>
-          <input type="text" class="form-control text-danger" name="produtora_numero" id="produtora_numero">
+          <input type="text" class="form-control" name="produtora_numero" id="produtora_numero">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.2.07.3 - Complemento</label>
@@ -343,15 +343,15 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.07.4 - Bairro</label>
-          <input type="text" class="form-control text-danger" name="produtora_bairro" id="produtora_bairro">
+          <input type="text" class="form-control" name="produtora_bairro" id="produtora_bairro">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.07.5 - Cidade</label>
-          <input type="text" class="form-control text-danger" name="produtora_cidade" id="produtora_cidade">
+          <input type="text" class="form-control" name="produtora_cidade" id="produtora_cidade">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.07.6 - UF</label>
-          <input type="text" class="form-control text-danger" name="produtora_uf" id="produtora_uf">
+          <input type="text" class="form-control" name="produtora_uf" id="produtora_uf">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.2.08 - Website</label>
@@ -377,7 +377,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.3.04 - Email</label>
-          <input type="email" class="form-control text-danger" name="diretor_email" id="diretor_email" required>
+          <input type="email" class="form-control" name="diretor_email" id="diretor_email" required>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.3.05 - Website</label>
@@ -394,57 +394,120 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <h6>4 - CRÉDITOS</h6>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.01 - Roteiro</label>
-          <input type="text" class="form-control text-danger" name="roteiro" id="roteiro" required>
+          <input type="text" class="form-control" name="roteiro" id="roteiro" required>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.02 - Empresa Co-Produtora</label>
-          <input type="text" class="form-control text-danger" name="coproducao" id="coproducao" placeholder="(caso o filme não tenha empresas co-produtoras colocar: NÃO HÁ)" required>
+          <input type="text" class="form-control" name="coproducao" id="coproducao" placeholder="(caso o filme não tenha empresas co-produtoras colocar: NÃO HÁ)" required>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.03 - Produção</label>
-          <input type="text" class="form-control text-danger" name="producao" id="producao" placeholder="(pessoa física responsável pelo filme)" required>
+          <input type="text" class="form-control" name="producao" id="producao" placeholder="(pessoa física responsável pelo filme)" required>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.04 - Fotografia</label>
-          <input type="text" class="form-control text-danger" name="fotografia" id="fotografia" required>
+          <input type="text" class="form-control" name="fotografia" id="fotografia" required>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.05 - Montagem</label>
-          <input type="text" class="form-control text-danger" name="montagem" id="montagem" required>
+          <input type="text" class="form-control" name="montagem" id="montagem" required>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.06 - Direção de Arte</label>
-          <input type="text" class="form-control text-danger" name="arte" id="arte" placeholder="(caso o filme não tenha trabalho de arte colocar: NÃO HÁ)" required>
+          <input type="text" class="form-control" name="arte" id="arte" placeholder="(caso o filme não tenha trabalho de arte colocar: NÃO HÁ)" required>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.07 - Edição de Som</label>
-          <input type="text" class="form-control text-danger" name="somedicao" id="somedicao" required>
+          <input type="text" class="form-control" name="somedicao" id="somedicao" required>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.08 - Música</label>
-          <input type="text" class="form-control text-danger" name="musica" id="musica" placeholder="(caso o filme não músicas colocar: NÃO HÁ)" required>
+          <input type="text" class="form-control" name="musica" id="musica" placeholder="(caso o filme não músicas colocar: NÃO HÁ)" required>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.09 - Figurino</label>
-          <input type="text" class="form-control text-danger" name="figurino" id="figurino" placeholder="(caso o filme não tenha trabalho de figurino colocar: NÃO HÁ)" required>
+          <input type="text" class="form-control" name="figurino" id="figurino" placeholder="(caso o filme não tenha trabalho de figurino colocar: NÃO HÁ)" required>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.10 - Elenco (máx. 5 atores)</label>
-          <textarea class="form-control text-danger" name="elenco" id="elenco" rows="5" placeholder="(caso documentário, preencha: documentário)"></textarea>
+          <textarea class="form-control" name="elenco" id="elenco" rows="5" placeholder="(caso documentário, preencha: documentário)"></textarea>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.11 - Sinopse</label>
-          <textarea class="form-control text-danger" name="sinopse_br" id="sinopse_br" rows="5" placeholder="(limitado a 580 [longa] ou 210 [curta] caracteres com espaços)"></textarea>
+          <textarea class="form-control" name="sinopse_br" id="sinopse_br" rows="5" placeholder="(limitado a 580 [longa] ou 210 [curta] caracteres com espaços)"></textarea>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.12 - Direção Biografia</label>
-          <textarea class="form-control text-danger" name="diretor_biografia_br" id="diretor_biografia_br" rows="5" placeholder="(limitado a 430 [longa] ou 180 [curta] caracteres com espaços)"></textarea>
+          <textarea class="form-control" name="diretor_biografia_br" id="diretor_biografia_br" rows="5" placeholder="(limitado a 430 [longa] ou 180 [curta] caracteres com espaços)"></textarea>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.13 - Direção Filmografia</label>
-          <textarea class="form-control text-danger" name="diretor_filmografia_br" id="diretor_filmografia_br" rows="5" placeholder="(limitado a 500 caracteres com espaço)"></textarea>
+          <textarea class="form-control" name="diretor_filmografia_br" id="diretor_filmografia_br" rows="5" placeholder="(limitado a 500 caracteres com espaço)"></textarea>
+        </div>
+        <hr style="height:5px;">
+        <h6>5 - TRÁFEGO DE CÓPIAS</h6>
+        <h7>5.1 - Devolução de Cópias</h7>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">5.1.01 - Contato</label>
+          <input type="text" class="form-control" name="destino_contato" id="destino_contato" placeholder="(caso o filme não músicas colocar: NÃO HÁ)" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">5.1.02 - CEP</label>
+          <input type="number" class="form-control" name="destino_cep" id="destino_cep">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">5.1.03.1 - Logradouro</label>
+          <input type="text" class="form-control" name="destino_logradouro" id="destino_logradouro">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">5.1.03.2 - Número</label>
+          <input type="text" class="form-control" name="destino_numero" id="destino_numero">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">5.1.03.3 - Complemento</label>
+          <input type="text" class="form-control" name="destino_complemento" id="destino_complemento">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">5.1.03.4 - Bairro</label>
+          <input type="text" class="form-control" name="destino_bairro" id="destino_bairro">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">5.1.03.5 - Cidade</label>
+          <input type="text" class="form-control" name="destino_cidade" id="destino_cidade">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">5.1.03.6 - UF</label>
+          <input type="text" class="form-control" name="destino_uf" id="destino_uf">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">5.1.04 - Telefone</label>
+          <input type="text" class="form-control" name="destinotelefone" id="destino_telefone" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">5.1.05 - Celular</label>
+          <input type="text" class="form-control" name="destino_celular" id="destino_celular">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">5.1.06 - Fax</label>
+          <input type="text" class="form-control" name="destino_fax" id="destino_fax">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">5.1.07 - Email</label>
+          <input type="email" class="form-control" name="destino_email" id="destino_email" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">5.1.08 - Observações Específicas</label>
+          <textarea class="form-control" name="destino_shippinginstruction" id="destino_shippinginstruction" rows="5"></textarea>
+        </div>
+        <hr style="height:5px;">
+        <h6>6 - OBSERVAÇÕES</h6>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">6.1 - Observações</label>
+          <textarea class="form-control" name="observacoes" id="observacoes" rows="5"></textarea>
         </div>
 
+        <hr style="height:5px;">
+        <h6>7 - REGULAMENTO</h6>
 
         
         <p>&nbsp;</p>
