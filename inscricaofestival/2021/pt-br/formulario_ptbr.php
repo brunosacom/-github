@@ -523,7 +523,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <button type="reset" class="btn btn-outline-secondary" name="reset" id="reset" value="Limpar">limpar</button>
         </div>
       </form>
-      <div class="justify-content-center">
+      <div class="row justify-content-center">
         <small>
           <small>Desenvolvido por Bruno Sá - <a href='//www.bruno-sa.com' target='_blank'>www.bruno-sa.com</a></small>
         </small>
