@@ -1,17 +1,27 @@
 <?php require $_SERVER['DOCUMENT_ROOT'].'/php/mysqli_connect.php'; ?> <!-- MySqlDB connect brunosacom -->
 
 <!DOCTYPE HTML>
-<html>
-<head>
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php'; ?>
-<meta charset="utf-8">
-<link rel="shortcut icon" href="http://www.festivaldorio.art.br/favicon.png">
-<link href="../../festatual.css" rel="stylesheet" type="text/css" />
-<title>Festival do Rio</title>
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-</head>
+<html lang="pt-br">
+	<head>
+		<?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php'; ?>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Envio Inscrição Festival de Cinema</title>
+		<link rel="shortcut icon" href="<?php echo $empresa_favicon; ?>">
+		<link href="https://fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
 
-<body>
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	</head>
+
+	<body style="font-family:Didact Gothic; color:#FFF; background-color:#333;">
+    <div class="container">
+    	<!-- Content here -->
+      <div class="row justify-content-md-center">
+        <div class="col"></div>
+        <div class="col"><img src="<?php echo $empresa_logo; ?>" class="custom-logo" alt="<?php echo $empresa_nome; ?>" width="200"></div>
+        <div class="col"></div>
+      </div>
 
 <?php 
 // inclui as classes do PHPMailer
@@ -437,9 +447,10 @@ while($row_inscricao = mysqli_fetch_array($result_inscricao))
 	} 
 ?>
 
+<h1>Formulário de Inscrição - pt-br</h1>
 </br>
 </br>
-<p class="txt_corrido"><strong>Premiére Brasil</br>
+<p><strong>Premiére Brasil</br>
 sugerimos que salve esta página (com print screen, ou copie e salve em documento de word) para seu conforto e segurança.</br>Número de inscrição: </strong><?php echo $idmysql_inscricao; ?></br>
 </br>
 <strong>Título Original: </strong><?php echo $titulo_original; ?></br>
@@ -498,8 +509,19 @@ sugerimos que salve esta página (com print screen, ou copie e salve em document
 
 <strong>Data e hora da inscrição: </strong><?php echo $timestamp; ?></p>
 
-<p class="resumo_regulamento"><strong>Dúvidas: </strong> <a href="mailto:pbrasil@festivaldorio.art.br">pbrasil@festivaldorio.art.br</a></p>
+<p class="resumo_regulamento"><strong>Dúvidas: </strong> <a href="mailto:bruno@bruno-sa.com">bruno@bruno-sa.com</a></p>
 
-<?php mysqli_close($con) ?>
-</body>
+		<hr>
+		<div class="d-flex justify-content-center">
+			<small>
+			<small>Desenvolvido por Bruno Sá - <a href='//www.bruno-sa.com' target='_blank'>www.bruno-sa.com</a></small>
+			</small>
+		</div>
+		<!-- Optional JavaScript; choose one of the two! -->
+
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+	</body>
 </html>
+<?php mysqli_close($con) ?>
