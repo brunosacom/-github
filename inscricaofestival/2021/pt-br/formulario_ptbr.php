@@ -95,7 +95,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">1.06 - Ano</label>
-          <select class="form-select text-danger" name="ano" id="ano" required>
+          <select class="form-select" name="ano" id="ano" required>
             <option value=""selected="selected">Selecione</option>
               <!-- Calculo para ano atual e anterior -->
               <option value="<?php echo date("Y"); ?>"><?php echo date("Y"); ?></option>
@@ -119,20 +119,20 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">1.10 - Categoria</label>
-          <div class="form-control text-danger">
-            <input class="form-check-input" name="categoria" type="radio" value="pb lg70 - fic" required> Longa-Metragem (acima de 70 min.) - Ficção<br>
-            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg70 - doc"  required> Longa-Metragem (acima de 70 min.) - Documentário<br>
-            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg60 - fic"  required> Longa-Metragem (entre 60 e 70 min.) - Ficção<br>
-            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb lg60 - doc" required> Longa-Metragem (entre 60 e 70 min.) - Documentário<br>
-            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct15 - fic" required> Curta-Metragem (até 15 min.) - Ficção<br>
-            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct15 - doc" required> Curta-Metragem (até 15 min.) - Documentário <br>
-            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct30 - fic"  required> Curta-Metragem (entre 15 e 30 min.) - Ficção<br>
-            <input class="form-check-input text-danger" name="categoria" type="radio" value="pb ct30 - doc"  required> Curta-Metragem (entre 15 e 30 min.) - Documentário
+          <div class="form-control">
+            <input name="categoria" type="radio" value="pb lg70 - fic" required> Longa-Metragem (acima de 70 min.) - Ficção<br>
+            <input name="categoria" type="radio" value="pb lg70 - doc"  required> Longa-Metragem (acima de 70 min.) - Documentário<br>
+            <input name="categoria" type="radio" value="pb lg60 - fic"  required> Longa-Metragem (entre 60 e 70 min.) - Ficção<br>
+            <input name="categoria" type="radio" value="pb lg60 - doc" required> Longa-Metragem (entre 60 e 70 min.) - Documentário<br>
+            <input name="categoria" type="radio" value="pb ct15 - fic" required> Curta-Metragem (até 15 min.) - Ficção<br>
+            <input name="categoria" type="radio" value="pb ct15 - doc" required> Curta-Metragem (até 15 min.) - Documentário <br>
+            <input name="categoria" type="radio" value="pb ct30 - fic"  required> Curta-Metragem (entre 15 e 30 min.) - Ficção<br>
+            <input name="categoria" type="radio" value="pb ct30 - doc"  required> Curta-Metragem (entre 15 e 30 min.) - Documentário
           </div>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">1.11 - Classificação Indicativa</label>
-          <div class="form-control text-danger">
+          <div class="form-control">
             <input name="classificacao" type="radio" value="ER" required> Especialmente Recomendado<br>
             <input name="classificacao" type="radio" value="L" required> Livre<br>
             <input name="classificacao" type="radio" value="10" required> 10 anos<br>
@@ -146,7 +146,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <h6>2 - INFORMAÇÃO TÉCNICA</h6>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.01 - Bitola de exibição final</label>
-          <div class="form-control text-danger">
+          <div class="form-control">
             <input name="bitola_inscricao" type="radio" value="DCP-aberto" required> DCP aberto <br>
             <input name="bitola_inscricao" type="radio" value="DCP-3Daberto" required> DCP-3D aberto <br>
             <input name="bitola_inscricao" type="radio" value="DCP-encriptado" required> DCP encriptado <br>
@@ -158,7 +158,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.02 - Definição Digital de exibição final</label>
-          <div class="form-control text-danger">
+          <div class="form-control">
             <input name="definicaodigital" type="radio" value="4K" required> 4K (4096x2160)<br>
             <input name="definicaodigital" type="radio" value="2K" required> 2K (2048x1080)<br>
             <input name="definicaodigital" type="radio" value="FullHD" required> FullHD (1920x1080)<br>
@@ -168,7 +168,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.03 - Janela de exibição final</label>
-          <div class="form-control text-danger">
+          <div class="form-control">
             <input name="janela" type="radio" value="1.78 (scopeinflat)" required>1.78 (Digital HD - Scope dentro do Flat/16:9)<br>
             <input name="janela" type="radio" value="2.39 (DCP_scope)" required> 2.39 (DCP scope)<br>
             <input name="janela" type="radio" value="1.85 (DCP_flat)" required> 1.85 (DCP flat)<br>
@@ -183,7 +183,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.04 - Cor  de exibição final</label>
-          <div class="form-control text-danger">
+          <div class="form-control">
             <input name="cor" type="radio" value="Cor" required> Cor<br>
             <input name="cor" type="radio" value="P&B" required> P&B <br>
             <input name="cor" type="radio" value="Cor e P&B" required> Cor / P&B
@@ -191,7 +191,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.05 - Som  de exibição final</label>
-          <div class="form-control text-danger">
+          <div class="form-control">
             <input name="som" type="radio" value="Dolby Atmos" required> Dolby Atmos<br>
             <input name="som" type="radio" value="Barco Auro3D 11.1" required> Barco Auro3D 11.1<br>
             <input name="som" type="radio" value="Dolby Digital EX 7.1" required> Dolby Digital EX 7.1<br>
@@ -206,7 +206,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.06 - Idioma  de exibição final</label>
-          <select class="form-select text-danger" name="idioma1_dci" id="idioma1_dci" required>
+          <select class="form-select" name="idioma1_dci" id="idioma1_dci" required>
             <option value="" selected="selected">selecione</option>
             <?php include '../../../../php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
           </select>
@@ -214,14 +214,14 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.07 - Idioma da legenda na cópia de exibição</label>
-          <select class="form-select text-danger" name="leg_copia_dci" id="leg_copia_dci" required>
+          <select class="form-select" name="leg_copia_dci" id="leg_copia_dci" required>
             <option value="" selected="selected">selecione</option>
             <?php include '../../../../php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
           </select>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.08 - Idioma da legenda na cópia de seleção</label>
-          <select class="form-select text-danger" name="leg_copiaselecao_dci" id="leg_copiaselecao_dci" required>
+          <select class="form-select" name="leg_copiaselecao_dci" id="leg_copiaselecao_dci" required>
             <option value="" selected="selected">selecione</option>
             <?php include '../../../../php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
           </select>
