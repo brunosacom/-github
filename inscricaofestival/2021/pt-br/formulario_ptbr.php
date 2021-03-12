@@ -525,7 +525,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
       </form>
       <hr>
-      <div class="d-flex justify-content-center bottom">
+      <div class="d-flex justify-content-center">
         <small>
           <small>Desenvolvido por Bruno Sá - <a href='//www.bruno-sa.com' target='_blank'>www.bruno-sa.com</a></small>
         </small>

@@ -54,8 +54,8 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 				<p><a href="pt-br/regulamento_ptbr.php?emp_sigla='<?php echo $empresa_sigla; ?>'">REGULAMENTO FESTIVAL DE CINEMA</a><br />
 				</p>
 			</div>
-			<div class="d-flex justify-content-center bottom">
-				<hr>
+			<div class="d-flex justify-content-center fixed-bottom">
+				<div><hr></div>
 				<div>
 				<small>
 					<small>Desenvolvido por Bruno Sá - <a href='//www.bruno-sa.com' target='_blank'>www.bruno-sa.com</a></small>
