@@ -55,7 +55,8 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 			  <div>Texto do regulamento</div>
         <div><a href="formulario_ptbr.php?emp_sigla='<?php echo $empresa_sigla; ?>'">INSCREVA-SE</a></div>
       </div>
-      <div class='row justify-content-center'>
+      <div class="d-flex justify-content-center bottom">
+        <hr>
         <div>
         <small>
           <small>Desenvolvido por Bruno Sá - <a href='//www.bruno-sa.com' target='_blank'>www.bruno-sa.com</a></small>
