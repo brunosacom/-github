@@ -14,11 +14,14 @@
     </head>
     <body style="font-family:Didact Gothic; color:#FFF; background-color:#333;">
         <div class="container">
+        <h1>API correios ViaCEP</h1>
             <!-- Inicio do formulario -->
             <form method="get" action=".">
-                <label>Cep:
+            <div class="input-group input-group-sm mb-3">
+                <label class="input-group-text">1. CEP</label>
                 <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-                    onblur="pesquisacep(this.value);" /></label><br />
+                    onblur="pesquisacep(this.value);" />
+            </div>
                 <label>logradouro:
                 <input name="logradouro" type="text" id="logradouro" size="60" /></label><br />
                 <label>numero:
