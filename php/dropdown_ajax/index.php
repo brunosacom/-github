@@ -21,9 +21,10 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
     <div class="container">
     <h1>DropDown Ajax JS</h1>
       <form action="">
-        <div>paises</div>
-        <select id="sel_pais" onchange="showUF(this.value)">
-            <option value="0" SELECTED>- Select -</option>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">1. Países</label>
+          <select class="form-select" name="sel_pais" id="sel_pais">
+          <option value="0" SELECTED>- Select -</option>
             <?php 
             // Fetch Department
             $sql_pais = "SELECT * FROM _pais ORDER BY pais_ptbr ASC";
@@ -36,7 +37,8 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
                 echo "<option value=\"".$paisid."\" >".$pais_ptbr."</option>";
             }
             ?>
-        </select>
+          </select>
+        </div>
         <div class="clear"></div>
 
         <div>unidades federativas</div>
