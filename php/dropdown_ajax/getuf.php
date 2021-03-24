@@ -11,7 +11,7 @@ while( $row = mysqli_fetch_array($result) ){
     $uf_ibge = $row['uf_ibge'];
     $uf_nome = $row['uf_nome'];
 
-    echo "<option value='" . $uf_ibge . "'>" . $uf_nome . "</option>";
+    echo "<option value='" . $uf_ibge . "'>" . $uf_nome . $rowuf_ibge . "</option>";
 }
 
 ?>
