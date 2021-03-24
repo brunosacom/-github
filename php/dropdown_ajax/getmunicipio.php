@@ -8,6 +8,8 @@ $sql = "SELECT municipio_id, municipio_ibge, municipio_nome FROM _municipio WHER
 
 $result = mysqli_query($con,$sql);
 
+echo "<option value=\"0\">- Select -</option>";
+
 while( $row = mysqli_fetch_array($result) ){
     $municipio_ibge = $row['municipio_ibge'];
     $municipio_nome = $row['municipio_nome'];
