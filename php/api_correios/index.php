@@ -17,29 +17,46 @@
         <h1>API correios ViaCEP</h1>
             <!-- Inicio do formulario -->
             <form method="get" action=".">
-            <div class="input-group input-group-sm mb-3">
-                <label class="input-group-text">1. CEP</label>
-                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-                    onblur="pesquisacep(this.value);" />
-            </div>
-                <label>logradouro:
-                <input name="logradouro" type="text" id="logradouro" size="60" /></label><br />
-                <label>numero:
-                <input name="numero" type="text" id="numero" size="60" /></label><br />
-                <label>complemento:
-                <input name="complemento" type="text" id="complemento" size="60" /></label><br />
-                <label>Bairro:
-                <input name="bairro" type="text" id="bairro" size="40" /></label><br />
-                <label>Cidade:
-                <input name="cidade" type="text" id="cidade" size="40" /></label><br />
-                <label>Estado:
-                <input name="uf" type="text" id="uf" size="2" /></label><br />
-                <label>unidade:
-                <input name="unidade" type="text" id="unidade" size="60" /></label><br />
-                <label>IBGE:
-                <input name="ibge" type="text" id="ibge" size="8" /></label><br />
-                <label>GIA:
-                <input name="gia" type="text" id="gia" size="60" /></label><br />
+                <div class="input-group input-group-sm mb-3">
+                    <label class="input-group-text">01. CEP</label>
+                    <input name="cep" type="text" id="cep" value="" maxlength="9" onblur="pesquisacep(this.value);" >
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <label class="input-group-text">02. logradouro</label>
+                    <input name="logradouro" type="text" id="logradouro">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <label class="input-group-text">03. número</label>
+                    <input name="numero" type="number" id="numero">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <label class="input-group-text">04. complemento</label>
+                    <input name="complemento" type="text" id="complemento">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <label class="input-group-text">05. bairro</label>
+                    <input name="bairro" type="text" id="bairro">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <label class="input-group-text">06. cidade</label>
+                    <input name="cidade" type="text" id="cidade">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <label class="input-group-text">07. uf</label>
+                    <input name="uf" type="text" id="uf">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <label class="input-group-text">08. unidade</label>
+                    <input name="unidade" type="text" id="unidade">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <label class="input-group-text">09. IBGE</label>
+                    <input name="ibge" type="text" id="ibge">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <label class="input-group-text">10. GIA</label>
+                    <input name="gia" type="text" id="gia">
+                </div>
             </form>
             <hr>
             <div class="d-flex justify-content-center">
