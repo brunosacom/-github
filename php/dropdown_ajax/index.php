@@ -30,27 +30,48 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
     <div class="clear"></div>
 
     <div>unidades federativas</div>
-    <select id="sel_uf">
+    <select id="sel_uf" onchange="showMunicipio(this.value)">
+        <option value="0">- Select -</option>
+    </select>
+    <div class="clear"></div>
+
+    <div>municipios</div>
+    <select id="sel_municipio">
         <option value="0">- Select -</option>
     </select>
     </form>
 </body>
 
 <script>
-    function showUF(str) {
-  var xhttp;
-  if (str == "") {
-    document.getElementById("sel_uf").innerHTML = "";
-    return;
-  }
-  xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-    document.getElementById("sel_uf").innerHTML = this.responseText;
+  function showUF(str) {
+    var xhttp;
+    if (str == "") {
+      document.getElementById("sel_uf").innerHTML = "";
+      return;
     }
+    xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("sel_uf").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "getuf.php?ps=" + str, true);
+    xhttp.send();
   };
-  xhttp.open("GET", "getuf.php?ps=" + str, true);
-  xhttp.send();
-}
+  function showMunicipio(str) {
+    var xhttp;
+    if (str == "") {
+      document.getElementById("sel_municipio").innerHTML = "";
+      return;
+    }
+    xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("sel_municipio").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "getmunicipio.php?uf=" + str, true);
+    xhttp.send();
+  };
 </script>
 </html>
