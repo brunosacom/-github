@@ -8,10 +8,10 @@ $sql = "SELECT uf_id, uf_alpha2, uf_nome FROM _uf WHERE pais_numero = $paisid";
 $result = mysqli_query($con,$sql);
 
 while( $row = mysqli_fetch_array($result) ){
-    $uf_id = $row['uf_id'];
+    $uf_alpha2 = $row['uf_alpha2'];
     $uf_nome = $row['uf_nome'];
 
-    echo "<option value=\"" . $uf_id . "\">" . $uf_nome . "</option>";
+    echo "<option value=\"" . $uf_alpha2 . "\">" . $uf_nome . "</option>";
 }
 
 ?>
