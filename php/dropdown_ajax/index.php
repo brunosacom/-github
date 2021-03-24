@@ -22,8 +22,8 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
     <h1>DropDown Ajax JS</h1>
       <form action="">
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text">1. Países</label>
-          <select class="form-select" name="sel_pais" id="sel_pais">
+          <label class="input-group-text">1. País</label>
+          <select class="form-select" name="sel_pais" id="sel_pais" onchange="showUF(this.value)">
           <option value="0" SELECTED>- Select -</option>
             <?php 
             // Fetch Department
@@ -39,7 +39,12 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
             ?>
           </select>
         </div>
-        <div class="clear"></div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">2. UF</label>
+          <select class="form-select" name="sel_uf" id="sel_uf" onchange="showMunicipio(this.value)">
+            <option value="0">- Select -</option>
+          </select>
+        </div>
 
         <div>unidades federativas</div>
         <select id="sel_uf" onchange="showMunicipio(this.value)">
