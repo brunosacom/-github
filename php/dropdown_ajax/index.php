@@ -47,6 +47,7 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
     var xhttp;
     if (str == "") {
       document.getElementById("sel_uf").innerHTML = "";
+      document.getElementById("sel_municipio").innerHTML = "";
       return;
     }
     xhttp = new XMLHttpRequest();
