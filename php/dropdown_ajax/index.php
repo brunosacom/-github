@@ -45,17 +45,12 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
             <option value="0">- Select -</option>
           </select>
         </div>
-
-        <div>unidades federativas</div>
-        <select id="sel_uf" onchange="showMunicipio(this.value)">
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">3. Município</label>
+          <select class="form-select" name="sel_municipio" id="sel_municipio">
             <option value="0">- Select -</option>
-        </select>
-        <div class="clear"></div>
-
-        <div>municipios</div>
-        <select id="sel_municipio">
-            <option value="0">- Select -</option>
-        </select>
+          </select>
+        </div>
       </form>
       <hr>
 			<div class="d-flex justify-content-center">
