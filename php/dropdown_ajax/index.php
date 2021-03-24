@@ -19,6 +19,7 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
 
   <body style="font-family:Didact Gothic; color:#FFF; background-color:#333;">
     <div class="container">
+    <h1>DropDown Ajax JS</h1>
       <form action="">
         <div>paises</div>
         <select id="sel_pais" onchange="showUF(this.value)">
@@ -49,6 +50,14 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
             <option value="0">- Select -</option>
         </select>
       </form>
+      <hr>
+			<div class="d-flex justify-content-center">
+				<div>
+				<small>
+					<small>Desenvolvido por Bruno Sá - <a href='//www.bruno-sa.com' target='_blank'>www.bruno-sa.com</a></small>
+				</small>
+				</div>
+			</div>
     </div>
     <script>
       function showUF(str) {
