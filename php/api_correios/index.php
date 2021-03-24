@@ -19,7 +19,7 @@
             <form method="get" action=".">
                 <div class="input-group input-group-sm mb-3">
                     <label class="input-group-text">01. CEP</label>
-                    <input class="form-control" name="cep" type="text" id="cep" value="" maxlength="9" onblur="pesquisacep(this.value);" >
+                    <input class="form-control" name="cep" type="text" id="cep" value="" maxlength="9" onchange="pesquisacep(this.value);" >
                 </div>
                 <div class="input-group input-group-sm mb-3">
                     <label class="input-group-text">02. logradouro</label>
