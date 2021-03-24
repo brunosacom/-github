@@ -61,7 +61,7 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
   function showMunicipio(str) {
     var xhttp;
     if (str == "") {
-      document.getElementById("sel_municipio").innerHTML = "";
+      document.getElementById("sel_municipio").innerHTML = "" || document.getElementById("sel_uf").innerHTML = "";;
       return;
     }
     xhttp = new XMLHttpRequest();
