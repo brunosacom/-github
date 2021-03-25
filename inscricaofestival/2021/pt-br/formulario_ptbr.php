@@ -269,7 +269,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07 - CEP</label>
-          <input type="number" class="form-control" name="distribuidora_cep" id="distribuidora_cep">
+          <input type="number" class="form-control" name="distribuidora_cep" id="distribuidora_cep" onchange="distribuidora_pesquisacep(this.value);" >
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.1 - Logradouro</label>
@@ -534,8 +534,74 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src='https://code.jquery.com/jquery-3.6.0.js' integrity='sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=' crossorigin='anonymous'></script>
     <script type="text/javascript">
+      function limpa_formulário_cep() {
+        //Limpa valores do formulário de cep.
+        document.getElementById('distribuidora_logradouro').value=("");
+        document.getElementById('distribuidora_complemento').value=("");
+        document.getElementById('distribuidora_bairro').value=("");
+        document.getElementById('distribuidora_cidade').value=("");
+        document.getElementById('distribuidora_uf').value=("");
+      }
 
-            $("#distribuidora_cep").focusout(function(){
+      function meu_callback(conteudo) {
+        if (!("erro" in conteudo)) {
+          //Atualiza os campos com os valores.
+          document.getElementById('distribuidora_logradouro').value=(conteudo.logradouro);
+          document.getElementById('distribuidora_complemento').value=(conteudo.complemento);
+          document.getElementById('distribuidora_bairro').value=(conteudo.bairro);
+          document.getElementById('distribuidora_cidade').value=(conteudo.localidade);
+          document.getElementById('distribuidora_uf').value=(conteudo.uf);
+        } //end if.
+        else {
+          //CEP não Encontrado.
+          limpa_formulário_cep();
+          alert("CEP não encontrado.");
+        }
+      }
+            
+      function distribuidora_pesquisacep(valor) {
+        //Nova variável "cep" somente com dígitos.
+        var cep = valor.replace(/\D/g, '');
+
+        //Verifica se campo cep possui valor informado.
+        if (cep != "") {
+
+          //Expressão regular para validar o CEP.
+          var validacep = /^[0-9]{8}$/;
+
+          //Valida o formato do CEP.
+          if(validacep.test(cep)) {
+
+            //Preenche os campos com "..." enquanto consulta webservice.
+            document.getElementById('distribuidora_logradouro').value="...";
+            document.getElementById('distribuidora_complemento').value="...";
+            document.getElementById('distribuidora_bairro').value="...";
+            document.getElementById('distribuidora_cidade').value="...";
+            document.getElementById('distribuidora_uf').value="...";
+
+            //Cria um elemento javascript.
+            var script = document.createElement('script');
+
+            //Sincroniza com o callback.
+            script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+
+            //Insere script no documento e carrega o conteúdo.
+            document.body.appendChild(script);
+
+          } //end if.
+          else {
+            //cep é inválido.
+            limpa_formulário_cep();
+            alert("Formato de CEP inválido.");
+          }
+        } //end if.
+        else {
+          //cep sem valor, limpa formulário.
+          limpa_formulário_cep();
+        }
+      };
+
+       /*     $("#distribuidora_cep").focusout(function(){
           //Início do Comando AJAX
           $.ajax({
             //O campo URL diz o caminho de onde virá os dados
@@ -561,7 +627,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               $("#distribuidora_numero").focus();
             }
           });
-        });
+        }); */
 
             $("#produtora_cep").focusout(function(){
           //Início do Comando AJAX
