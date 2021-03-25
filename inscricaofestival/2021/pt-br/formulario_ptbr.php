@@ -242,62 +242,62 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <hr style="height:5px;">
         <h6>3 - CONTATOS</h6>
-        <h7>3.1 - Contatos destino</h7>
+        <h7>3.1 - Contatos Distribuidora</h7>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text">3.1.01 - Empresa destino</label>
-          <input type="text" class="form-control" name="destino_empresa" id="destino_empresa">
+          <label class="input-group-text">3.1.01 - Empresa Distribuidora</label>
+          <input type="text" class="form-control" name="distribuidora_empresa" id="distribuidora_empresa">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.02 - Nome do Contato</label>
-          <input type="text" class="form-control" name="destino_contatonome" id="destino_contatonome">
+          <input type="text" class="form-control" name="distribuidora_contatonome" id="distribuidora_contatonome">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.03 - Telefone</label>
-          <input type="text" class="form-control" name="destino_telefone" id="destino_telefone">
+          <input type="text" class="form-control" name="distribuidora_telefone" id="distribuidora_telefone">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.04 - Celular</label>
-          <input type="text" class="form-control" name="destino_celular" id="destino_celular">
+          <input type="text" class="form-control" name="distribuidora_celular" id="distribuidora_celular">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.05 - Fax</label>
-          <input type="text" class="form-control" name="destino_fax" id="destino_fax">
+          <input type="text" class="form-control" name="distribuidora_fax" id="distribuidora_fax">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.06 - Email</label>
-          <input type="email" class="form-control" name="destino_email" id="destino_email">
+          <input type="email" class="form-control" name="distribuidora_email" id="distribuidora_email">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07 - CEP</label>
-          <input type="number" class="form-control" name="destino_cep" id="destino_cep" onchange="destino_pesquisacep(this.value);" >
+          <input type="number" class="form-control" name="distribuidora_cep" id="distribuidora_cep" onchange="distribuidora_pesquisacep(this.value);" >
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.1 - Logradouro</label>
-          <input type="text" class="form-control" name="destino_logradouro" id="destino_logradouro">
+          <input type="text" class="form-control" name="distribuidora_logradouro" id="distribuidora_logradouro">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.2 - Número</label>
-          <input type="text" class="form-control" name="destino_numero" id="destino_numero">
+          <input type="text" class="form-control" name="distribuidora_numero" id="distribuidora_numero">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.3 - Complemento</label>
-          <input type="text" class="form-control" name="destino_complemento" id="destino_complemento">
+          <input type="text" class="form-control" name="distribuidora_complemento" id="distribuidora_complemento">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.4 - Bairro</label>
-          <input type="text" class="form-control" name="destino_bairro" id="destino_bairro">
+          <input type="text" class="form-control" name="distribuidora_bairro" id="distribuidora_bairro">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.5 - Cidade</label>
-          <input type="text" class="form-control" name="destino_cidade" id="destino_cidade">
+          <input type="text" class="form-control" name="distribuidora_cidade" id="distribuidora_cidade">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.6 - UF</label>
-          <input type="text" class="form-control" name="destino_uf" id="destino_uf">
+          <input type="text" class="form-control" name="distribuidora_uf" id="distribuidora_uf">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.08 - Website</label>
-          <input type="text" class="form-control" name="destino_website" id="destino_website">
+          <input type="text" class="form-control" name="distribuidora_website" id="distribuidora_website">
         </div>
         <hr>
         <h7>3.2 - Contatos Produtora</h7>
@@ -532,32 +532,32 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
       </div>
     </div>
     <script type="text/javascript">
-      function destino_limpa_formulário_cep() {
+      function distribuidora_limpa_formulário_cep() {
         //Limpa valores do formulário de cep.
-        document.getElementById('destino_logradouro').value=("");
-        document.getElementById('destino_complemento').value=("");
-        document.getElementById('destino_bairro').value=("");
-        document.getElementById('destino_cidade').value=("");
-        document.getElementById('destino_uf').value=("");
+        document.getElementById('distribuidora_logradouro').value=("");
+        document.getElementById('distribuidora_complemento').value=("");
+        document.getElementById('distribuidora_bairro').value=("");
+        document.getElementById('distribuidora_cidade').value=("");
+        document.getElementById('distribuidora_uf').value=("");
       }
 
-      function destino_meu_callback(conteudo) {
+      function distribuidora_meu_callback(conteudo) {
         if (!("erro" in conteudo)) {
           //Atualiza os campos com os valores.
-          document.getElementById('destino_logradouro').value=(conteudo.logradouro);
-          document.getElementById('destino_complemento').value=(conteudo.complemento);
-          document.getElementById('destino_bairro').value=(conteudo.bairro);
-          document.getElementById('destino_cidade').value=(conteudo.localidade);
-          document.getElementById('destino_uf').value=(conteudo.uf);
+          document.getElementById('distribuidora_logradouro').value=(conteudo.logradouro);
+          document.getElementById('distribuidora_complemento').value=(conteudo.complemento);
+          document.getElementById('distribuidora_bairro').value=(conteudo.bairro);
+          document.getElementById('distribuidora_cidade').value=(conteudo.localidade);
+          document.getElementById('distribuidora_uf').value=(conteudo.uf);
         } //end if.
         else {
           //CEP não Encontrado.
-          destino_limpa_formulário_cep();
+          distribuidora_limpa_formulário_cep();
           alert("CEP não encontrado.");
         }
       }
             
-      function destino_pesquisacep(valor) {
+      function distribuidora_pesquisacep(valor) {
         //Nova variável "cep" somente com dígitos.
         var cep = valor.replace(/\D/g, '');
 
@@ -571,17 +571,17 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           if(validacep.test(cep)) {
 
             //Preenche os campos com "..." enquanto consulta webservice.
-            document.getElementById('destino_logradouro').value="...";
-            document.getElementById('destino_complemento').value="...";
-            document.getElementById('destino_bairro').value="...";
-            document.getElementById('destino_cidade').value="...";
-            document.getElementById('destino_uf').value="...";
+            document.getElementById('distribuidora_logradouro').value="...";
+            document.getElementById('distribuidora_complemento').value="...";
+            document.getElementById('distribuidora_bairro').value="...";
+            document.getElementById('distribuidora_cidade').value="...";
+            document.getElementById('distribuidora_uf').value="...";
 
             //Cria um elemento javascript.
             var script = document.createElement('script');
 
             //Sincroniza com o callback.
-            script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=destino_meu_callback';
+            script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=distribuidora_meu_callback';
 
             //Insere script no documento e carrega o conteúdo.
             document.body.appendChild(script);
@@ -589,13 +589,13 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           } //end if.
           else {
             //cep é inválido.
-            destino_limpa_formulário_cep();
+            distribuidora_limpa_formulário_cep();
             alert("Formato de CEP inválido.");
           }
         } //end if.
         else {
           //cep sem valor, limpa formulário.
-          destino_limpa_formulário_cep();
+          distribuidora_limpa_formulário_cep();
         }
       };
 
