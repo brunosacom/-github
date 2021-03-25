@@ -242,62 +242,62 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <hr style="height:5px;">
         <h6>3 - CONTATOS</h6>
-        <h7>3.1 - Contatos Distribuidora</h7>
+        <h7>3.1 - Contatos destino</h7>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text">3.1.01 - Empresa Distribuidora</label>
-          <input type="text" class="form-control" name="distribuidora_empresa" id="distribuidora_empresa">
+          <label class="input-group-text">3.1.01 - Empresa destino</label>
+          <input type="text" class="form-control" name="destino_empresa" id="destino_empresa">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.02 - Nome do Contato</label>
-          <input type="text" class="form-control" name="distribuidora_contatonome" id="distribuidora_contatonome">
+          <input type="text" class="form-control" name="destino_contatonome" id="destino_contatonome">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.03 - Telefone</label>
-          <input type="text" class="form-control" name="distribuidora_telefone" id="distribuidora_telefone">
+          <input type="text" class="form-control" name="destino_telefone" id="destino_telefone">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.04 - Celular</label>
-          <input type="text" class="form-control" name="distribuidora_celular" id="distribuidora_celular">
+          <input type="text" class="form-control" name="destino_celular" id="destino_celular">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.05 - Fax</label>
-          <input type="text" class="form-control" name="distribuidora_fax" id="distribuidora_fax">
+          <input type="text" class="form-control" name="destino_fax" id="destino_fax">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.06 - Email</label>
-          <input type="email" class="form-control" name="distribuidora_email" id="distribuidora_email">
+          <input type="email" class="form-control" name="destino_email" id="destino_email">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07 - CEP</label>
-          <input type="number" class="form-control" name="distribuidora_cep" id="distribuidora_cep" onchange="distribuidora_pesquisacep(this.value);" >
+          <input type="number" class="form-control" name="destino_cep" id="destino_cep" onchange="destino_pesquisacep(this.value);" >
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.1 - Logradouro</label>
-          <input type="text" class="form-control" name="distribuidora_logradouro" id="distribuidora_logradouro">
+          <input type="text" class="form-control" name="destino_logradouro" id="destino_logradouro">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.2 - Número</label>
-          <input type="text" class="form-control" name="distribuidora_numero" id="distribuidora_numero">
+          <input type="text" class="form-control" name="destino_numero" id="destino_numero">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.3 - Complemento</label>
-          <input type="text" class="form-control" name="distribuidora_complemento" id="distribuidora_complemento">
+          <input type="text" class="form-control" name="destino_complemento" id="destino_complemento">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.4 - Bairro</label>
-          <input type="text" class="form-control" name="distribuidora_bairro" id="distribuidora_bairro">
+          <input type="text" class="form-control" name="destino_bairro" id="destino_bairro">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.5 - Cidade</label>
-          <input type="text" class="form-control" name="distribuidora_cidade" id="distribuidora_cidade">
+          <input type="text" class="form-control" name="destino_cidade" id="destino_cidade">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.07.6 - UF</label>
-          <input type="text" class="form-control" name="distribuidora_uf" id="distribuidora_uf">
+          <input type="text" class="form-control" name="destino_uf" id="destino_uf">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.1.08 - Website</label>
-          <input type="text" class="form-control" name="distribuidora_website" id="distribuidora_website">
+          <input type="text" class="form-control" name="destino_website" id="destino_website">
         </div>
         <hr>
         <h7>3.2 - Contatos Produtora</h7>
@@ -327,7 +327,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.07 - CEP</label>
-          <input type="number" class="form-control" name="produtora_cep" id="produtora_cep">
+          <input type="number" class="form-control" name="produtora_cep" id="produtora_cep" onchange="produtora_pesquisacep(this.value);">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">3.2.07.1 - Logradouro</label>
@@ -453,7 +453,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">5.1.02 - CEP</label>
-          <input type="number" class="form-control" name="destino_cep" id="destino_cep">
+          <input type="number" class="form-control" name="destino_cep" id="destino_cep" onchange="destino_pesquisacep(this.value);">
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">5.1.03.1 - Logradouro</label>
@@ -531,35 +531,33 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </small>
       </div>
     </div>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src='https://code.jquery.com/jquery-3.6.0.js' integrity='sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=' crossorigin='anonymous'></script>
     <script type="text/javascript">
-      function limpa_formulário_cep() {
+      function destino_limpa_formulário_cep() {
         //Limpa valores do formulário de cep.
-        document.getElementById('distribuidora_logradouro').value=("");
-        document.getElementById('distribuidora_complemento').value=("");
-        document.getElementById('distribuidora_bairro').value=("");
-        document.getElementById('distribuidora_cidade').value=("");
-        document.getElementById('distribuidora_uf').value=("");
+        document.getElementById('destino_logradouro').value=("");
+        document.getElementById('destino_complemento').value=("");
+        document.getElementById('destino_bairro').value=("");
+        document.getElementById('destino_cidade').value=("");
+        document.getElementById('destino_uf').value=("");
       }
 
-      function meu_callback(conteudo) {
+      function destino_meu_callback(conteudo) {
         if (!("erro" in conteudo)) {
           //Atualiza os campos com os valores.
-          document.getElementById('distribuidora_logradouro').value=(conteudo.logradouro);
-          document.getElementById('distribuidora_complemento').value=(conteudo.complemento);
-          document.getElementById('distribuidora_bairro').value=(conteudo.bairro);
-          document.getElementById('distribuidora_cidade').value=(conteudo.localidade);
-          document.getElementById('distribuidora_uf').value=(conteudo.uf);
+          document.getElementById('destino_logradouro').value=(conteudo.logradouro);
+          document.getElementById('destino_complemento').value=(conteudo.complemento);
+          document.getElementById('destino_bairro').value=(conteudo.bairro);
+          document.getElementById('destino_cidade').value=(conteudo.localidade);
+          document.getElementById('destino_uf').value=(conteudo.uf);
         } //end if.
         else {
           //CEP não Encontrado.
-          limpa_formulário_cep();
+          destino_limpa_formulário_cep();
           alert("CEP não encontrado.");
         }
       }
             
-      function distribuidora_pesquisacep(valor) {
+      function destino_pesquisacep(valor) {
         //Nova variável "cep" somente com dígitos.
         var cep = valor.replace(/\D/g, '');
 
@@ -573,17 +571,17 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           if(validacep.test(cep)) {
 
             //Preenche os campos com "..." enquanto consulta webservice.
-            document.getElementById('distribuidora_logradouro').value="...";
-            document.getElementById('distribuidora_complemento').value="...";
-            document.getElementById('distribuidora_bairro').value="...";
-            document.getElementById('distribuidora_cidade').value="...";
-            document.getElementById('distribuidora_uf').value="...";
+            document.getElementById('destino_logradouro').value="...";
+            document.getElementById('destino_complemento').value="...";
+            document.getElementById('destino_bairro').value="...";
+            document.getElementById('destino_cidade').value="...";
+            document.getElementById('destino_uf').value="...";
 
             //Cria um elemento javascript.
             var script = document.createElement('script');
 
             //Sincroniza com o callback.
-            script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+            script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=destino_meu_callback';
 
             //Insere script no documento e carrega o conteúdo.
             document.body.appendChild(script);
@@ -591,99 +589,149 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           } //end if.
           else {
             //cep é inválido.
-            limpa_formulário_cep();
+            destino_limpa_formulário_cep();
             alert("Formato de CEP inválido.");
           }
         } //end if.
         else {
           //cep sem valor, limpa formulário.
-          limpa_formulário_cep();
+          destino_limpa_formulário_cep();
         }
       };
 
-       /*     $("#distribuidora_cep").focusout(function(){
-          //Início do Comando AJAX
-          $.ajax({
-            //O campo URL diz o caminho de onde virá os dados
-            //É importante concatenar o valor digitado no CEP
-            url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
-            //Aqui você deve preencher o tipo de dados que será lido,
-            //no caso, estamos lendo JSON.
-            dataType: 'json',
-            //SUCESS é referente a função que será executada caso
-            //ele consiga ler a fonte de dados com sucesso.
-            //O parâmetro dentro da função se refere ao nome da variável
-            //que você vai dar para ler esse objeto.
-            success: function(resposta){
-              //Agora basta definir os valores que você deseja preencher
-              //automaticamente nos campos acima.
-              $("#distribuidora_logradouro").val(resposta.logradouro);
-              $("#distribuidora_complemento").val(resposta.complemento);
-              $("#distribuidora_bairro").val(resposta.bairro);
-              $("#distribuidora_cidade").val(resposta.localidade);
-              $("#distribuidora_uf").val(resposta.uf);
-              //Vamos incluir para que o Número seja focado automaticamente
-              //melhorando a experiência do usuário
-              $("#distribuidora_numero").focus();
-            }
-          });
-        }); */
+      function produtora_limpa_formulário_cep() {
+        //Limpa valores do formulário de cep.
+        document.getElementById('produtora_logradouro').value=("");
+        document.getElementById('produtora_complemento').value=("");
+        document.getElementById('produtora_bairro').value=("");
+        document.getElementById('produtora_cidade').value=("");
+        document.getElementById('produtora_uf').value=("");
+      }
 
-            $("#produtora_cep").focusout(function(){
-          //Início do Comando AJAX
-          $.ajax({
-            //O campo URL diz o caminho de onde virá os dados
-            //É importante concatenar o valor digitado no CEP
-            url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
-            //Aqui você deve preencher o tipo de dados que será lido,
-            //no caso, estamos lendo JSON.
-            dataType: 'json',
-            //SUCESS é referente a função que será executada caso
-            //ele consiga ler a fonte de dados com sucesso.
-            //O parâmetro dentro da função se refere ao nome da variável
-            //que você vai dar para ler esse objeto.
-            success: function(resposta){
-              //Agora basta definir os valores que você deseja preencher
-              //automaticamente nos campos acima.
-              $("#produtora_logradouro").val(resposta.logradouro);
-              $("#produtora_complemento").val(resposta.complemento);
-              $("#produtora_bairro").val(resposta.bairro);
-              $("#produtora_cidade").val(resposta.localidade);
-              $("#produtora_uf").val(resposta.uf);
-              //Vamos incluir para que o Número seja focado automaticamente
-              //melhorando a experiência do usuário
-              $("#produtora_numero").focus();
-            }
-          });
-        });
+      function produtora_meu_callback(conteudo) {
+        if (!("erro" in conteudo)) {
+          //Atualiza os campos com os valores.
+          document.getElementById('produtora_logradouro').value=(conteudo.logradouro);
+          document.getElementById('produtora_complemento').value=(conteudo.complemento);
+          document.getElementById('produtora_bairro').value=(conteudo.bairro);
+          document.getElementById('produtora_cidade').value=(conteudo.localidade);
+          document.getElementById('produtora_uf').value=(conteudo.uf);
+        } //end if.
+        else {
+          //CEP não Encontrado.
+          produtora_limpa_formulário_cep();
+          alert("CEP não encontrado.");
+        }
+      }
+            
+      function produtora_pesquisacep(valor) {
+        //Nova variável "cep" somente com dígitos.
+        var cep = valor.replace(/\D/g, '');
 
-        $("#destino_cep").focusout(function(){
-          //Início do Comando AJAX
-          $.ajax({
-            //O campo URL diz o caminho de onde virá os dados
-            //É importante concatenar o valor digitado no CEP
-            url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
-            //Aqui você deve preencher o tipo de dados que será lido,
-            //no caso, estamos lendo JSON.
-            dataType: 'json',
-            //SUCESS é referente a função que será executada caso
-            //ele consiga ler a fonte de dados com sucesso.
-            //O parâmetro dentro da função se refere ao nome da variável
-            //que você vai dar para ler esse objeto.
-            success: function(resposta){
-              //Agora basta definir os valores que você deseja preencher
-              //automaticamente nos campos acima.
-              $("#destino_logradouro").val(resposta.logradouro);
-              $("#destino_complemento").val(resposta.complemento);
-              $("#destino_bairro").val(resposta.bairro);
-              $("#destino_cidade").val(resposta.localidade);
-              $("#destino_uf").val(resposta.uf);
-              //Vamos incluir para que o Número seja focado automaticamente
-              //melhorando a experiência do usuário
-              $("#destino_numero").focus();
-            }
-          });
-        });
+        //Verifica se campo cep possui valor informado.
+        if (cep != "") {
+
+          //Expressão regular para validar o CEP.
+          var validacep = /^[0-9]{8}$/;
+
+          //Valida o formato do CEP.
+          if(validacep.test(cep)) {
+
+            //Preenche os campos com "..." enquanto consulta webservice.
+            document.getElementById('produtora_logradouro').value="...";
+            document.getElementById('produtora_complemento').value="...";
+            document.getElementById('produtora_bairro').value="...";
+            document.getElementById('produtora_cidade').value="...";
+            document.getElementById('produtora_uf').value="...";
+
+            //Cria um elemento javascript.
+            var script = document.createElement('script');
+
+            //Sincroniza com o callback.
+            script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=produtora_meu_callback';
+
+            //Insere script no documento e carrega o conteúdo.
+            document.body.appendChild(script);
+
+          } //end if.
+          else {
+            //cep é inválido.
+            produtora_limpa_formulário_cep();
+            alert("Formato de CEP inválido.");
+          }
+        } //end if.
+        else {
+          //cep sem valor, limpa formulário.
+          produtora_limpa_formulário_cep();
+        }
+      };
+
+      function destino_limpa_formulário_cep() {
+        //Limpa valores do formulário de cep.
+        document.getElementById('destino_logradouro').value=("");
+        document.getElementById('destino_complemento').value=("");
+        document.getElementById('destino_bairro').value=("");
+        document.getElementById('destino_cidade').value=("");
+        document.getElementById('destino_uf').value=("");
+      }
+
+      function destino_meu_callback(conteudo) {
+        if (!("erro" in conteudo)) {
+          //Atualiza os campos com os valores.
+          document.getElementById('destino_logradouro').value=(conteudo.logradouro);
+          document.getElementById('destino_complemento').value=(conteudo.complemento);
+          document.getElementById('destino_bairro').value=(conteudo.bairro);
+          document.getElementById('destino_cidade').value=(conteudo.localidade);
+          document.getElementById('destino_uf').value=(conteudo.uf);
+        } //end if.
+        else {
+          //CEP não Encontrado.
+          destino_limpa_formulário_cep();
+          alert("CEP não encontrado.");
+        }
+      }
+            
+      function destino_pesquisacep(valor) {
+        //Nova variável "cep" somente com dígitos.
+        var cep = valor.replace(/\D/g, '');
+
+        //Verifica se campo cep possui valor informado.
+        if (cep != "") {
+
+          //Expressão regular para validar o CEP.
+          var validacep = /^[0-9]{8}$/;
+
+          //Valida o formato do CEP.
+          if(validacep.test(cep)) {
+
+            //Preenche os campos com "..." enquanto consulta webservice.
+            document.getElementById('destino_logradouro').value="...";
+            document.getElementById('destino_complemento').value="...";
+            document.getElementById('destino_bairro').value="...";
+            document.getElementById('destino_cidade').value="...";
+            document.getElementById('destino_uf').value="...";
+
+            //Cria um elemento javascript.
+            var script = document.createElement('script');
+
+            //Sincroniza com o callback.
+            script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=destino_meu_callback';
+
+            //Insere script no documento e carrega o conteúdo.
+            document.body.appendChild(script);
+
+          } //end if.
+          else {
+            //cep é inválido.
+            destino_limpa_formulário_cep();
+            alert("Formato de CEP inválido.");
+          }
+        } //end if.
+        else {
+          //cep sem valor, limpa formulário.
+          destino_limpa_formulário_cep();
+        }
+      };
     </script>
     <!-- Optional JavaScript; choose one of the two! -->
 
