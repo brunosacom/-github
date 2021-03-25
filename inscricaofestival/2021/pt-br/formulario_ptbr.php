@@ -418,11 +418,11 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.07 - Edição de Som</label>
-          <input type="text" class="form-control" name="somedicao" id="somedicao" required>
+          <input type="text" class="form-control" name="somedicao" id="somedicao" placeholder="(caso o filme não tenha edição de som colocar: NÃO HÁ)" required>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.08 - Música</label>
-          <input type="text" class="form-control" name="musica" id="musica" placeholder="(caso o filme não músicas colocar: NÃO HÁ)" required>
+          <input type="text" class="form-control" name="musica" id="musica" placeholder="(caso o filme não tenha músicas colocar: NÃO HÁ)" required>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">4.09 - Figurino</label>
@@ -449,7 +449,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <h7>5.1 - Devolução de Cópias</h7>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">5.1.01 - Contato</label>
-          <input type="text" class="form-control" name="destino_contato" id="destino_contato" placeholder="(caso o filme não músicas colocar: NÃO HÁ)" required>
+          <input type="text" class="form-control" name="destino_contato" id="destino_contato" required>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">5.1.02 - CEP</label>
