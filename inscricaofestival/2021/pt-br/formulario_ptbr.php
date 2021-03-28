@@ -120,26 +120,26 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">1.10 - Categoria</label>
           <div class="form-control">
-            <input name="categoria" type="radio" value="pb lg70 - fic" required> Longa-Metragem (acima de 70 min.) - Ficção<br>
-            <input name="categoria" type="radio" value="pb lg70 - doc"  required> Longa-Metragem (acima de 70 min.) - Documentário<br>
-            <input name="categoria" type="radio" value="pb lg60 - fic"  required> Longa-Metragem (entre 60 e 70 min.) - Ficção<br>
-            <input name="categoria" type="radio" value="pb lg60 - doc" required> Longa-Metragem (entre 60 e 70 min.) - Documentário<br>
-            <input name="categoria" type="radio" value="pb ct15 - fic" required> Curta-Metragem (até 15 min.) - Ficção<br>
-            <input name="categoria" type="radio" value="pb ct15 - doc" required> Curta-Metragem (até 15 min.) - Documentário <br>
-            <input name="categoria" type="radio" value="pb ct30 - fic"  required> Curta-Metragem (entre 15 e 30 min.) - Ficção<br>
-            <input name="categoria" type="radio" value="pb ct30 - doc"  required> Curta-Metragem (entre 15 e 30 min.) - Documentário
+            <input class="form-check-input" name="categoria" type="radio" value="pb lg70 - fic" required> Longa-Metragem (acima de 70 min.) - Ficção<br>
+            <input class="form-check-input" name="categoria" type="radio" value="pb lg70 - doc"  required> Longa-Metragem (acima de 70 min.) - Documentário<br>
+            <input class="form-check-input" name="categoria" type="radio" value="pb lg60 - fic"  required> Longa-Metragem (entre 60 e 70 min.) - Ficção<br>
+            <input class="form-check-input" name="categoria" type="radio" value="pb lg60 - doc" required> Longa-Metragem (entre 60 e 70 min.) - Documentário<br>
+            <input class="form-check-input" name="categoria" type="radio" value="pb ct15 - fic" required> Curta-Metragem (até 15 min.) - Ficção<br>
+            <input class="form-check-input" name="categoria" type="radio" value="pb ct15 - doc" required> Curta-Metragem (até 15 min.) - Documentário <br>
+            <input class="form-check-input" name="categoria" type="radio" value="pb ct30 - fic"  required> Curta-Metragem (entre 15 e 30 min.) - Ficção<br>
+            <input class="form-check-input" name="categoria" type="radio" value="pb ct30 - doc"  required> Curta-Metragem (entre 15 e 30 min.) - Documentário
           </div>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">1.11 - Classificação Indicativa</label>
           <div class="form-control">
-            <input name="classificacao" type="radio" value="ER" required> Especialmente Recomendado<br>
-            <input name="classificacao" type="radio" value="L" required> Livre<br>
-            <input name="classificacao" type="radio" value="10" required> 10 anos<br>
-            <input name="classificacao" type="radio" value="12" required> 12 anos<br>
-            <input name="classificacao" type="radio" value="14" required> 14 anos<br>
-            <input name="classificacao" type="radio" value="16" required> 16 anos<br>
-            <input name="classificacao" type="radio" value="18" required> 18 anos
+            <input class="form-check-input" name="classificacao" type="radio" value="ER" required> Especialmente Recomendado<br>
+            <input class="form-check-input" name="classificacao" type="radio" value="L" required> Livre<br>
+            <input class="form-check-input" name="classificacao" type="radio" value="10" required> 10 anos<br>
+            <input class="form-check-input" name="classificacao" type="radio" value="12" required> 12 anos<br>
+            <input class="form-check-input" name="classificacao" type="radio" value="14" required> 14 anos<br>
+            <input class="form-check-input" name="classificacao" type="radio" value="16" required> 16 anos<br>
+            <input class="form-check-input" name="classificacao" type="radio" value="18" required> 18 anos
           </div>
         </div>
         <hr style="height:5px;">
@@ -147,61 +147,61 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.01 - Bitola de exibição final</label>
           <div class="form-control">
-            <input name="bitola_inscricao" type="radio" value="DCP-aberto" required> DCP aberto <br>
-            <input name="bitola_inscricao" type="radio" value="DCP-3Daberto" required> DCP-3D aberto <br>
-            <input name="bitola_inscricao" type="radio" value="DCP-encriptado" required> DCP encriptado <br>
-            <input name="bitola_inscricao" type="radio" value="DCP-3Dencriptado" required> DCP-3D encriptado <br>
-            <input name="bitola_inscricao" type="radio" value="DCP-+chave" required> DCP + chave <br>
-            <input name="bitola_inscricao" type="radio" value="DCP-3D+chave" required> DCP-3D + chave <br>
-            <input name="bitola_inscricao" type="radio" value="DCP naodefinido" required> DCP não definido
+            <input class="form-check-input" name="bitola_inscricao" type="radio" value="DCP-aberto" required> DCP aberto <br>
+            <input class="form-check-input" name="bitola_inscricao" type="radio" value="DCP-3Daberto" required> DCP-3D aberto <br>
+            <input class="form-check-input" name="bitola_inscricao" type="radio" value="DCP-encriptado" required> DCP encriptado <br>
+            <input class="form-check-input" name="bitola_inscricao" type="radio" value="DCP-3Dencriptado" required> DCP-3D encriptado <br>
+            <input class="form-check-input" name="bitola_inscricao" type="radio" value="DCP-+chave" required> DCP + chave <br>
+            <input class="form-check-input" name="bitola_inscricao" type="radio" value="DCP-3D+chave" required> DCP-3D + chave <br>
+            <input class="form-check-input" name="bitola_inscricao" type="radio" value="DCP naodefinido" required> DCP não definido
           </div>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.02 - Definição Digital de exibição final</label>
           <div class="form-control">
-            <input name="definicaodigital" type="radio" value="4K" required> 4K (4096x2160)<br>
-            <input name="definicaodigital" type="radio" value="2K" required> 2K (2048x1080)<br>
-            <input name="definicaodigital" type="radio" value="FullHD" required> FullHD (1920x1080)<br>
-            <input name="definicaodigital" type="radio" value="HD" required> HD (1280x720)<br>
-            <input name="definicaodigital" type="radio" value="SD" required> SD (720x480)
+            <input class="form-check-input" name="definicaodigital" type="radio" value="4K" required> 4K (4096x2160)<br>
+            <input class="form-check-input" name="definicaodigital" type="radio" value="2K" required> 2K (2048x1080)<br>
+            <input class="form-check-input" name="definicaodigital" type="radio" value="FullHD" required> FullHD (1920x1080)<br>
+            <input class="form-check-input" name="definicaodigital" type="radio" value="HD" required> HD (1280x720)<br>
+            <input class="form-check-input" name="definicaodigital" type="radio" value="SD" required> SD (720x480)
           </div>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.03 - Janela de exibição final</label>
           <div class="form-control">
-            <input name="janela" type="radio" value="1.78 (scopeinflat)" required>1.78 (Digital HD - Scope dentro do Flat/16:9)<br>
-            <input name="janela" type="radio" value="2.39 (DCP_scope)" required> 2.39 (DCP scope)<br>
-            <input name="janela" type="radio" value="1.85 (DCP_flat)" required> 1.85 (DCP flat)<br>
-            <input name="janela" type="radio" value="1.90 (DCP_full)" required> 1.90 (DCP full)<br>
-            <input name="janela" type="radio" value="1.33 (35_planoantigo)" required> 1.33 (35mm antigo)<br>
-            <input name="janela" type="radio" value="1.66 (35_plano)" required> 1.66 (35mm)<br>
-            <input name="janela" type="radio" value="1.85 (35_panoramico)" required> 1.85 (35mm)<br>
-            <input name="janela" type="radio" value="2.35 (35_scope)" required> 2.35 (35mm scope)<br>
-            <input name="janela" type="radio" value="1.33 (DIG_sd - 4:3)" required> 1.33 (Digital SD - 4:3)<br>
-            <input name="janela" type="radio" value="1.78 (DIG_hd - 16:9)" required> 1.78 (Digital HD - 16:9)
+            <input class="form-check-input" name="janela" type="radio" value="1.78 (scopeinflat)" required>1.78 (Digital HD - Scope dentro do Flat/16:9)<br>
+            <input class="form-check-input" name="janela" type="radio" value="2.39 (DCP_scope)" required> 2.39 (DCP scope)<br>
+            <input class="form-check-input" name="janela" type="radio" value="1.85 (DCP_flat)" required> 1.85 (DCP flat)<br>
+            <input class="form-check-input" name="janela" type="radio" value="1.90 (DCP_full)" required> 1.90 (DCP full)<br>
+            <input class="form-check-input" name="janela" type="radio" value="1.33 (35_planoantigo)" required> 1.33 (35mm antigo)<br>
+            <input class="form-check-input" name="janela" type="radio" value="1.66 (35_plano)" required> 1.66 (35mm)<br>
+            <input class="form-check-input" name="janela" type="radio" value="1.85 (35_panoramico)" required> 1.85 (35mm)<br>
+            <input class="form-check-input" name="janela" type="radio" value="2.35 (35_scope)" required> 2.35 (35mm scope)<br>
+            <input class="form-check-input" name="janela" type="radio" value="1.33 (DIG_sd - 4:3)" required> 1.33 (Digital SD - 4:3)<br>
+            <input class="form-check-input" name="janela" type="radio" value="1.78 (DIG_hd - 16:9)" required> 1.78 (Digital HD - 16:9)
           </div>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.04 - Cor  de exibição final</label>
           <div class="form-control">
-            <input name="cor" type="radio" value="Cor" required> Cor<br>
-            <input name="cor" type="radio" value="P&B" required> P&B <br>
-            <input name="cor" type="radio" value="Cor e P&B" required> Cor / P&B
+            <input class="form-check-input" name="cor" type="radio" value="Cor" required> Cor<br>
+            <input class="form-check-input" name="cor" type="radio" value="P&B" required> P&B <br>
+            <input class="form-check-input" name="cor" type="radio" value="Cor e P&B" required> Cor / P&B
           </div>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.05 - Som  de exibição final</label>
           <div class="form-control">
-            <input name="som" type="radio" value="Dolby Atmos" required> Dolby Atmos<br>
-            <input name="som" type="radio" value="Barco Auro3D 11.1" required> Barco Auro3D 11.1<br>
-            <input name="som" type="radio" value="Dolby Digital EX 7.1" required> Dolby Digital EX 7.1<br>
-            <input name="som" type="radio" value="Dolby Digital EX 6.1" required> Dolby Digital EX 6.1<br>
-            <input name="som" type="radio" value="Digital 5.1" required> Digital 5.1<br>
-            <input name="som" type="radio" value="Digital 5.0" required> Digital 5.0 <br>
-            <input name="som" type="radio" value="Dolby SR 5.1" required> Dolby SR 5.1<br>
-            <input name="som" type="radio" value="Stereo 2.0" required> Stereo 2.0 <br>
-            <input name="som" type="radio" value="Mono 1.0" required> Mono 1.0<br>
-            <input name="som" type="radio" value="Mudo" required> Mudo
+            <input class="form-check-input" name="som" type="radio" value="Dolby Atmos" required> Dolby Atmos<br>
+            <input class="form-check-input" name="som" type="radio" value="Barco Auro3D 11.1" required> Barco Auro3D 11.1<br>
+            <input class="form-check-input" name="som" type="radio" value="Dolby Digital EX 7.1" required> Dolby Digital EX 7.1<br>
+            <input class="form-check-input" name="som" type="radio" value="Dolby Digital EX 6.1" required> Dolby Digital EX 6.1<br>
+            <input class="form-check-input" name="som" type="radio" value="Digital 5.1" required> Digital 5.1<br>
+            <input class="form-check-input" name="som" type="radio" value="Digital 5.0" required> Digital 5.0 <br>
+            <input class="form-check-input" name="som" type="radio" value="Dolby SR 5.1" required> Dolby SR 5.1<br>
+            <input class="form-check-input" name="som" type="radio" value="Stereo 2.0" required> Stereo 2.0 <br>
+            <input class="form-check-input" name="som" type="radio" value="Mono 1.0" required> Mono 1.0<br>
+            <input class="form-check-input" name="som" type="radio" value="Mudo" required> Mudo
           </div>
         </div>
         <div class="input-group input-group-sm mb-3">
@@ -386,8 +386,8 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">3.3.06 - Estará disponível para entrevistas por telefone ou email?</label>
           <div class="form-control">
-            <input name="diretor_disponivel" type="radio" value="sim"> Sim<br>
-            <input name="diretor_disponivel" type="radio" value="não"> Não
+            <input class="form-check-input" name="diretor_disponivel" type="radio" value="sim"> Sim<br>
+            <input class="form-check-input" name="diretor_disponivel" type="radio" value="não"> Não
           </div>
         </div>
         <hr style="height:5px;">
