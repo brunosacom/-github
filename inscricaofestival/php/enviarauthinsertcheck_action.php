@@ -211,10 +211,12 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 					//Ask for HTML-friendly debug output
 					$mail->Debugoutput = 'html';
 
-					//Set the hostname of the mail server
-					$mail->Host = 'smtp.bruno-sa.com';
+					// servidor SMTP
+					$mail->Host = $empresa_smtp; 
 
-					//Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
+					// usuário, senha e porta do SMTP
+					$mail->Username = $empresa_username;
+					$mail->Password = $empresa_password;
 					$mail->Port = 587;
 
 					//Set the encryption system to use - ssl (deprecated) or tls
@@ -222,12 +224,6 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
 					//Whether to use SMTP authentication
 					$mail->SMTPAuth = true;
-
-					//Username to use for SMTP authentication - use full email address for gmail
-					$mail->Username = "formulario@bruno-sa.com";
-
-					//Password to use for SMTP authentication
-					$mail->Password = "Bb852963";
 
 					//Set who the message is to be sent from
 					$mail->setFrom($remetente, $nomeRemetente);
