@@ -3,7 +3,7 @@
 <!DOCTYPE HTML>
     <html lang="pt-br">
       <head>
-        <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php'; ?>
+        <?php include_once $_SERVER['DOCUMENT_ROOT'].'/js/analyticstracking.js'; ?>
         <!-- Required meta tags -->
         <meta charset="utf-8">
 

@@ -32,7 +32,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 <html lang="pt-br">
 
   <head>
-    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php'; ?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/js/analyticstracking.js'; ?>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
