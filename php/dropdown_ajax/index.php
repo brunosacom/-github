@@ -5,6 +5,7 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
 <!DOCTYPE HTML>
 <html lang="pt-br">
   <head>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php'; ?>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="author" content="Bruno Sá - www.bruno-sa.com">

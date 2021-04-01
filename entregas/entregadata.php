@@ -30,7 +30,7 @@
 <html lang="pt-br">
 
   <head>
-    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/js/analyticstracking.js'; ?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php'; ?>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">

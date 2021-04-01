@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/js/analyticstracking.js'; ?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php'; ?>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="author" content="Bruno Sá - www.bruno-sa.com">
@@ -11,11 +11,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-    <title>include GitHub > UolHost - Bruno Sá</title>
+    <title>GitHub > UolHost - Bruno Sá</title>
   </head>
   <body style="font-family:Didact Gothic; color:#FFF; background-color:#333;">
     <div class="container">
-      <h1>include GitHub > UolHost - Bruno Sá</h1>
+      <h1>GitHub > UolHost - Bruno Sá</h1>
       <h3>Integração do GitHub com www.bruno-sa.com</h3>
       <div><a href="php/dropdown_ajax/">Dropdown Ajax JS</a></div>
       <div><a href="php/dropdown_jqueryajax/">Dropdown Ajax JQuery</a></div>
