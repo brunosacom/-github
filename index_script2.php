@@ -2,7 +2,6 @@
 <html lang="pt-br">
   <head>
     <script type='text/javascript' src='//www.bruno-sa.com/js/analyticstracking.js' id='Google-Analytics-js'></script>
-    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/js/analyticstracking.js'; ?>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="author" content="Bruno Sá - www.bruno-sa.com">
