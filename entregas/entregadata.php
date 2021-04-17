@@ -27,7 +27,7 @@
 ?>
 
 <!DOCTYPE HTML>
-<html lang="pt-br">
+<html lang="pt-BR">
 
   <head>
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php'; ?>
@@ -109,6 +109,8 @@
           <div id="entregaondeHelp" class="form-text">Diga onde foi feita a entrega</div>
           <label for="entrega_quemoutro" class="form-label">4b. Se não foi o cliente, qual o nome de quem recebeu?</label>
           <input type="text" class="form-control" name="entrega_quemoutro" id="entrega_quemoutro" size="50" maxlength="100">
+          <label for="entrega_quemoutroid" class="form-label">4c. ID de quem recebeu?</label>
+          <input type="text" class="form-control" name="entrega_quemoutroid" id="entrega_quemoutroid" size="50" maxlength="100">
           <div id="entregaentregadorHelp" class="form-text">preencha o nome de quem recebeu se não foi a/o cliente</div>
         </div>
         <div class="mb-3">
@@ -120,7 +122,8 @@
           <input type="reset" class="btn btn-secondary" name="reset" value="apagar">
         </div>
       </form>
-      <div class='row justify-content-center'>
+      <hr>
+      <div class='d-flex justify-content-center'>
         <div><small><small>Desenvolvido por Bruno Sá - <a href='//www.bruno-sa.com' target='_blank'>www.bruno-sa.com</a></small></small></div>
       </div>
     </div>

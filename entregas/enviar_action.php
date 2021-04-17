@@ -1,7 +1,7 @@
 <?php require $_SERVER['DOCUMENT_ROOT'].'/php/mysqli_connect.php'; //MySqlDB connect brunosacom ?>
 
 <!DOCTYPE HTML>
-    <html lang="pt-br">
+    <html lang="pt-BR">
       <head>
         <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php'; ?>
         <!-- Required meta tags -->
@@ -63,7 +63,7 @@
             //montar campos do email
             $assunto = "[".$empresa_sigla."]: Entrega #".$entrega_numeropedido."";
       
-            $corpo = "Entregador: <b>".$entrega_entregador."</b><br/>Numero do Pedido: <b>".$entrega_numeropedido."</b><br/>Comunicacao: <b>".$entrega_comunicacao."</b><br/>Onde entregou: <b>".$entrega_onde."</b><br/>Outro: <b>".$entrega_quemoutro."</b><br/>Recibo Imagem: <b>".$entrega_imgrecibo."</b><br/>TimeStamp envio: <b>".$current_timestamp."</b><br/>WhatsApp Entregue: <b>".$whatsapp_entregue."</b><br/>Whatsapp recebimento: <b>".$whatsapp_recebimento."</b><br/>";
+            $corpo = "Entregador: <b>".$entrega_entregador."</b><br/>Numero do Pedido: <b>".$entrega_numeropedido."</b><br/>Comunicacao: <b>".$entrega_comunicacao."</b><br/>Onde entregou: <b>".$entrega_onde."</b><br/>Outro: <b>".$entrega_quemoutro."</b><br/>Outro ID: <b>".$entrega_quemoutroid."</b><br/>Recibo Imagem: <b>".$entrega_imgrecibo."</b><br/>TimeStamp envio: <b>".$current_timestamp."</b><br/>WhatsApp Entregue: <b>".$whatsapp_entregue."</b><br/>Whatsapp recebimento: <b>".$whatsapp_recebimento."</b><br/>";
 
       
 
@@ -149,7 +149,7 @@
             }
 
             //update MySQL database
-            $sql="UPDATE bembos_entrega SET charset = '$charset', entrega_status = '$entrega_status', entrega_entregador = '$entrega_entregador', entrega_onde = '$entrega_onde', entrega_quemoutro = '$entrega_quemoutro', entrega_comunicacao = '$entrega_comunicacao', entrega_imgrecibo = '$entrega_imgrecibo', entrega_timestamp = '$current_timestamp' WHERE pedido_numero = '$entrega_numeropedido' AND empresa_sigla = '$empresa_sigla'";
+            $sql="UPDATE bembos_entrega SET charset = '$charset', entrega_status = '$entrega_status', entrega_entregador = '$entrega_entregador', entrega_onde = '$entrega_onde', entrega_quemoutro = '$entrega_quemoutro', entrega_quemoutroid = '$entrega_quemoutroid', entrega_comunicacao = '$entrega_comunicacao', entrega_imgrecibo = '$entrega_imgrecibo', entrega_timestamp = '$current_timestamp' WHERE pedido_numero = '$entrega_numeropedido' AND empresa_sigla = '$empresa_sigla'";
 
             if (!mysqli_query($con, $sql)) {
               die('Error: ' . mysqli_error($con));
@@ -184,10 +184,12 @@
             Comunicação com cliente: <b><?php echo $entrega_comunicacao ?></b><br/>
             Onde entregou: <b><?php echo $entrega_onde ?></b><br/>
             Outro: <b><?php echo $entrega_quemoutro ?></b><br/>
+            Outro ID: <b><?php echo $entrega_quemoutroid ?></b><br/>
             Recibo Imagem: <b><?php echo $entrega_imgrecibo ?></b><br/>
             TimeStamp envio: <b><?php echo $current_timestamp ?></b>
           </p>
-          <div class="row justify-content-center">
+          <hr>
+          <div class="d-flex justify-content-center">
             <div><small><small>Desenvolvido por Bruno Sá - <a href="//www.bruno-sa.com" target="_blank">www.bruno-sa.com</a></small></small></div>
           </div>
         </div>

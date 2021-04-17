@@ -29,7 +29,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 ?>
 
 <!DOCTYPE HTML>
-<html lang="pt-br">
+<html lang="pt-BR">
 
   <head>
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php'; ?>
@@ -42,8 +42,6 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-
   </head>
 
   <body style="font-family: Didact Gothic;">
@@ -85,6 +83,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <input type="reset" class="btn btn-secondary" name="reset" value="apagar">
         </div>
       </form>
+      <hr>
       <div class='row justify-content-center'>
         <div>
           <small>
