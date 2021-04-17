@@ -21,6 +21,7 @@
             $entrega_numeropedido = $_POST['entrega_numeropedido'];
             $entrega_onde = $_POST['entrega_onde'];
             $entrega_quemoutro = $_POST['entrega_quemoutro'];
+            $entrega_quemoutroid = $_POST['entrega_quemoutroid'];
             $entrega_comunicacao = $_POST['entrega_comunicacao'];
             $entrega_imgrecibo = $_FILES['entrega_imgrecibo']['name'];
             $cliente_celular = $_POST['cliente_celular'];
