@@ -97,10 +97,10 @@
               // usuário, senha e porta do SMTP
               $mail->Username = $empresa_username;
               $mail->Password = $empresa_password;
-              $mail->Port = 587;
+              $mail->Port = $empresa_port;
               
               // tipo de criptografia: "tls" ou "ssl"
-              //$mail->SMTPSecure = 'tls';
+              $mail->SMTPSecure = $empresa_smtpsecure;
               
               // email e nome do remetente
               $mail->setFrom($empresa_emailfrom, $empresa_emailfromnome);
