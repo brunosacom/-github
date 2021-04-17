@@ -83,7 +83,7 @@
               // 2 = mensagens do cliente e do servidor SMTP
               // 3 = igual o 2, incluindo detalhes da conexão
               // 4 = igual o 3, inlcuindo mensagens de debug baixo-nível
-              $mail->SMTPDebug = 2;
+              $mail->SMTPDebug = 4;
         
               // utilizar SMTP
               $mail->isSMTP();
