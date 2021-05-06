@@ -111,7 +111,7 @@
           <input type="text" class="form-control" name="entrega_quemoutro" id="entrega_quemoutro" size="50" maxlength="100">
           <label for="entrega_quemoutroid" class="form-label">4c. ID de quem recebeu?</label>
           <input type="text" class="form-control" name="entrega_quemoutroid" id="entrega_quemoutroid" size="50" maxlength="100">
-          <div id="entregaentregadorHelp" class="form-text">preencha o nome de quem recebeu se não foi a/o cliente</div>
+          <div id="entregaentregadorHelp" class="form-text">preencha o nome e identidade de quem recebeu se não foi a/o cliente</div>
         </div>
         <div class="mb-3">
           <label for="entrega_imgrecibo" class="form-label">5. Foto do Recibo:</label>
