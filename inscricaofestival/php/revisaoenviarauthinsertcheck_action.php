@@ -39,7 +39,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 		<link href="https://fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
 
 		<!-- Bootstrap CSS -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	</head>
 
 	<body style="font-family:Didact Gothic; color:#FFF; background-color:#333;">
@@ -340,7 +340,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
 			<!-- Option 2: Separate Popper and Bootstrap JS -->
 			<script src="https://unpkg.com/@popperjs/core@2"></script>
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 		</div>
 	</body>
 </html>
