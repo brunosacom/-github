@@ -7,9 +7,7 @@
     <meta name="author" content="Bruno Sá - www.bruno-sa.com">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
-
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/bootstrap_head.php'; ?>
-    
     <title>GitHub > UolHost - Bruno Sá</title>
   </head>
   <body style="font-family:Didact Gothic; color:#FFF; background-color:#333;">
