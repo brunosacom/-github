@@ -1,7 +1,6 @@
 <?php 
 require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
 ?>
-
 <!DOCTYPE HTML>
 <html lang="pt-br">
   <head>
@@ -11,10 +10,7 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
     <meta name="author" content="Bruno Sá - www.bruno-sa.com">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/bootstrap_head.php'; ?>
     <title>DropDown using Ajax JS</title>
   </head>
 
@@ -94,14 +90,6 @@ require $_SERVER['DOCUMENT_ROOT']."/php/mysqli_connect.php";
         xhttp.send();
       };
     </script>
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    -->
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/bootstrap_body.php'; ?>
   </body>
 </html>
