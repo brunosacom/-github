@@ -1,43 +1,20 @@
-<?php
-$con = mysqli_connect("dbmy0046.whservidor.com","ebcinesa_4","3gd8h3wqEG","ebcinesa_4");
-if (!$con)
-  {
-  die('Could not connect: ' . mysqli_error());
-  }
-?>
+<?php require $_SERVER['DOCUMENT_ROOT'].'/php/mysqli_connect.php'; //MySqlDB connect brunosacom ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
+<html lang="pt-BR">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="Keywords" content="Grupo Esta&ccedil;&atilde;o, Circuito Esta&ccedil;&atilde;o, Programa&ccedil;&atilde;o, Esta&ccedil;&atilde;o, Esta&ccedil;&atilde;o Virtual, esta&ccedil;&atilde;o virtual, estacao virtual, filmes, cinema" />
-<meta name="Description" content="Grupo Esta&ccedil;&atilde;o" />
-<meta name="Author" content="Grupo Esta&ccedil;&atilde;o" />
-<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> 
-<style>
-body {
-font-family: 'Muli', sans-serif;}</style>
-<title>Grupo Estação</title>
-<style type="text/css">
-<!--
--->
-</style>
-<script type="text/javascript">
+        <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php'; ?>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title><?php echo $empresa_nome; ?> - ManutenÃ§Ã£o</title>
+        <link href="https://fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
+        <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/bootstrap_head.php'; ?>
+    </head>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-9870195-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-</head>
-
-<body style="font-family: 'Muli', serif;">
+    <body style="font-family: Didact Gothic;">
+        <div class="container">
+        <!-- Content here -->
     
 <?php
 
@@ -105,7 +82,7 @@ $mail->AddReplyTo($email_manutencao_grupoestacao, $cinema_manutencao_grupoestaca
 
 if(!$mail->Send()){
 
-echo '<p><b> Erro ao enviar formulário: '. print($mail->ErrorInfo);
+echo '<p><b> Erro ao enviar formulï¿½rio: '. print($mail->ErrorInfo);
 
 }else{
 

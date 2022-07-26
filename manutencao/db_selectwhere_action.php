@@ -1,32 +1,21 @@
-<?php
-$con = mysqli_connect("dbmy0046.whservidor.com","ebcinesa_4","3gd8h3wqEG","ebcinesa_4");
-if (!$con)
-  {
-  die('Could not connect: ' . mysqli_error());
-  }
-?>
+<?php require $_SERVER['DOCUMENT_ROOT'].'/php/mysqli_connect.php'; //MySqlDB connect brunosacom ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
+<html lang="pt-BR">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Grupo Estação</title>
-<script type="text/javascript">
+        <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php'; ?>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title><?php echo $empresa_nome; ?> - Manutenção</title>
+        <link href="https://fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
+        <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/bootstrap_head.php'; ?>
+    </head>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-9870195-1']);
-  _gaq.push(['_trackPageview']);
+    <body style="font-family: Didact Gothic;">
+        <div class="container">
+        <!-- Content here -->
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-</head>
-
-<body>
 <?php
 
 $complexo_manutencao=$_POST[email_manutencao_grupoestacao];

@@ -1,5 +1,4 @@
 <?php require $_SERVER['DOCUMENT_ROOT'].'/php/mysqli_connect.php'; //MySqlDB connect brunosacom ?>
-?>
 
 <?php
 
