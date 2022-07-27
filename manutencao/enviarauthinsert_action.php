@@ -21,35 +21,36 @@
 if(isset($_POST['submit'])) {
 
 $charset = $_POST['charset'];
-$cinema_manutencao_grupoestacao = addslashes($_POST['cinema_manutencao_grupoestacao']);
-$urgencia_manutencao_grupoestacao = addslashes($_POST['urgencia_manutencao_grupoestacao']);
-$area_manutencao_grupoestacao = addslashes($_POST['area_manutencao_grupoestacao']);
-$gerente_manutencao_grupoestacao = addslashes($_POST['gerente_manutencao_grupoestacao']);
-$tiposolicitacao_manutencao_grupoestacao = addslashes($_POST['tiposolicitacao_manutencao_grupoestacao']);
-$relateproblema_manutencao_grupoestacao = addslashes($_POST['relateproblema_manutencao_grupoestacao']);
-$localizacao_manutencao_grupoestacao = addslashes($_POST['localizacao_manutencao_grupoestacao']);
-$status_manutencao_grupoestacao = addslashes($_POST['status_manutencao_grupoestacao']);
-$email_manutencao_grupoestacao = addslashes($_POST['email_manutencao_grupoestacao']);
+$manutencao_status = addslashes($_POST['manutencao_status']);
+$manutencao_email = addslashes($_POST['manutencao_email']);
+$manutencao_cinema = addslashes($_POST['manutencao_cinema']);
+$manutencao_area = addslashes($_POST['manutencao_area']);
+$manutencao_gerente = addslashes($_POST['manutencao_gerente']);
+$manutencao_tiposolicitacao = addslashes($_POST['manutencao_tiposolicitacao']);
+$manutencao_urgencia = addslashes($_POST['manutencao_urgencia']);
+$manutencao_relateproblema = addslashes($_POST['manutencao_relateproblema']);
+$manutencao_localizacao = addslashes($_POST['manutencao_localizacao']);
 
 
-$caixaPostalServidorNome = "".$cinema_manutencao_grupoestacao." Manutencao";
+
+$caixaPostalServidorNome = "".$manutencao_cinema." Manutencao";
 $caixaPostalServidorEmail = 'formulario@grupoestacao.com.br';
 $caixaPostalServidorSenha = 'Estacao12345';
 
-$assunto = "[[".$urgencia_manutencao_grupoestacao." - ".$cinema_manutencao_grupoestacao." - ".$area_manutencao_grupoestacao." - ".$tiposolicitacao_manutencao_grupoestacao."]]";
+$assunto = "[[".$manutencao_cinema." - ".$manutencao_area." - ".$manutencao_tiposolicitacao."]]";
 
 $mensagemConcatenada = 'LOCALIZACAO'.'<br/>'; 
-$mensagemConcatenada .= 'Cinema: '.$cinema_manutencao_grupoestacao.'<br/>';
-$mensagemConcatenada .= 'Area: '.$area_manutencao_grupoestacao.'<br/>';
-$mensagemConcatenada .= 'Localizacao: '.$localizacao_manutencao_grupoestacao.'<br/>';
-$mensagemConcatenada .= 'Tipo: '.$tiposolicitacao_manutencao_grupoestacao.'<br/><br/>';
+$mensagemConcatenada .= 'Cinema: '.$manutencao_cinema.'<br/>';
+$mensagemConcatenada .= 'Area: '.$manutencao_area.'<br/>';
+$mensagemConcatenada .= 'Localizacao: '.$manutencao_localizacao.'<br/>';
+$mensagemConcatenada .= 'Tipo: '.$manutencao_tiposolicitacao.'<br/><br/>';
 
 $mensagemConcatenada .= 'DESCRICAO'.'<br/>';
-$mensagemConcatenada .= 'Relato: '.$relateproblema_manutencao_grupoestacao.'<br/><br/>';
-$mensagemConcatenada .= 'Status: '.$status_manutencao_grupoestacao.'<br/><br/>';
+$mensagemConcatenada .= 'Relato: '.$manutencao_relateproblema.'<br/><br/>';
+$mensagemConcatenada .= 'Status: '.$manutencao_status.'<br/><br/>';
 
 $mensagemConcatenada .= 'RESPONSAVEL'.'<br/>';
-$mensagemConcatenada .= 'Gerente: '.$gerente_manutencao_grupoestacao.'<br/><br/>';
+$mensagemConcatenada .= 'Gerente: '.$manutencao_gerente.'<br/><br/>';
 
 
 /*********************************** A PARTIR DAQUI NAO ALTERAR ************************************/
@@ -75,14 +76,14 @@ $mail->Body  = $mensagemConcatenada;
 /*********************************** EMAILS QUE RECEBEM O FORM ************************************/
 
 
-$mail->AddAddress('manutencao.rj@ebcine.com.br', 'Manutencao RJ');
+$mail->AddAddress('bruno@bruno-sa.com', 'Manutencao RJ');
 
-$mail->AddReplyTo($email_manutencao_grupoestacao, $cinema_manutencao_grupoestacao);
+$mail->AddReplyTo($manutencao_email, $manutencao_cinema);
 
 
 if(!$mail->Send()){
 
-echo '<p><b> Erro ao enviar formul�rio: '. print($mail->ErrorInfo);
+echo '<p><b> Erro ao enviar formulário: '. print($mail->ErrorInfo);
 
 }else{
 
@@ -95,15 +96,15 @@ echo 'Mail enviado com sucesso!<br/>';
 }
 
 
-$sql="INSERT INTO manutencao_grupoestacao (charset, cinema_manutencao_grupoestacao, urgencia_manutencao_grupoestacao, area_manutencao_grupoestacao, gerente_manutencao_grupoestacao, tiposolicitacao_manutencao_grupoestacao, relateproblema_manutencao_grupoestacao, localizacao_manutencao_grupoestacao, status_manutencao_grupoestacao, email_manutencao_grupoestacao)
+$sql="INSERT INTO bembos_manutencao (charset, manutencao_cinema, manutencao_urgencia, manutencao_area, manutencao_gerente, manutencao_tiposolicitacao, manutencao_relateproblema, manutencao_localizacao, manutencao_status, manutencao_email)
 VALUES
-('$charset','$cinema_manutencao_grupoestacao','$urgencia_manutencao_grupoestacao','$area_manutencao_grupoestacao','$gerente_manutencao_grupoestacao','$tiposolicitacao_manutencao_grupoestacao','$relateproblema_manutencao_grupoestacao','$localizacao_manutencao_grupoestacao','$status_manutencao_grupoestacao','$email_manutencao_grupoestacao')";
+('$charset','$manutencao_cinema','$manutencao_urgencia','$manutencao_area','$manutencao_gerente','$manutencao_tiposolicitacao','$manutencao_relateproblema','$manutencao_localizacao','$manutencao_status','$manutencao_email')";
 
 if (!mysqli_query($con, $sql))
   {
   die('Error: ' . mysqli_error($con));
   }
-echo "<br>Obrigado por enviar a solicitacao/manutencao de ".$cinema_manutencao_grupoestacao.".<br>";
+echo "<br>Obrigado por enviar a solicitacao/manutencao de ".$manutencao_cinema.".<br>";
 
 
 
