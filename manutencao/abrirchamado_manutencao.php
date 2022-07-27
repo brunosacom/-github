@@ -49,13 +49,16 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
       </div>
       <div class="mb-3">
         <h1>Abrir Chamado Manutenção</h1>
-        <form action="enviarauthinsert_action.php" method="post" name="manutencao" id="manutencao">
+        <form action="enviarauthinsert_action.php" method="post" name="bembos_manutencao" id="bembos_manutencao">
         <input name="charset" type="hidden" value="utf-8">
         <input name="empresa_sigla" type="hidden" id="empresa_sigla" value="<?php echo $empresa_sigla; ?>">
+        <input name="manutencao_status" type="hidden" value="aberto">
           <p>
             <strong>Registre o pedido de manutenção</strong> </p>
+          <p>E-MAIL:<br>
+          <input type="email" name="manutencao_email"></p>
           <p>CINEMA / CAFE:<br>
-            <select name="cinema_manutencao_grupoestacao" id="cinema_manutencao_grupoestacao">
+            <select name="manutencao_cinema" id="manutencao_cinema">
               <option value="" selected="selected">Selecione...</option>
               <option value="BOTcafe">BOTcafe</option>
               <option value="BOTcinema">BOTcinema</option>
@@ -69,8 +72,8 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
             <br>
 
-            <p>LOCAL:<br>
-              <select name="local_manutencao_grupoestacao" id="local_manutencao_grupoestacao">
+            <p>AREA:<br>
+              <select name="manutencao_area" id="manutencao_area">
                 <option value="" selected="selected">Selecione...</option>
                 <option value="salacinema">Salas de Cinema</option>
                 <option value="estoque">Estoque</option>
@@ -82,12 +85,12 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               <br>
 
               <p>GERENTE:<br>
-                <input name="gerente_manutencao_grupoestacao" type="text" id="gerente_manutencao_grupoestacao" size="55" required="required">
+                <input name="manutencao_gerente" type="text" id="manutencao_gerente" size="55" required="required">
                 <br>
 
 
                 <p>TIPO DE SOLICITAÇÃO:<br>
-                  <select name="tiposolicitacao_manutencao_grupoestacao" id="tiposolicitacao_manutencao_grupoestacao">
+                  <select name="manutencao_tiposolicitacao" id="manutencao_tiposolicitacao">
                     <option value="" selected="selected">Selecione...</option>
                     <option value="poltrona">Poltronas de Cinema</option>
                     <option value="estoque">Estoque</option>
@@ -96,12 +99,13 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
                     <option value="areaexterna">Área Externa</option>
                   </select>
                 </p>
-                <p>RELATE O PROBLEMA:<br>
-                  <textarea name="relateproblema_manutencao_grupoestacao" cols="55" rows="4" required id="relateproblema_manutencao_grupoestacao"></textarea>
+                <p>RELATE O PROBLEMA: (urgente? <input type="checkbox" id="manutencao_urgencia"> sim) </input><br>
+                  <textarea name="manutencao_relateproblema" cols="55" rows="4" required id="manutencao_relateproblema"></textarea>
                   <br>
+                </p>
 
                   <p>LOCALIZAÇÃO:<br>
-                    <select name="localizacao_manutencao_grupoestacao" id="localizacao_manutencao_grupoestacao">
+                    <select name="manutencao_localizacao" id="manutencao_localizacao">
                       <option value="" selected="selected">Selecione...</option>
                       <option value="poltrona">Poltronas de Cinema</option>
                       <option value="estoque">Estoque</option>
