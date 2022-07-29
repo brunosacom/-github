@@ -100,7 +100,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
                     <option value="areaexterna">Área Externa</option>
                   </select>
                 </p>
-                <p>RELATE O PROBLEMA: (urgente? <input type="checkbox" id="manutencao_urgencia"> sim) </input><br>
+                <p>RELATE O PROBLEMA: (urgente? <input type="checkbox" id="manutencao_urgencia" value="urgente" > sim) </input><br>
                   <textarea name="manutencao_relateproblema" cols="55" rows="4" required id="manutencao_relateproblema"></textarea>
                   <br>
                 </p>
