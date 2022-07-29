@@ -22,7 +22,7 @@ $complexo_manutencao=$_POST[email_manutencao_grupoestacao];
 $status_manutencao=$_POST[status_manutencao_grupoestacao];
 
 
-$sql = "SELECT * FROM manutencao_grupoestacao WHERE status_manutencao_grupoestacao='$status_manutencao' AND email_manutencao_grupoestacao='$complexo_manutencao' ORDER BY timestamp_manutencao_grupoestacao DESC";
+$sql = "SELECT * FROM bembos_manutencao WHERE manutencao_status='$status_manutencao' AND manutencao_email='$complexo_manutencao' ORDER BY manutencao_timestamp DESC";
 $result = $con->query($sql);
 
 if ($result->num_rows > 0) {
