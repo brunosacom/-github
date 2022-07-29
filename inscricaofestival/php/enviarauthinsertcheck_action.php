@@ -169,7 +169,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 					$destino_endereco = $destino_logradouro . ", " . $destino_numero . " / " . $destino_complemento . " - " . $destino_bairro . " - " . $destino_cidade . " - " . $destino_uf . " | " . $destino_cep;
 
 
-					$remetente = "formulario@bruno-sa.com"; // INSIRA AQUI UM EMAIL CRIADO EM SUA HOSPEDAGEM PARA QUE A MENSAGEM SEJA ENVIADA CORRETAMENTE.
+					$remetente = "form@bruno-sa.com"; // INSIRA AQUI UM EMAIL CRIADO EM SUA HOSPEDAGEM PARA QUE A MENSAGEM SEJA ENVIADA CORRETAMENTE.
 					$nomeRemetente = "Form BEMBOS Inscrição Festival"; // INSIRA AQUI O NOME PARA APARECER NO CAMPO FROM.
 					$destinatario = "inscricao_" . $inscricao . "@bruno-sa.com"; // INSIRA AQUI O ENDEREÇO DO DESTINATÁRIO DO E-MAIL.
 					$assunto = "[INSCRICAO " . $inscricao . " ] " . $titulo_original . ", de " . $diretor . "\r\n";

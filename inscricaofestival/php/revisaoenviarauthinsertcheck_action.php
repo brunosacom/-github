@@ -92,7 +92,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
 
 
-				$remetente = "formulario@bruno-sa.com"; // INSIRA AQUI UM EMAIL CRIADO EM SUA HOSPEDAGEM PARA QUE A MENSAGEM SEJA ENVIADA CORRETAMENTE.
+				$remetente = "form@bruno-sa.com"; // INSIRA AQUI UM EMAIL CRIADO EM SUA HOSPEDAGEM PARA QUE A MENSAGEM SEJA ENVIADA CORRETAMENTE.
 				$nomeRemetente = "Form BEMBOS Revisão Festival"; // INSIRA AQUI O NOME PARA APARECER NO CAMPO FROM.
 				$destinatario = "inscricao_".$inscricao."@bruno-sa.com"; // INSIRA AQUI O ENDEREÇO DO DESTINATÁRIO DO E-MAIL.
 				$assunto = "[REVISAO ".$inscricao." ] ".$titulo_original.", de ".$diretor."\r\n";
