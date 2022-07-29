@@ -38,7 +38,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/bootstrap_head.php'; ?>
     </head>
 
-    <body style="font-family: Didact Gothic;">
+    <body style="font-family: Didact Gothic; color:#FFF; background-color:#333;">
         <div class="container">
             <!-- Content here -->
             <br>

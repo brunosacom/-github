@@ -37,7 +37,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/bootstrap_head.php'; ?>
   </head>
 
-  <body style="font-family: Didact Gothic;">
+  <body style="font-family: Didact Gothic; color:#FFF; background-color:#333;">
     <div class="container">
       <!-- Content here -->
       <br>
@@ -51,32 +51,6 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         <form method="post" action="db_selectwhere_action.php">
           <input name="charset" type="hidden" value="utf-8">
           <input name="empresa_sigla" type="hidden" id="empresa_sigla" value="<?php echo $empresa_sigla; ?>">
-          <div class="mb-3">
-            <label for="folhaponto_matricula" class="form-label">Matrícula do funcionário:</label>
-            <select class="form-select" name="folhaponto_matricula" id="folhaponto_matricula" required>
-              <option value="" selected="selected">Selecione...</option>
-
-              <?php
-              $sql = "SELECT funcionarios_nome, funcionarios_matricula, funcionarios_empresa, funcionarios_ativo FROM bembos_funcionarios WHERE funcionarios_ativo = 1 ORDER BY funcionarios_nome ASC";
-              $result = $con->query($sql);
-
-              if ($result->num_rows > 0) {
-                // output data of each row
-                while ($row = $result->fetch_assoc()) {
-                  echo "<option value=\"" . $row["funcionarios_matricula"] . "\">" . $row["funcionarios_matricula"] . " - " . $row["funcionarios_nome"] . " - " . $row["funcionarios_empresa"] . "</option>";
-                }
-              } else {
-                echo "0 results";
-              }
-              ?>
-
-            </select>
-            <div id="folhaponto_matriculaHelpBlock" class="form-text" required>
-              Escolha o funcionário.
-            </div>
-          </div>
-
-
 
           <table width="300" cellpadding="5" cellspacing="0" bordercolor="#000000">
             <tr>

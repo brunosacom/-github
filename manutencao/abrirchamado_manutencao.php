@@ -39,7 +39,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/bootstrap_head.php'; ?>
   </head>
 
-  <body style="font-family: Didact Gothic;">
+  <body style="font-family: Didact Gothic; color:#FFF; background-color:#333;">
     <div class="container">
       <!-- Content here -->
       <br>
@@ -100,7 +100,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
                     <option value="areaexterna">Área Externa</option>
                   </select>
                 </p>
-                <p>RELATE O PROBLEMA: (urgente? <input type="checkbox" name="manutencao_urgencia" id="manutencao_urgencia" value="urgente" > sim) </input><br>
+                <p>RELATE O PROBLEMA: (urgente? <input type="checkbox" name="manutencao_urgencia" id="manutencao_urgencia" value="URGENTE" > sim) </input><br>
                   <textarea name="manutencao_relateproblema" cols="55" rows="4" required id="manutencao_relateproblema"></textarea>
                   <br>
                 </p>
