@@ -73,7 +73,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
                 <?php
 
 
-                $sql = "SELECT * FROM manutencao_grupoestacao WHERE status_manutencao_grupoestacao='aberto' OR status_manutencao_grupoestacao='emandamento' OR status_manutencao_grupoestacao='aguardando' OR status_manutencao_grupoestacao='concluido' ORDER BY timestamp_manutencao_grupoestacao DESC";
+                $sql = "SELECT * FROM bembos_manutencao WHERE manutencao_status='aberto' OR manutencao_status='emandamento' OR manutencao_status='aguardando' OR manutencao_status='concluido' ORDER BY manutencao_timestamp DESC";
                 $result = $con->query($sql);
 
                 if ($result->num_rows > 0) {
@@ -95,20 +95,20 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
                     // output data of each row
                     while ($row = $result->fetch_assoc()) {
 
-                        $color = trbackground($row["urgencia_manutencao_grupoestacao"]);
-                        $fontcolor = trfontcolor($row["status_manutencao_grupoestacao"]);
+                        $color = trbackground($row["manutencao_urgencia"]);
+                        $fontcolor = trfontcolor($row["manutencao_status"]);
                         echo "<tr style='background: {$color}; color: {$fontcolor}; font-family: verdana; font-size: 70%; '>";
-                        echo "<td>" . $row['timestamp_manutencao_grupoestacao'] . "</td>";
-                        echo "<td>" . $row['idmanutencao_grupoestacao'] . "</td>";
-                        echo "<td><b>" . $row['urgencia_manutencao_grupoestacao'] . "</b></td>";
-                        echo "<td>" . $row['cinema_manutencao_grupoestacao'] . "</td>";
-                        echo "<td>" . $row['area_manutencao_grupoestacao'] . "</td>";
-                        echo "<td>" . $row['localizacao_manutencao_grupoestacao'] . "</td>";
-                        echo "<td>" . $row['tiposolicitacao_manutencao_grupoestacao'] . "</td>";
-                        echo "<td>" . $row['relateproblema_manutencao_grupoestacao'] . "</td>";
-                        echo "<td>" . $row['status_manutencao_grupoestacao'] . "</td>";
-                        echo "<td>" . $row['andamento_manutencao_grupoestacao'] . "</td>";
-                        echo "<td>" . $row['updatetimestamp_manutencao_grupoestacao'] . "</td>";
+                        echo "<td>" . $row['manutencao_timestamp'] . "</td>";
+                        echo "<td>" . $row['id_manutencao'] . "</td>";
+                        echo "<td><b>" . $row['manutencao_urgencia'] . "</b></td>";
+                        echo "<td>" . $row['manutencao_cinema'] . "</td>";
+                        echo "<td>" . $row['manutencao_area'] . "</td>";
+                        echo "<td>" . $row['manutencao_localizacao'] . "</td>";
+                        echo "<td>" . $row['manutencao_tiposolicitacao'] . "</td>";
+                        echo "<td>" . $row['manutencao_relateproblema'] . "</td>";
+                        echo "<td>" . $row['manutencao_status'] . "</td>";
+                        echo "<td>" . $row['manutencao_andamento'] . "</td>";
+                        echo "<td>" . $row['manutencao_updatetimestamp'] . "</td>";
                         echo "</tr>";
                     }
                 } else {
