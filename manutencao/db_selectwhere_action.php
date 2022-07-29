@@ -43,11 +43,13 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
 <?php
 
-$complexo_manutencao=$_POST[email_manutencao_grupoestacao];
-$status_manutencao=$_POST[status_manutencao_grupoestacao];
+if (isset($_POST['submit'])) {
 
+$manutencao_email=$_POST[manutencao_email];
+$manutencao_status=$_POST[manutencao_status];
+}
 
-$sql = "SELECT * FROM bembos_manutencao WHERE manutencao_status='$status_manutencao' AND manutencao_email='$complexo_manutencao' ORDER BY manutencao_timestamp DESC";
+$sql = "SELECT * FROM bembos_manutencao WHERE manutencao_status='$manutencao_status' AND manutencao_email='$manutencao_email' ORDER BY manutencao_timestamp DESC";
 $result = $con->query($sql);
 
 if ($result->num_rows > 0) {
