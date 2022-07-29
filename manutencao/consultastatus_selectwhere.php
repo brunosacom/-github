@@ -58,7 +58,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               <td nowrap="nowrap">
                 <select name="email_manutencao_grupoestacao" id="email_manutencao_grupoestacao">
                   <option value="" selected="selected">Selecione...</option>
-                  <option value="estacaobotafogo@grupoestacao.com.br">BOTAFOGO</option>
+                  <option value="bruno.sa.com@gmailcom">BRUNO</option>
                   <option value="estacaogavea@grupoestacao.com.br">GAVEA</option>
                   <option value="estacaoipanema@grupoestacao.com.br">IPANEMA</option>
                   <option value="estacaorio@grupoestacao.com.br">RIO</option>
@@ -71,7 +71,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
                   <option value="" selected="selected">Selecione...</option>
                   <option value="aberto">aberto</option>
                   <option value="emandamento">em andamento</option>
-                  <option value="aguardandopeca">aguardando peca</option>
+                  <option value="aguardando">aguardando peca</option>
                   <option value="concluido">concluido</option>
                 </select>
             </tr>
