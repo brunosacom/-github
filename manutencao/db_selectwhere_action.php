@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
 
 $manutencao_email=$_POST['manutencao_email'];
 $manutencao_status=$_POST['manutencao_status'];
-}
+
 
 $sql = "SELECT * FROM bembos_manutencao WHERE manutencao_status='$manutencao_status' AND manutencao_email='$manutencao_email' ORDER BY manutencao_timestamp DESC";
 $result = $con->query($sql);
@@ -85,7 +85,7 @@ while($row = $result->fetch_assoc()) {
     echo "0 results";
 }
 
-
+}
 
 mysqli_close($con)
 ?>

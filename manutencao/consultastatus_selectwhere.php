@@ -54,7 +54,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
           <table width="300" cellpadding="5" cellspacing="0" bordercolor="#000000">
             <tr>
-              <td nowrap="nowrap">COMPLEXO</td>
+              <td nowrap="nowrap">MAIL</td>
               <td nowrap="nowrap">
                 <select name="manutencao_email" id="manutencao_email_manutencao">
                   <option value="" selected="selected">Selecione...</option>
