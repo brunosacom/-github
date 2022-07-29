@@ -52,7 +52,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
       if (isset($_POST['submit'])) {
 
-        $charset = $_POST['charset'];
+        $manutencao_charset = $_POST['manutencao_charset'];
         $manutencao_status = addslashes($_POST['manutencao_status']);
         $manutencao_email = addslashes($_POST['manutencao_email']);
         $manutencao_cinema = addslashes($_POST['manutencao_cinema']);
@@ -86,7 +86,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
 
         $headers = "MIME-Version: 1.0\r\n";
-        $headers .= "Content-type: text/html; charset=" . $charset . "\r\n";
+        $headers .= "Content-type: text/html; charset=" . $manutencao_charset . "\r\n";
         $headers .= "Reply-To: " . $manutencao_email . "\r\n";
         //$headers .= "Cc: copia@seudominio\r\n"; //CAMPO COPIA OPCIONAL
         //$headers .= "Bcc: copiaoculta@seudominio\r\n"; //CAMPO COPIA OCULTA OPCIONAL

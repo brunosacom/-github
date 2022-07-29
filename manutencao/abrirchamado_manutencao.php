@@ -51,7 +51,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
       <div class="mb-3">
         <h1>Abrir Chamado Manutenção</h1>
         <form action="enviarauthinsert_action.php?emp_sigla='<?php echo $empresa_sigla; ?>'" method="post" name="bembos_manutencao" id="bembos_manutencao">
-        <input name="charset" type="hidden" value="utf-8">
+        <input name="manutencao_charset" type="hidden" value="utf-8">
         <input name="empresa_sigla" type="hidden" id="empresa_sigla" value="<?php echo $empresa_sigla; ?>">
         <input name="manutencao_status" type="hidden" value="aberto">
           <p>
