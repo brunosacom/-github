@@ -103,7 +103,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
 
         //Create a new PHPMailer instance
-        $$mail = new PHPMailer();
+        $mail = new PHPMailer();
 
         //Define Charset
         $mail->CharSet = 'UTF-8';
