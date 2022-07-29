@@ -66,7 +66,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
         $remetente = "formulario@bruno-sa.com"; // INSIRA AQUI UM EMAIL CRIADO EM SUA HOSPEDAGEM PARA QUE A MENSAGEM SEJA ENVIADA CORRETAMENTE.
         $nomeRemetente = "Form BEMBOS Manutenção"; // INSIRA AQUI O NOME PARA APARECER NO CAMPO FROM.
-        $destinatario = "bruno" . "@bruno-sa.com"; // INSIRA AQUI O ENDEREÇO DO DESTINATÁRIO DO E-MAIL.
+        $destinatario = "bruno@bruno-sa.com"; // INSIRA AQUI O ENDEREÇO DO DESTINATÁRIO DO E-MAIL.
         $assunto = "[[" . $manutencao_cinema . " - " . $manutencao_area . " - " . $manutencao_tiposolicitacao . "]]" . "\r\n";
 
         $corpo =
@@ -115,7 +115,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
         // 0 = off (for production use)
         // 1 = client messages
         // 2 = client and server messages
-        $mail->SMTPDebug = 0;
+        $mail->SMTPDebug = 2;
 
         //Ask for HTML-friendly debug output
         $mail->Debugoutput = 'html';
