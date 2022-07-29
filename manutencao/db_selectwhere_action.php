@@ -72,15 +72,16 @@ while($row = $result->fetch_assoc()) {
 
   echo "<tr>";
   echo "<td>" . $row['manutencao_timestamp'] . "</td>";
-  echo "<td>" . $row['manutencao_cinema_manutencao'] . "</td>";
-  echo "<td>" . $row['manutencao_area_manutencao'] . "</td>";
-  echo "<td>" . $row['manutencao_localizacao_manutencao'] . "</td>";
-  echo "<td>" . $row['manutencao_tiposolicitacao_manutencao'] . "</td>";
-  echo "<td>" . $row['manutencao_relateproblema_manutencao'] . "</td>";
-  echo "<td>" . $row['manutencao_status_manutencao'] . "</td>";
-  echo "<td>" . $row['manutencao_andamento_manutencao'] . "</td>";
+  echo "<td>" . $row['manutencao_cinema'] . "</td>";
+  echo "<td>" . $row['manutencao_area'] . "</td>";
+  echo "<td>" . $row['manutencao_localizacao'] . "</td>";
+  echo "<td>" . $row['manutencao_tiposolicitacao'] . "</td>";
+  echo "<td>" . $row['manutencao_relateproblema'] . "</td>";
+  echo "<td>" . $row['manutencao_status'] . "</td>";
+  echo "<td>" . $row['manutencao_andamento'] . "</td>";
   echo "</tr>";
-		
+    echo "<p>" . $manutencao_email . "</p>";
+    echo "<p>" . $manutencao_status . "</p>";
 		
     }
 } else {
