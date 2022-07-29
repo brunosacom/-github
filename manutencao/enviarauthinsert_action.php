@@ -77,7 +77,7 @@
 
 
       //Create a new PHPMailer instance
-      $$mail = new PHPMailer(true);
+      $$mail = new PHPMailer();
 
       //Define Charset
       $mail->CharSet = 'UTF-8';
