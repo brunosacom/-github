@@ -34,6 +34,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $empresa_nome; ?> - Manutenção</title>
+    <link rel="shortcut icon" href="<?php echo $empresa_favicon; ?>">
     <link href="https://fonts.googleapis.com/css?family=Didact Gothic" rel="stylesheet">
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/bootstrap_head.php'; ?>
   </head>
@@ -49,7 +50,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
       </div>
       <div class="mb-3">
         <h1>Abrir Chamado Manutenção</h1>
-        <form action="enviarauthinsert_action.php" method="post" name="bembos_manutencao" id="bembos_manutencao">
+        <form action="enviarauthinsert_action.php?emp_sigla='<?php echo $empresa_sigla; ?>'" method="post" name="bembos_manutencao" id="bembos_manutencao">
         <input name="charset" type="hidden" value="utf-8">
         <input name="empresa_sigla" type="hidden" id="empresa_sigla" value="<?php echo $empresa_sigla; ?>">
         <input name="manutencao_status" type="hidden" value="aberto">
