@@ -80,10 +80,11 @@ while($row = $result->fetch_assoc()) {
   echo "<td>" . $row['manutencao_status'] . "</td>";
   echo "<td>" . $row['manutencao_andamento'] . "</td>";
   echo "</tr>";
-    echo "<p>" . $manutencao_email . "</p>";
-    echo "<p>" . $manutencao_status . "</p>";
 		
     }
+    echo "</table>";
+    echo "<p>" . $manutencao_email . "</p>";
+    echo "<p>" . $manutencao_status . "</p>";
 } else {
     echo "0 results";
 }
