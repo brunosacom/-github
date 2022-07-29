@@ -165,9 +165,9 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
       }
 
 
-      $sql = "INSERT INTO bembos_manutencao (charset, manutencao_cinema, manutencao_urgencia, manutencao_area, manutencao_gerente, manutencao_tiposolicitacao, manutencao_relateproblema, manutencao_localizacao, manutencao_status, manutencao_email)
+      $sql = "INSERT INTO bembos_manutencao (manutencao_charset, manutencao_cinema, manutencao_urgencia, manutencao_area, manutencao_gerente, manutencao_tiposolicitacao, manutencao_relateproblema, manutencao_localizacao, manutencao_status, manutencao_email)
       VALUES
-      ('$charset','$manutencao_cinema','$manutencao_urgencia','$manutencao_area','$manutencao_gerente','$manutencao_tiposolicitacao','$manutencao_relateproblema','$manutencao_localizacao','$manutencao_status','$manutencao_email')";
+      ('$manutencao_charset','$manutencao_cinema','$manutencao_urgencia','$manutencao_area','$manutencao_gerente','$manutencao_tiposolicitacao','$manutencao_relateproblema','$manutencao_localizacao','$manutencao_status','$manutencao_email')";
 
       if (!mysqli_query($con, $sql)) {
         die('Error: ' . mysqli_error($con));
