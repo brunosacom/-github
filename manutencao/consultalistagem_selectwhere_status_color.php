@@ -59,7 +59,7 @@
                                 <span class="bg-success">VERDE - ADIAVEL</span>
                             </div>
                             <div>
-                                TEXTO: <span class="text-primary">PRETO - ABERTO</span> |
+                                TEXTO: <span class="text-body">PRETO - ABERTO</span> |
                                 <span class="text-success">VERDE - EM ANDAMENTO</span> |
                                 <span class="text-danger">VERMELHO - AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO</span> |
                                 <span class="text-secondary">CINZA - CONCLUIDO</span>
