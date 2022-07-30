@@ -103,7 +103,7 @@
                         $classtextcolor = classtextcolor($row["manutencao_status"]);
                         $color = trbackground($row["manutencao_urgencia"]);
                         $fontcolor = trfontcolor($row["manutencao_status"]);
-                        echo "  <tr class='$classtablecolor $classtextcolor' style='background: {$color}; color: {$fontcolor}; font-size: 70%; '>";
+                        echo "  <tr class='$classtablecolor $classtextcolor'>";
                         echo "      <td>" . $row['manutencao_timestamp'] . "</td>";
                         echo "      <td>" . $row['id_manutencao'] . "</td>";
                         echo "      <td><b>" . $row['manutencao_urgencia'] . "</b></td>";
