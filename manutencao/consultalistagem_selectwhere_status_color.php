@@ -111,6 +111,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
                         echo "<td>" . $row['manutencao_updatetimestamp'] . "</td>";
                         echo "</tr>";
                     }
+                    echo "</table>";
                 } else {
                     echo "0 results";
                 }
