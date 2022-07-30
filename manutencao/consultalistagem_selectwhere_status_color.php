@@ -79,20 +79,23 @@
                 if ($result->num_rows > 0) {
 
                     echo 
-                    "<table border='1'>
-                        <tr style='font-family: verdana; font-size: 70%;' >
-                            <th>DATA e HORA abertura</th>
-                            <th>ID PEDIDO</th>
-                            <th>URGENCIA</th>
-                            <th>CINEMA / CAFE</th>
-                            <th>AREA</th>
-                            <th>LOCALIZACAO</th>
-                            <th>TIPO SOLICITACAO</th>
-                            <th>RELATO</th>
-                            <th>STATUS</th>
-                            <th>ANDAMENTO</th>
-                            <th>DATA e HORA conclusao</th>
-                        </tr>";
+                    "<table class='table' border='1'>
+                        <thead>
+                            <tr style='font-family: verdana; font-size: 70%;' >
+                                <th>DATA e HORA abertura</th>
+                                <th>ID PEDIDO</th>
+                                <th>URGENCIA</th>
+                                <th>CINEMA / CAFE</th>
+                                <th>AREA</th>
+                                <th>LOCALIZACAO</th>
+                                <th>TIPO SOLICITACAO</th>
+                                <th>RELATO</th>
+                                <th>STATUS</th>
+                                <th>ANDAMENTO</th>
+                                <th>DATA e HORA conclusao</th>
+                            </tr>
+                        </thead>
+                        <tbody>";
                     // output data of each row
                     while ($row = $result->fetch_assoc()) {
 
@@ -112,7 +115,9 @@
                         echo "      <td>" . $row['manutencao_updatetimestamp'] . "</td>";
                         echo "  </tr>";
                     }
-                    echo "</table>";
+                    echo 
+                    "   </tbody>
+                    </table>";
                 } else {
                     echo "0 results";
                 }
