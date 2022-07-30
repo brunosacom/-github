@@ -68,7 +68,7 @@ if ($result->num_rows > 0) {
 <th>ANDAMENTO</th>
 </tr>";
     // output data of each row
-while($row = $result->fetch_assoc()) {
+while($row = mysqli_fetch_assoc($result)) {
 
   echo "<tr>";
   echo "<td>" . $row['manutencao_timestamp'] . "</td>";
