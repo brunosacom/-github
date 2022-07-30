@@ -51,7 +51,7 @@ $manutencao_status=$_POST['manutencao_status'];
 }
 
 
-$sql = "SELECT * FROM bembos_manutencao WHERE manutencao_status='".$manutencao_status."' AND manutencao_email='".$manutencao_email."' ORDER BY manutencao_timestamp DESC";
+$sql = "SELECT * FROM bembos_manutencao WHERE manutencao_status=`".mysql_real_escape_string($manutencao_status)."` AND manutencao_email=`".mysql_real_escape_string($manutencao_email)."` ORDER BY manutencao_timestamp DESC";
 $result = $con->query($sql);
 
 if ($result->num_rows > 0) {
