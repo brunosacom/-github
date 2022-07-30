@@ -128,23 +128,23 @@
 
                     switch ($cod) {
                         default:
-                            $classtablecolor = "table-light table-striped";
+                            $classtablecolor = "table-light";
                             break;
 
                         case 'URGENTE':
-                            $classtablecolor = "table-warning table-striped";
+                            $classtablecolor = "table-warning";
                             break;
 
                         case 'NORMAL':
-                            $classtablecolor = "table-light table-striped";
+                            $classtablecolor = "table-light";
                             break;
 
                         case 'MAXIMA':
-                            $classtablecolor = "table-danger table-striped";
+                            $classtablecolor = "table-danger";
                             break;
 
                         case 'ADIAVEL':
-                            $classtablecolor = "table-success table-striped";
+                            $classtablecolor = "table-success";
                             break;
                     }
 
