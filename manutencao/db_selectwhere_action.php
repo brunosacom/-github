@@ -85,7 +85,7 @@ while($row = mysqli_fetch_assoc($result)) {
     echo "</table>";
     echo "<p>" . $manutencao_email . "</p>";
     echo "<p>" . $manutencao_status . "</p>";
-    echo "<p>" . $sql2 . "</p>";
+    echo "<p>" . $sql2 . "2</p>";
     echo "<p>" . $sql . "</p>";
 } else {
     echo "0 results";
