@@ -53,16 +53,16 @@
                     <small>Legenda Status
                         <small>
                             <div>
-                                FUNDO: BRANCO - NORMAL |
+                                FUNDO: <span class="bg-light">BRANCO - NORMAL</span> |
                                 <span class="bg-warning">AMARELO - URGENTE</span> |
                                 <span class="bg-danger">VERMELHO - URGENCIA MAXIMA</span> |
                                 <span class="bg-success">VERDE - ADIAVEL</span>
                             </div>
                             <div>
-                                TEXTO: <span class="text-body">PRETO - ABERTO</span> |
-                                <span class="text-success">VERDE - EM ANDAMENTO</span> |
-                                <span class="text-danger">VERMELHO - AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO</span> |
-                                <span class="text-secondary">CINZA - CONCLUIDO</span>
+                                TEXTO: <span class="bg-light text-body">PRETO - ABERTO</span> |
+                                <span class="bg-light text-success">VERDE - EM ANDAMENTO</span> |
+                                <span class="bg-light text-danger">VERMELHO - AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO</span> |
+                                <span class="bg-light text-secondary">CINZA - CONCLUIDO</span>
                             </div>
                         </small>
                     </small>
