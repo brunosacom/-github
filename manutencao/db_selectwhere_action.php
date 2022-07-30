@@ -45,14 +45,13 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
 if (isset($_POST['submit'])) {
 
-$manutencao_email=addslashes($_POST['manutencao_email']);
-$manutencao_status=addslashes($_POST['manutencao_status']);
+$manutencao_email=$_POST['manutencao_email'];
+$manutencao_status=$_POST['manutencao_status'];
 
 }
 
-$sql2 = "SELECT * FROM bembos_manutencao WHERE manutencao_status = '$manutencao_status' AND manutencao_email = '$manutencao_email' ORDER BY manutencao_timestamp DESC";
-$sql = "SELECT * FROM bembos_manutencao WHERE manutencao_status = 'aberto' AND manutencao_email = 'bruno.sa.com@gmail.com' ORDER BY manutencao_timestamp DESC";
-$result = mysqli_query($con, $sql2);
+$sql = "SELECT * FROM bembos_manutencao WHERE manutencao_status = '$manutencao_status' AND manutencao_email = '$manutencao_email' ORDER BY manutencao_timestamp DESC";
+$result = mysqli_query($con, $sql);
 
 if (mysqli_num_rows($result) > 0) {
 		
@@ -83,10 +82,7 @@ while($row = mysqli_fetch_assoc($result)) {
 		
     }
     echo "</table>";
-    echo "<p>" . $manutencao_email . "</p>";
-    echo "<p>" . $manutencao_status . "</p>";
-    echo "<p>" . $sql2 . "2</p>";
-    echo "<p>" . $sql . "</p>";
+
 } else {
     echo "0 results";
 }
