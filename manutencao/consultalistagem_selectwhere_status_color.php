@@ -127,7 +127,7 @@
 
                     switch ($cod) {
                         default:
-                            $classcolor = "table-dark table-striped";
+                            $classcolor = "table-light table-striped";
                             break;
 
                         case 'URGENTE':
@@ -135,7 +135,7 @@
                             break;
 
                         case 'NORMAL':
-                            $classcolor = "table-dark table-striped";
+                            $classcolor = "table-light table-striped";
                             break;
 
                         case 'MAXIMA':
