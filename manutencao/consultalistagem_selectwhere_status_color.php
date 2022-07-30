@@ -99,10 +99,11 @@
                     // output data of each row
                     while ($row = $result->fetch_assoc()) {
 
-                        $classcolor = classcolor($row["manutencao_urgencia"]);
+                        $classtablecolor = classtablecolor($row["manutencao_urgencia"]);
+                        $classtextcolor = classtextcolor($row["manutencao_status"]);
                         $color = trbackground($row["manutencao_urgencia"]);
                         $fontcolor = trfontcolor($row["manutencao_status"]);
-                        echo "  <tr class='$classcolor' style='background: {$color}; color: {$fontcolor}; font-size: 70%; '>";
+                        echo "  <tr class='$classtablecolor $classtextcolor' style='background: {$color}; color: {$fontcolor}; font-size: 70%; '>";
                         echo "      <td>" . $row['manutencao_timestamp'] . "</td>";
                         echo "      <td>" . $row['id_manutencao'] . "</td>";
                         echo "      <td><b>" . $row['manutencao_urgencia'] . "</b></td>";
@@ -123,33 +124,60 @@
                     echo "0 results";
                 }
 
-                function classcolor($cod) {
+                function classtablecolor($cod) {
 
                     switch ($cod) {
                         default:
-                            $classcolor = "table-light table-striped";
+                            $classtablecolor = "table-light table-striped";
                             break;
 
                         case 'URGENTE':
-                            $classcolor = "table-warning table-striped";
+                            $classtablecolor = "table-warning table-striped";
                             break;
 
                         case 'NORMAL':
-                            $classcolor = "table-light table-striped";
+                            $classtablecolor = "table-light table-striped";
                             break;
 
                         case 'MAXIMA':
-                            $classcolor = "table-danger table-striped";
+                            $classtablecolor = "table-danger table-striped";
                             break;
 
                         case 'ADIAVEL':
-                            $classcolor = "table-success table-striped";
+                            $classtablecolor = "table-success table-striped";
                             break;
                     }
 
-                    return $classcolor;
+                    return $classtablecolor;
                 }
                 
+                function classtextcolor($cod) {
+
+                    switch ($cod) {
+                        default:
+                            $classtextcolor = "text-body";
+                            break;
+
+                        case 'aberto':
+                            $classtextcolor = "text-danger";
+                            break;
+
+                        case 'emandamento':
+                            $classtextcolor = "text-success";
+                            break;
+
+                        case 'aguardando':
+                            $classtextcolor = "text-warning";
+                            break;
+
+                        case 'concluido':
+                            $classtextcolor = "text-secondary";
+                            break;
+                    }
+
+                    return $classtextcolor;
+                }
+
                 function trbackground($cod) {
 
                     switch ($cod) {
