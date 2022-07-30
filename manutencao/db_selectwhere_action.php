@@ -45,8 +45,8 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
 
 if (isset($_POST['submit'])) {
 
-$manutencao_email=$_POST['manutencao_email'];
-$manutencao_status=$_POST['manutencao_status'];
+$manutencao_email=addslashes($_POST['manutencao_email']);
+$manutencao_status=addslashes($_POST['manutencao_status']);
 
 }
 
@@ -85,7 +85,7 @@ while($row = mysqli_fetch_assoc($result)) {
     echo "</table>";
     echo "<p>" . $manutencao_email . "</p>";
     echo "<p>" . $manutencao_status . "</p>";
-    echo "<p>" . $sql2 . "2</p>";
+    echo "<p>" . $sql2 . "</p>";
     echo "<p>" . $sql . "</p>";
 } else {
     echo "0 results";
