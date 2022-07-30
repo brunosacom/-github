@@ -79,9 +79,9 @@
                 if ($result->num_rows > 0) {
 
                     echo 
-                    "<table class='table' border='1'>
+                    "<table class='table table-dark table-striped' border='1'>
                         <thead>
-                            <tr style='font-family: verdana; font-size: 70%;' >
+                            <tr>
                                 <th>DATA e HORA abertura</th>
                                 <th>ID PEDIDO</th>
                                 <th>URGENCIA</th>
