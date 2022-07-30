@@ -99,6 +99,7 @@
                     // output data of each row
                     while ($row = $result->fetch_assoc()) {
 
+                        $classcolor = classcolor($row["manutencao_urgencia"]);
                         $color = trbackground($row["manutencao_urgencia"]);
                         $fontcolor = trfontcolor($row["manutencao_status"]);
                         echo "  <tr style='background: {$color}; color: {$fontcolor}; font-size: 70%; '>";
@@ -122,6 +123,33 @@
                     echo "0 results";
                 }
 
+                function classcolor($cod) {
+
+                    switch ($cod) {
+                        default:
+                            $classcolor = "table-dark table-striped";
+                            break;
+
+                        case 'URGENTE':
+                            $classcolor = "table-warning table-striped";
+                            break;
+
+                        case 'NORMAL':
+                            $classcolor = "table-dark table-striped";
+                            break;
+
+                        case 'MAXIMA':
+                            $classcolor = "table-danger table-striped";
+                            break;
+
+                        case 'ADIAVEL':
+                            $classcolor = "table-success table-striped";
+                            break;
+                    }
+
+                    return $classcolor;
+                }
+                
                 function trbackground($cod) {
 
                     switch ($cod) {
