@@ -74,9 +74,9 @@
 
 
                 $sql = "SELECT * FROM bembos_manutencao WHERE manutencao_status='aberto' OR manutencao_status='emandamento' OR manutencao_status='aguardando' OR manutencao_status='concluido' ORDER BY manutencao_timestamp DESC";
-                $result = $con->query($sql);
+                $result = mysqli_query($con, $sql);
 
-                if ($result->num_rows > 0) {
+                if (mysqli_num_rows($result) > 0) {
 
                     echo 
                     "<table class='table table-light'>
@@ -97,7 +97,7 @@
                         </thead>
                         <tbody>";
                     // output data of each row
-                    while ($row = $result->fetch_assoc()) {
+                    while($row = mysqli_fetch_assoc($result)) {
 
                         $classtablecolor = classtablecolor($row["manutencao_urgencia"]);
                         $classtextcolor = classtextcolor($row["manutencao_status"]);
