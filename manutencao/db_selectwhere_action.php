@@ -54,7 +54,7 @@ $sql2 = "SELECT * FROM bembos_manutencao WHERE manutencao_status = '$manutencao_
 $sql = "SELECT * FROM bembos_manutencao WHERE manutencao_status = 'aberto' AND manutencao_email = 'bruno.sa.com@gmail.com' ORDER BY manutencao_timestamp DESC";
 $result = mysqli_query($con, $sql);
 
-if ($result->num_rows > 0) {
+if (mysqli_num_rows($result) > 0) {
 		
 	echo "<table border='1'>
 <tr>
