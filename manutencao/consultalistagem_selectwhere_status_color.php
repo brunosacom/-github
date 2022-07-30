@@ -54,15 +54,15 @@
                         <small>
                             <div>
                                 FUNDO: BRANCO - NORMAL |
-                                <span style="background-color: #ffbb99;">LARANJA - URGENTE</span> |
-                                <span style="background-color: #ff9999;">VERMELHO - URGENCIA MAXIMA</span> |
-                                <span style="background-color: #ccffcc;">VERDE - ADIAVEL</span>
+                                <span class="bg-warning">AMARELO - URGENTE</span> |
+                                <span class="bg-danger">VERMELHO - URGENCIA MAXIMA</span> |
+                                <span class="bg-success">VERDE - ADIAVEL</span>
                             </div>
                             <div>
-                                TEXTO: <span style="color: #000000;">PRETO - ABERTO</span> |
-                                <span style="color: #009900;">VERDE - EM ANDAMENTO</span> |
-                                <span style="color: #990000;">VERMELHO - AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO</span> |
-                                <span style="color: #999999;">CINZA - CONCLUIDO</span>
+                                TEXTO: <span class="text-primary">PRETO - ABERTO</span> |
+                                <span class="text-success">VERDE - EM ANDAMENTO</span> |
+                                <span class="text-danger">VERMELHO - AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO</span> |
+                                <span class="text-secondary">CINZA - CONCLUIDO</span>
                             </div>
                         </small>
                     </small>
@@ -101,8 +101,6 @@
 
                         $classtablecolor = classtablecolor($row["manutencao_urgencia"]);
                         $classtextcolor = classtextcolor($row["manutencao_status"]);
-                        $color = trbackground($row["manutencao_urgencia"]);
-                        $fontcolor = trfontcolor($row["manutencao_status"]);
                         echo "  <tr class='$classtablecolor $classtextcolor'><small>";
                         echo "      <td>" . $row['manutencao_timestamp'] . "</td>";
                         echo "      <td>" . $row['id_manutencao'] . "</td>";
@@ -176,60 +174,6 @@
                     }
 
                     return $classtextcolor;
-                }
-
-                function trbackground($cod) {
-
-                    switch ($cod) {
-                        default:
-                            $color = "#ffffff";
-                            break;
-
-                        case 'URGENTE':
-                            $color = "#ffbb99";
-                            break;
-
-                        case 'NORMAL':
-                            $color = "#ffffff";
-                            break;
-
-                        case 'MAXIMA':
-                            $color = "#ff9999";
-                            break;
-
-                        case 'ADIAVEL':
-                            $color = "#ccffcc";
-                            break;
-                    }
-
-                    return $color;
-                }
-
-                function trfontcolor($fontcod) {
-
-                    switch ($fontcod) {
-                        default:
-                            $fontcolor = "#ffffff";
-                            break;
-
-                        case 'aberto':
-                            $fontcolor = "#000000";
-                            break;
-
-                        case 'emandamento':
-                            $fontcolor = "#009900";
-                            break;
-
-                        case 'aguardando':
-                            $fontcolor = "#990000";
-                            break;
-
-                        case 'concluido':
-                            $fontcolor = "#999999";
-                            break;
-                    }
-
-                    return $fontcolor;
                 }
 
                 ?>
