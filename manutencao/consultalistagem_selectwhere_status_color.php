@@ -79,7 +79,7 @@
                 if ($result->num_rows > 0) {
 
                     echo 
-                    "<table class='table table-dark table-striped' border='1'>
+                    "<table class='table table-light table-striped'>
                         <thead>
                             <tr>
                                 <th>DATA e HORA abertura</th>
