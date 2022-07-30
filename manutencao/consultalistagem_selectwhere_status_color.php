@@ -159,7 +159,7 @@
                             break;
 
                         case 'aberto':
-                            $classtextcolor = "text-danger";
+                            $classtextcolor = "text-body";
                             break;
 
                         case 'emandamento':
@@ -167,7 +167,7 @@
                             break;
 
                         case 'aguardando':
-                            $classtextcolor = "text-warning";
+                            $classtextcolor = "text-danger";
                             break;
 
                         case 'concluido':
