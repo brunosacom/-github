@@ -56,38 +56,112 @@
                 if (mysqli_num_rows($result) > 0) {
                         
                     echo 
-                    "<table border='1'>
-                        <tr>
-                            <th>DATA e HORA</th>
-                            <th>CINEMA / CAFE</th>
-                            <th>AREA</th>
-                            <th>LOCALIZACAO</th>
-                            <th>TIPO SOLICITACAO</th>
-                            <th>RELATO</th>
-                            <th>STATUS</th>
-                            <th>ANDAMENTO</th>
-                        </tr>";
+                    "<table class='table table-light'>
+                        <thead>
+                            <tr>
+                                <th>DATA e HORA abertura</th>
+                                <th>ID PEDIDO</th>
+                                <th>URGENCIA</th>
+                                <th>CINEMA / CAFE</th>
+                                <th>AREA</th>
+                                <th>LOCALIZACAO</th>
+                                <th>TIPO SOLICITACAO</th>
+                                <th>RELATO</th>
+                                <th>STATUS</th>
+                                <th>ANDAMENTO</th>
+                                <th>DATA e HORA conclusao</th>
+                            </tr>
+                        </thead>
+                        <tbody>";
 
                     // output data of each row
                     while($row = mysqli_fetch_assoc($result)) {
 
-                    echo "  <tr>";
-                    echo "      <td>" . $row['manutencao_timestamp'] . "</td>";
-                    echo "      <td>" . $row['manutencao_cinema'] . "</td>";
-                    echo "      <td>" . $row['manutencao_area'] . "</td>";
-                    echo "      <td>" . $row['manutencao_localizacao'] . "</td>";
-                    echo "      <td>" . $row['manutencao_tiposolicitacao'] . "</td>";
-                    echo "      <td>" . $row['manutencao_relateproblema'] . "</td>";
-                    echo "      <td>" . $row['manutencao_status'] . "</td>";
-                    echo "      <td>" . $row['manutencao_andamento'] . "</td>";
-                    echo "  </tr>";   
+                        $classtablecolor = classtablecolor($row["manutencao_urgencia"]);
+                        $classtextcolor = classtextcolor($row["manutencao_status"]);
+                        echo "  <tr class='$classtablecolor $classtextcolor'><small>";
+                        echo "      <td>" . $row['manutencao_timestamp'] . "</td>";
+                        echo "      <td>" . $row['id_manutencao'] . "</td>";
+                        echo "      <td><b>" . $row['manutencao_urgencia'] . "</b></td>";
+                        echo "      <td>" . $row['manutencao_cinema'] . "</td>";
+                        echo "      <td>" . $row['manutencao_area'] . "</td>";
+                        echo "      <td>" . $row['manutencao_localizacao'] . "</td>";
+                        echo "      <td>" . $row['manutencao_tiposolicitacao'] . "</td>";
+                        echo "      <td>" . $row['manutencao_relateproblema'] . "</td>";
+                        echo "      <td>" . $row['manutencao_status'] . "</td>";
+                        echo "      <td>" . $row['manutencao_andamento'] . "</td>";
+                        echo "      <td>" . $row['manutencao_updatetimestamp'] . "</td>";
+                        echo "  </small></tr>";  
                     }
-                    echo "</table>";
+                    echo
+                    "   </tbody>
+                    </table>";
 
                 } else {
                     echo "0 results";
                 }
+
+                function classtablecolor($cod) {
+
+                    switch ($cod) {
+                        default:
+                            $classtablecolor = "table-light";
+                            break;
+
+                        case 'URGENTE':
+                            $classtablecolor = "table-warning";
+                            break;
+
+                        case 'NORMAL':
+                            $classtablecolor = "table-light";
+                            break;
+
+                        case 'MAXIMA':
+                            $classtablecolor = "table-danger";
+                            break;
+
+                        case 'ADIAVEL':
+                            $classtablecolor = "table-success";
+                            break;
+                    }
+
+                    return $classtablecolor;
+                }
+                
+                function classtextcolor($cod) {
+
+                    switch ($cod) {
+                        default:
+                            $classtextcolor = "text-body";
+                            break;
+
+                        case 'aberto':
+                            $classtextcolor = "text-body";
+                            break;
+
+                        case 'emandamento':
+                            $classtextcolor = "text-success";
+                            break;
+
+                        case 'aguardando':
+                            $classtextcolor = "text-danger";
+                            break;
+
+                        case 'concluido':
+                            $classtextcolor = "text-secondary";
+                            break;
+                    }
+
+                    return $classtextcolor;
+                }
             ?>
+            <div class='row justify-content-center'>
+                <div>
+                    <small>
+                        <small>Desenvolvido por Bruno Sá - <a href='//www.bruno-sa.com' target='_blank'>www.bruno-sa.com</a></small>
+                    </small>
+                </div>
+            </div>
         </div>
         <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/bootstrap_body.php'; ?>
     </body>
