@@ -218,7 +218,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               <td>
                 <select name="idioma1" size="1" >
                   <option value=""></option>
-                  <?php include '../../../../php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
+                  <?php include $_SERVER['DOCUMENT_ROOT'].'/php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
                 </select><br />
               mais de um idioma? <br />
               especifique todos
@@ -230,7 +230,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
               <td>
                 <select name="leg_copia" >
                   <option value=""></option>
-                  <?php include '../../../../php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
+                  <?php include $_SERVER['DOCUMENT_ROOT'].'/php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
                 </select>
               </td>
             </tr>
