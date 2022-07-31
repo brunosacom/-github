@@ -80,7 +80,7 @@
                 $sql_cinema = "SELECT manutencao_cinema FROM bembos_manutencao ORDER BY manutencao_cinema ASC";
                 $result_cinema = mysqli_query($con, $sql_cinema);
 
-                while($row_cinema = mysqli_fetch_array($result_cinema)) { ?>
+                while($row_cinema = mysqli_fetch_assoc($result_cinema)) { ?>
                 <option value="<?php echo $row_cinema['manutencao_cinema'] ?>"><?php echo $row_cinema['manutencao_cinema'] ?></option>
                 <?php } ?>
               </select>
