@@ -71,6 +71,22 @@
               <option value="RIOcinema">RIOcinema</option>
             </select>
 
+            <div class="input-group input-group-sm mb-3">
+              <label class="input-group-text">CINEMA2</label>
+              <select class="form-select" name="manutencao_cinema2" id="manutencao_cinema2">
+                <option value="" selected="selected">selecione</option>
+                <?php
+                //selecao de dados
+                $sql_cinema = "SELECT manutencao_cinema FROM bembos_manutencao ORDER BY manutencao_cinema ASC";
+                $result_cinema = mysqli_query($con, $sql_cinema);
+
+                while($row_cinema = mysqli_fetch_array($result_cinema)) { ?>
+                <option value="<?php echo $row_cinema['manutencao_cinema'] ?>"><?php echo $row_cinema['manutencao_cinema'] ?></option>
+                <?php } ?>
+              </select>
+            </div>
+            
+
             <br>
 
             <p>AREA:<br>
