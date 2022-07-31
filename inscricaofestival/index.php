@@ -6,7 +6,7 @@
 <meta http-equiv="refresh" content="0; url=2021/index.php">
 <link rel="shortcut icon" href="favicon.png">
 <link href="festatual.css" rel="stylesheet" type="text/css" />
-<title>Festival do Rio</title>
+<title>Festival de Cinema</title>
 </head>
 
 <body>
