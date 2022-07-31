@@ -40,7 +40,12 @@
     <body style="font-family: Didact Gothic; color:#FFF; background-color:#333;">
         <div class="container">
         <!-- Content here -->
-
+            <br>
+            <div>
+                <div class="col"></div>
+                <div class="col"><img src="<?php echo $empresa_logo; ?>" class="custom-logo" alt="<?php echo $empresa_nome; ?>" width="200"></div>
+                <div class="col"></div>
+            </div>
             <?php
 
                 if (isset($_POST['submit'])) {
