@@ -55,13 +55,21 @@
           $manutencao_charset = $_POST['manutencao_charset'];
           $manutencao_status = addslashes($_POST['manutencao_status']);
           $manutencao_email = addslashes($_POST['manutencao_email']);
-          $manutencao_cinema = addslashes($_POST['manutencao_cinema2']).addslashes($_POST['manutencao_cinema3']);
+          $manutencao_cinema2 = addslashes($_POST['manutencao_cinema2']);
+          $manutencao_cinema3 = addslashes($_POST['manutencao_cinema3']);
           $manutencao_area = addslashes($_POST['manutencao_area']);
           $manutencao_gerente = addslashes($_POST['manutencao_gerente']);
           $manutencao_tiposolicitacao = addslashes($_POST['manutencao_tiposolicitacao']);
           $manutencao_urgencia = addslashes($_POST['manutencao_urgencia']);
           $manutencao_relateproblema = addslashes($_POST['manutencao_relateproblema']);
           $manutencao_localizacao = addslashes($_POST['manutencao_localizacao']);
+
+          $manutencao_cinema = 
+          if ($manutencao_cinema2 = "") {
+            $manutencao_cinema3
+          } else {
+            $manutencao_cinema2;
+          }
 
 
           $remetente = "form@bruno-sa.com"; // INSIRA AQUI UM EMAIL CRIADO EM SUA HOSPEDAGEM PARA QUE A MENSAGEM SEJA ENVIADA CORRETAMENTE.

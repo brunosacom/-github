@@ -76,13 +76,15 @@
               <select class="form-select" name="manutencao_cinema2" id="manutencao_cinema2">
                 <option value="" selected="selected">novo...</option>
                 <?php
-                //selecao de dados
-                $sql_cinema = "SELECT DISTINCT manutencao_cinema FROM bembos_manutencao ORDER BY manutencao_cinema ASC";
-                $result_cinema = mysqli_query($con, $sql_cinema);
+                  //selecao de dados
+                  $sql_cinema = "SELECT DISTINCT manutencao_cinema FROM bembos_manutencao ORDER BY manutencao_cinema ASC";
+                  $result_cinema = mysqli_query($con, $sql_cinema);
 
-                while($row_cinema = mysqli_fetch_array($result_cinema)) { ?>
-                <option value="<?php echo $row_cinema['manutencao_cinema'] ?>"><?php echo $row_cinema['manutencao_cinema'] ?></option>
-                <?php } ?>
+                  while($row_cinema = mysqli_fetch_array($result_cinema)) { 
+                ?>
+                  <option value="<?php echo $row_cinema['manutencao_cinema'] ?>"><?php echo $row_cinema['manutencao_cinema'] ?></option>
+                <?php } 
+                ?>
               </select>
             </div>
             <div class="input-group input-group-sm mb-3">
