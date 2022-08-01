@@ -52,35 +52,41 @@
           <input name="charset" type="hidden" value="utf-8">
           <input name="empresa_sigla" type="hidden" id="empresa_sigla" value="<?php echo $empresa_sigla; ?>">
 
-          <table width="300" cellpadding="5" cellspacing="0" bordercolor="#000000">
-            <tr>
-              <td nowrap="nowrap">MAIL</td>
-              <td nowrap="nowrap">
-                <select name="manutencao_email" id="manutencao_email_manutencao">
-                  <option value="" selected="selected">Selecione...</option>
-                  <option value="bruno.sa.com@gmail.com">BRUNO</option>
-                  <option value="estacaogavea@grupoestacao.com.br">GAVEA</option>
-                  <option value="estacaoipanema@grupoestacao.com.br">IPANEMA</option>
-                  <option value="estacaorio@grupoestacao.com.br">RIO</option>
-                </select>
-            </tr>
-            <tr>
-              <td nowrap="nowrap">STATUS</td>
-              <td nowrap="nowrap">
-                <select name="manutencao_status" id="manutencao_status">
-                  <option value="" selected="selected">Selecione...</option>
-                  <option value="aberto">aberto</option>
-                  <option value="emandamento">em andamento</option>
-                  <option value="aguardando">aguardando peca</option>
-                  <option value="concluido">concluido</option>
-                </select>
-            </tr>
-          </table>
-          <p>&nbsp;</p>
-          <p>
-            <input type="submit" name="submit" id="submit" value="enviar" />
-            <input type="reset" name="reset" id="reset" value="limpar" />
-          </p>
+          <div class="input-group input-group-sm mb-3">
+            <label class="input-group-text text-danger">E-MAIL</label>
+            <select class="form-select" name="manutencao_email" id="manutencao_email" required>
+              <?php
+                //selecao de dados
+                $sql_local = "SELECT DISTINCT manutencao_email FROM bembos_manutencao ORDER BY manutencao_email ASC";
+                $result_local = mysqli_query($con, $sql_local);
+
+                while($row_local = mysqli_fetch_array($result_local)) { 
+              ?>
+                <option value="<?php echo $row_local['manutencao_email'] ?>"><?php echo $row_local['manutencao_email'] ?></option>
+              <?php } 
+              ?>
+            </select>
+          </div>
+          <div class="input-group input-group-sm mb-3">
+            <label class="input-group-text text-danger">STATUS</label>
+            <select class="form-select" name="manutencao_status" id="manutencao_status" required>
+              <?php
+                //selecao de dados
+                $sql_local = "SELECT DISTINCT manutencao_status FROM bembos_manutencao ORDER BY manutencao_status ASC";
+                $result_local = mysqli_query($con, $sql_local);
+
+                while($row_local = mysqli_fetch_array($result_local)) { 
+              ?>
+                <option value="<?php echo $row_local['manutencao_status'] ?>"><?php echo $row_local['manutencao_status'] ?></option>
+              <?php } 
+              ?>
+            </select>
+          </div>
+          <hr style="height:5px;">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="submit" class="btn btn-primary btn-sm" name="submit" id="submit" value="Enviar">enviar</button>
+            <button type="reset" class="btn btn-outline-secondary btn-sm" name="reset" id="reset" value="Limpar">limpar</button>
+          </div>
         </form>
       </div>
       <div class='row justify-content-center'>
