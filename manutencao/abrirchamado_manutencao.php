@@ -100,7 +100,7 @@
           <textarea class="form-control" name="manutencao_relateproblema" id="manutencao_relateproblema" rows="5"></textarea>
         </div>
         <div class="input-group input-group-sm mb-3">
-          URGENTE?
+          <br>URGENTE? 
           <input class="form-check-input" name="manutencao_urgencia" id="manutencao_urgencia" type="checkbox" value="URGENTE">
         </div>
         <hr style="height:5px;">
