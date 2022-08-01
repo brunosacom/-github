@@ -64,13 +64,7 @@
           $manutencao_relateproblema = addslashes($_POST['manutencao_relateproblema']);
           $manutencao_localizacao = addslashes($_POST['manutencao_localizacao']);
 
-          $manutencao_cinema = 
-          if (empty($manutencao_cinema2)) {
-            echo $manutencao_cinema3;
-          } else {
-            echo $manutencao_cinema2;
-          };
-
+          $manutencao_cinema = empty($manutencao_cinema2) ? $manutencao_cinema3 : $manutencao_cinema2;
 
           $remetente = "form@bruno-sa.com"; // INSIRA AQUI UM EMAIL CRIADO EM SUA HOSPEDAGEM PARA QUE A MENSAGEM SEJA ENVIADA CORRETAMENTE.
           $nomeRemetente = "Form BEMBOS Manutenção"; // INSIRA AQUI O NOME PARA APARECER NO CAMPO FROM.
