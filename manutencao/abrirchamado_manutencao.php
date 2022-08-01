@@ -86,9 +86,8 @@
                 <?php } 
                 ?>
               </select>
-            </div>
-            <div class="input-group input-group-sm mb-3">
-              <label class="input-group-text text-danger">Qual?</label>
+            
+              <label class="input-group-text">Qual?</label>
               <input type="text" class="form-control" name="manutencao_cinema3" id="manutencao_cinema3">
             </div>
             
