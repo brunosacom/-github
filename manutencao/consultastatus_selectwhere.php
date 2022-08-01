@@ -57,12 +57,12 @@
             <select class="form-select" name="manutencao_email" id="manutencao_email" required>
               <?php
                 //selecao de dados
-                $sql_local = "SELECT DISTINCT manutencao_email FROM bembos_manutencao ORDER BY manutencao_email ASC";
+                $sql_local = "SELECT DISTINCT manutencao_email, manutencao_responsavel FROM bembos_manutencao ORDER BY manutencao_responsavel ASC";
                 $result_local = mysqli_query($con, $sql_local);
 
                 while($row_local = mysqli_fetch_array($result_local)) { 
               ?>
-                <option value="<?php echo $row_local['manutencao_email'] ?>"><?php echo $row_local['manutencao_responsavel']." - ".$row_local['manutencao_email'] ?></option>
+                <option value="<?php echo $row_local['manutencao_email'] ?>"><?php echo $row_local['manutencao_responsavel'].' - '.$row_local['manutencao_email'] ?></option>
               <?php } 
               ?>
             </select>
