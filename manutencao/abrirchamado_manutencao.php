@@ -74,7 +74,7 @@
             <div class="input-group input-group-sm mb-3">
               <label class="input-group-text">CINEMA2</label>
               <select class="form-select" name="manutencao_cinema2" id="manutencao_cinema2">
-                <option value="" selected="selected">selecione</option>
+                <option value="" selected="selected">novo...</option>
                 <?php
                 //selecao de dados
                 $sql_cinema = "SELECT DISTINCT manutencao_cinema FROM bembos_manutencao ORDER BY manutencao_cinema ASC";
@@ -84,6 +84,10 @@
                 <option value="<?php echo $row_cinema['manutencao_cinema'] ?>"><?php echo $row_cinema['manutencao_cinema'] ?></option>
                 <?php } ?>
               </select>
+            </div>
+            <div class="input-group input-group-sm mb-3">
+              <label class="input-group-text text-danger">Qual?</label>
+              <input type="text" class="form-control" name="manutencao_cinema3" id="manutencao_cinema3">
             </div>
             
 

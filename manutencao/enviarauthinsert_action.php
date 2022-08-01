@@ -55,7 +55,7 @@
           $manutencao_charset = $_POST['manutencao_charset'];
           $manutencao_status = addslashes($_POST['manutencao_status']);
           $manutencao_email = addslashes($_POST['manutencao_email']);
-          $manutencao_cinema = addslashes($_POST['manutencao_cinema']);
+          $manutencao_cinema = addslashes($_POST['manutencao_cinema2']).addslashes($_POST['manutencao_cinema3']);
           $manutencao_area = addslashes($_POST['manutencao_area']);
           $manutencao_gerente = addslashes($_POST['manutencao_gerente']);
           $manutencao_tiposolicitacao = addslashes($_POST['manutencao_tiposolicitacao']);
