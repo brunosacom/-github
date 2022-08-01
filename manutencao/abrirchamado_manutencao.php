@@ -116,7 +116,7 @@
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">URGENTE?</label> 
-          <div class="form-control text-danger">
+          <div class="form-control">
             <input class="form-check-input" name="manutencao_urgencia" id="manutencao_urgencia"  type="checkbox" value="URGENTE" required> sim
           </div>
         </div>
