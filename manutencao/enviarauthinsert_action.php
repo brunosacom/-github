@@ -56,16 +56,18 @@
           $manutencao_status = addslashes($_POST['manutencao_status']);
           $manutencao_responsavel = addslashes($_POST['manutencao_responsavel']);
           $manutencao_email = addslashes($_POST['manutencao_email']);
-          $manutencao_local2 = addslashes($_POST['manutencao_local2']);
-          $manutencao_local3 = addslashes($_POST['manutencao_local3']);
-          $manutencao_area = addslashes($_POST['manutencao_area']);
+          $manutencao_locallista = addslashes($_POST['manutencao_locallista']);
+          $manutencao_localqual = addslashes($_POST['manutencao_localqual']);
+          $manutencao_arealista = addslashes($_POST['manutencao_arealista']);
+          $manutencao_areaqual = addslashes($_POST['manutencao_areaqual']);
           $manutencao_tipo = addslashes($_POST['manutencao_tipo']);
           $manutencao_item = addslashes($_POST['manutencao_item']);
           $manutencao_urgencia = addslashes($_POST['manutencao_urgencia']);
           $manutencao_relateproblema = addslashes($_POST['manutencao_relateproblema']);
           
 
-          $manutencao_local = empty($manutencao_local2) ? $manutencao_local3 : $manutencao_local2;
+          $manutencao_local = empty($manutencao_locallista) ? $manutencao_localqual : $manutencao_locallista;
+          $manutencao_area = empty($manutencao_arealista) ? $manutencao_areaqual : $manutencao_arealista;
 
           $remetente = "form@bruno-sa.com"; // INSIRA AQUI UM EMAIL CRIADO EM SUA HOSPEDAGEM PARA QUE A MENSAGEM SEJA ENVIADA CORRETAMENTE.
           $nomeRemetente = "Form BEMBOS Manutenção"; // INSIRA AQUI O NOME PARA APARECER NO CAMPO FROM.

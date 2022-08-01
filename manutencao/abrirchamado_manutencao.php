@@ -65,34 +65,49 @@
           <input type="email" class="form-control" name="manutencao_email" id="manutencao_email" required>
         </div>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text">LOCAL2</label>
-          <select class="form-select" name="manutencao_local2" id="manutencao_local2">
+          <label class="input-group-text">LOCAL</label>
+          <select class="form-select" name="manutencao_locallista" id="manutencao_locallista">
             <option value="" selected="selected">novo...</option>
             <?php
               //selecao de dados
-              $sql_cinema = "SELECT DISTINCT manutencao_local FROM bembos_manutencao ORDER BY manutencao_local ASC";
-              $result_cinema = mysqli_query($con, $sql_cinema);
+              $sql_local = "SELECT DISTINCT manutencao_local FROM bembos_manutencao ORDER BY manutencao_local ASC";
+              $result_local = mysqli_query($con, $sql_local);
 
-              while($row_cinema = mysqli_fetch_array($result_cinema)) { 
+              while($row_local = mysqli_fetch_array($result_local)) { 
             ?>
-              <option value="<?php echo $row_cinema['manutencao_local'] ?>"><?php echo $row_cinema['manutencao_local'] ?></option>
+              <option value="<?php echo $row_local['manutencao_local'] ?>"><?php echo $row_local['manutencao_local'] ?></option>
             <?php } 
             ?>
           </select>
         
           <label class="input-group-text">Qual?</label>
-          <input type="text" class="form-control" name="manutencao_local3" id="manutencao_local3">
+          <input type="text" class="form-control" name="manutencao_localqual" id="manutencao_localqual">
         </div>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text text-danger">ÁREA</label>
-          <input type="text" class="form-control" name="manutencao_area" id="manutencao_area" required>
+          <label class="input-group-text">ÁREA</label>
+          <select class="form-select" name="manutencao_arealista" id="manutencao_arealista">
+            <option value="" selected="selected">novo...</option>
+            <?php
+              //selecao de dados
+              $sql_area = "SELECT DISTINCT manutencao_area FROM bembos_manutencao ORDER BY manutencao_area ASC";
+              $result_area = mysqli_query($con, $sql_area);
+
+              while($row_area = mysqli_fetch_array($result_area)) { 
+            ?>
+              <option value="<?php echo $row_area['manutencao_area'] ?>"><?php echo $row_area['manutencao_area'] ?></option>
+            <?php } 
+            ?>
+          </select>
+        
+          <label class="input-group-text">Qual?</label>
+          <input type="text" class="form-control" name="manutencao_areaqual" id="manutencao_areaqual">
         </div>   
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text text-danger">TIPO</label>
+          <label class="input-group-text">TIPO</label>
           <input type="text" class="form-control" name="manutencao_tipo" id="manutencao_tipo" required>
         </div> 
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text text-danger">ITEM</label>
+          <label class="input-group-text">ITEM</label>
           <input type="text" class="form-control" name="manutencao_item" id="manutencao_item" required>
         </div>
         <div class="input-group input-group-sm mb-3">
@@ -100,7 +115,7 @@
           <textarea class="form-control" name="manutencao_relateproblema" id="manutencao_relateproblema" rows="5"></textarea>
         </div>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text text-danger">URGENTE?</label> 
+          <label class="input-group-text">URGENTE?</label> 
           <div class="form-control text-danger">
             <input class="form-check-input" name="manutencao_urgencia" id="manutencao_urgencia"  type="checkbox" value="URGENTE" required> sim
           </div>
