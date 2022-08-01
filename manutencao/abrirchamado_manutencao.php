@@ -50,100 +50,64 @@
       </div>
       <div class="mb-3">
         <h1>Abrir Chamado Manutenção</h1>
+        <p><strong>Registre o pedido de manutenção</strong></p>
         <form action="enviarauthinsert_action.php?emp_sigla='<?php echo $empresa_sigla; ?>'" method="post" name="bembos_manutencao" id="bembos_manutencao">
         <input name="manutencao_charset" type="hidden" value="utf-8">
         <input name="empresa_sigla" type="hidden" id="empresa_sigla" value="<?php echo $empresa_sigla; ?>">
         <input name="manutencao_status" type="hidden" value="aberto">
-          <p>
-            <strong>Registre o pedido de manutenção</strong> </p>
-          <p>E-MAIL:<br>
-          <input type="email" name="manutencao_email"></p>
-          <p>LOCAL:<br>
-            <select name="manutencao_local" id="manutencao_local">
-              <option value="" selected="selected">Selecione...</option>
-              <option value="BOTcafe">BOTcafe</option>
-              <option value="BOTcinema">BOTcinema</option>
-              <option value="GAVcafe">GAVcafe</option>
-              <option value="GAVcinema">GAVcinema</option>
-              <option value="IPAcafe">IPAcafe</option>
-              <option value="IPAcinema">IPAcinema</option>
-              <option value="RIOcafe">RIOcafe</option>
-              <option value="RIOcinema">RIOcinema</option>
-            </select>
+          
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">RESPONSAVEL</label>
+          <input type="text" class="form-control" name="manutencao_responsavel" id="manutencao_responsavel" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">E-MAIL</label>
+          <input type="email" class="form-control" name="manutencao_email" id="manutencao_email" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">LOCAL2</label>
+          <select class="form-select" name="manutencao_local2" id="manutencao_local2">
+            <option value="" selected="selected">novo...</option>
+            <?php
+              //selecao de dados
+              $sql_cinema = "SELECT DISTINCT manutencao_local FROM bembos_manutencao ORDER BY manutencao_local ASC";
+              $result_cinema = mysqli_query($con, $sql_cinema);
 
-            <div class="input-group input-group-sm mb-3">
-              <label class="input-group-text">LOCAL2</label>
-              <select class="form-select" name="manutencao_local2" id="manutencao_local2">
-                <option value="" selected="selected">novo...</option>
-                <?php
-                  //selecao de dados
-                  $sql_cinema = "SELECT DISTINCT manutencao_local FROM bembos_manutencao ORDER BY manutencao_local ASC";
-                  $result_cinema = mysqli_query($con, $sql_cinema);
-
-                  while($row_cinema = mysqli_fetch_array($result_cinema)) { 
-                ?>
-                  <option value="<?php echo $row_cinema['manutencao_local'] ?>"><?php echo $row_cinema['manutencao_local'] ?></option>
-                <?php } 
-                ?>
-              </select>
-            
-              <label class="input-group-text">Qual?</label>
-              <input type="text" class="form-control" name="manutencao_local3" id="manutencao_local3">
-            </div>
-            
-
-            <br>
-
-            <p>AREA:<br>
-              <select name="manutencao_area" id="manutencao_area">
-                <option value="" selected="selected">Selecione...</option>
-                <option value="salacinema">Salas de Cinema</option>
-                <option value="estoque">Estoque</option>
-                <option value="halldocafe">Hall do Café</option>
-                <option value="banheiros">Banheiros</option>
-                <option value="areaexterna">Área Externa</option>
-              </select>
-
-              <br>
-
-              <p>RESPONSAVEL:<br>
-                <input name="manutencao_responsavel" type="text" id="manutencao_responsavel" size="55" required="required">
-                <br>
-
-
-                <p>TIPO:<br>
-                  <select name="manutencao_tipo" id="manutencao_tipo">
-                    <option value="" selected="selected">Selecione...</option>
-                    <option value="poltrona">Poltronas de Cinema</option>
-                    <option value="estoque">Estoque</option>
-                    <option value="halldocafe">Hall do Café</option>
-                    <option value="banheiros">Banheiros</option>
-                    <option value="areaexterna">Área Externa</option>
-                  </select>
-                </p>
-                <p>RELATE O PROBLEMA: (urgente? <input type="checkbox" name="manutencao_urgencia" id="manutencao_urgencia" value="URGENTE" > sim) </input><br>
-                  <textarea name="manutencao_relateproblema" cols="55" rows="4" required id="manutencao_relateproblema"></textarea>
-                  <br>
-                </p>
-
-                  <p>ITEM:<br>
-                    <select name="manutencao_item" id="manutencao_item">
-                      <option value="" selected="selected">Selecione...</option>
-                      <option value="poltrona">Poltronas de Cinema</option>
-                      <option value="estoque">Estoque</option>
-                      <option value="halldocafe">Hall do Café</option>
-                      <option value="banheiros">Banheiros</option>
-                      <option value="areaexterna">Área Externa</option>
-                    </select>
-                  </p>
-
-                  <p>
-                    <br>
-                    <input type="submit" name="submit" id="submit" value="enviar">
-                    <input type="reset" name="reset" id="reset" value="cancelar">
-                    <br>
-
-                  </p>
+              while($row_cinema = mysqli_fetch_array($result_cinema)) { 
+            ?>
+              <option value="<?php echo $row_cinema['manutencao_local'] ?>"><?php echo $row_cinema['manutencao_local'] ?></option>
+            <?php } 
+            ?>
+          </select>
+        
+          <label class="input-group-text">Qual?</label>
+          <input type="text" class="form-control" name="manutencao_local3" id="manutencao_local3">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">ÁREA</label>
+          <input type="text" class="form-control" name="manutencao_area" id="manutencao_area" required>
+        </div>   
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">TIPO</label>
+          <input type="text" class="form-control" name="manutencao_tipo" id="manutencao_tipo" required>
+        </div> 
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">ITEM</label>
+          <input type="text" class="form-control" name="manutencao_item" id="manutencao_item" required>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text">RELATE O PROBLEMA</label>
+          <textarea class="form-control" name="manutencao_relateproblema" id="manutencao_relateproblema" rows="5"></textarea>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <label class="input-group-text text-danger">URGENTE?</label>
+          <input class="form-check-input" name="manutencao_urgencia" id="manutencao_urgencia" type="checkbox" value="URGENTE">
+        </div>
+        <hr style="height:5px;">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="submit" class="btn btn-primary btn-sm" name="submit" id="submit" value="Enviar">enviar</button>
+          <button type="reset" class="btn btn-outline-secondary btn-sm" name="reset" id="reset" value="Limpar">limpar</button>
+        </div>
         </form>
       </div>
       <div class='row justify-content-center'>

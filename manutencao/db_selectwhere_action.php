@@ -90,8 +90,8 @@
                                     <th>URGENCIA</th>
                                     <th>LOCAL</th>
                                     <th>AREA</th>
-                                    <th>ITEM</th>
                                     <th>TIPO</th>
+                                    <th>ITEM</th>
                                     <th>RELATO</th>
                                     <th>STATUS</th>
                                     <th>ANDAMENTO</th>
@@ -111,8 +111,8 @@
                             echo "      <td><b>" . $row['manutencao_urgencia'] . "</b></td>";
                             echo "      <td>" . $row['manutencao_local'] . "</td>";
                             echo "      <td>" . $row['manutencao_area'] . "</td>";
-                            echo "      <td>" . $row['manutencao_item'] . "</td>";
                             echo "      <td>" . $row['manutencao_tipo'] . "</td>";
+                            echo "      <td>" . $row['manutencao_item'] . "</td>";
                             echo "      <td>" . $row['manutencao_relateproblema'] . "</td>";
                             echo "      <td>" . $row['manutencao_status'] . "</td>";
                             echo "      <td>" . $row['manutencao_andamento'] . "</td>";

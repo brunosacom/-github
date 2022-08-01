@@ -54,15 +54,16 @@
 
           $manutencao_charset = $_POST['manutencao_charset'];
           $manutencao_status = addslashes($_POST['manutencao_status']);
+          $manutencao_responsavel = addslashes($_POST['manutencao_responsavel']);
           $manutencao_email = addslashes($_POST['manutencao_email']);
           $manutencao_local2 = addslashes($_POST['manutencao_local2']);
           $manutencao_local3 = addslashes($_POST['manutencao_local3']);
           $manutencao_area = addslashes($_POST['manutencao_area']);
-          $manutencao_responsavel = addslashes($_POST['manutencao_responsavel']);
           $manutencao_tipo = addslashes($_POST['manutencao_tipo']);
+          $manutencao_item = addslashes($_POST['manutencao_item']);
           $manutencao_urgencia = addslashes($_POST['manutencao_urgencia']);
           $manutencao_relateproblema = addslashes($_POST['manutencao_relateproblema']);
-          $manutencao_item = addslashes($_POST['manutencao_item']);
+          
 
           $manutencao_local = empty($manutencao_local2) ? $manutencao_local3 : $manutencao_local2;
 
@@ -75,8 +76,9 @@
             "LOCALIZACAO" . "<br/>" .
             "Local: " . $manutencao_local . "<br/>" .
             "Area: " . $manutencao_area . "<br/>" .
-            "Item: " . $manutencao_item . "<br/>" .
-            "Tipo: " . $manutencao_tipo . "<br/><br/>" .
+            "Tipo: " . $manutencao_tipo . "<br/>" .
+            "Item: " . $manutencao_item . "<br/><br/>" .
+
 
             "DESCRICAO" . "<br/>" .
             "Relato: " . $manutencao_relateproblema . "<br/><br/>" .
