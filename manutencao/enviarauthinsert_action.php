@@ -55,28 +55,28 @@
           $manutencao_charset = $_POST['manutencao_charset'];
           $manutencao_status = addslashes($_POST['manutencao_status']);
           $manutencao_email = addslashes($_POST['manutencao_email']);
-          $manutencao_cinema2 = addslashes($_POST['manutencao_cinema2']);
-          $manutencao_cinema3 = addslashes($_POST['manutencao_cinema3']);
+          $manutencao_local2 = addslashes($_POST['manutencao_local2']);
+          $manutencao_local3 = addslashes($_POST['manutencao_local3']);
           $manutencao_area = addslashes($_POST['manutencao_area']);
-          $manutencao_gerente = addslashes($_POST['manutencao_gerente']);
-          $manutencao_tiposolicitacao = addslashes($_POST['manutencao_tiposolicitacao']);
+          $manutencao_responsavel = addslashes($_POST['manutencao_responsavel']);
+          $manutencao_tipo = addslashes($_POST['manutencao_tipo']);
           $manutencao_urgencia = addslashes($_POST['manutencao_urgencia']);
           $manutencao_relateproblema = addslashes($_POST['manutencao_relateproblema']);
-          $manutencao_localizacao = addslashes($_POST['manutencao_localizacao']);
+          $manutencao_item = addslashes($_POST['manutencao_item']);
 
-          $manutencao_cinema = empty($manutencao_cinema2) ? $manutencao_cinema3 : $manutencao_cinema2;
+          $manutencao_local = empty($manutencao_local2) ? $manutencao_local3 : $manutencao_local2;
 
           $remetente = "form@bruno-sa.com"; // INSIRA AQUI UM EMAIL CRIADO EM SUA HOSPEDAGEM PARA QUE A MENSAGEM SEJA ENVIADA CORRETAMENTE.
           $nomeRemetente = "Form BEMBOS Manutenção"; // INSIRA AQUI O NOME PARA APARECER NO CAMPO FROM.
           $destinatario = "bruno@bruno-sa.com"; // INSIRA AQUI O ENDEREÇO DO DESTINATÁRIO DO E-MAIL.
-          $assunto = "[[" . $manutencao_cinema . " - " . $manutencao_area . " - " . $manutencao_tiposolicitacao . "]]" . "\r\n";
+          $assunto = "[[" . $manutencao_local . " - " . $manutencao_area . " - " . $manutencao_tipo . "]]" . "\r\n";
 
           $corpo =
             "LOCALIZACAO" . "<br/>" .
-            "Cinema: " . $manutencao_cinema . "<br/>" .
+            "Local: " . $manutencao_local . "<br/>" .
             "Area: " . $manutencao_area . "<br/>" .
-            "Localizacao: " . $manutencao_localizacao . "<br/>" .
-            "Tipo: " . $manutencao_tiposolicitacao . "<br/><br/>" .
+            "Item: " . $manutencao_item . "<br/>" .
+            "Tipo: " . $manutencao_tipo . "<br/><br/>" .
 
             "DESCRICAO" . "<br/>" .
             "Relato: " . $manutencao_relateproblema . "<br/><br/>" .
@@ -84,7 +84,7 @@
             "Status: " . $manutencao_status . "<br/><br/>" .
 
             "RESPONSAVEL" . "<br/>" .
-            "Gerente: " . $manutencao_gerente . "<br/><br/>" . "\r\n";
+            "Responsavel: " . $manutencao_responsavel . "<br/><br/>" . "\r\n";
 
 
           $headers = "MIME-Version: 1.0\r\n";
@@ -140,7 +140,7 @@
           $mail->setFrom($remetente, $nomeRemetente);
 
           //Set an alternative reply-to address
-          $mail->addReplyTo($manutencao_email, $manutencao_gerente);
+          $mail->addReplyTo($manutencao_email, $manutencao_responsavel);
 
           //Set who the message is to be sent to
           $mail->addAddress($destinatario, $emp_sigla);
@@ -167,14 +167,14 @@
         }
 
 
-        $sql = "INSERT INTO bembos_manutencao (manutencao_charset, manutencao_cinema, manutencao_urgencia, manutencao_area, manutencao_gerente, manutencao_tiposolicitacao, manutencao_relateproblema, manutencao_localizacao, manutencao_status, manutencao_email)
+        $sql = "INSERT INTO bembos_manutencao (manutencao_charset, manutencao_local, manutencao_urgencia, manutencao_area, manutencao_responsavel, manutencao_tipo, manutencao_relateproblema, manutencao_item, manutencao_status, manutencao_email)
         VALUES
-        ('$manutencao_charset','$manutencao_cinema','$manutencao_urgencia','$manutencao_area','$manutencao_gerente','$manutencao_tiposolicitacao','$manutencao_relateproblema','$manutencao_localizacao','$manutencao_status','$manutencao_email')";
+        ('$manutencao_charset','$manutencao_local','$manutencao_urgencia','$manutencao_area','$manutencao_responsavel','$manutencao_tipo','$manutencao_relateproblema','$manutencao_item','$manutencao_status','$manutencao_email')";
 
         if (!mysqli_query($con, $sql)) {
           die('Error: ' . mysqli_error($con));
         }
-        echo "<br>Obrigado por enviar a solicitacao/manutencao de " . $manutencao_cinema . ".<br>";
+        echo "<br>Obrigado por enviar a solicitacao/manutencao de " . $manutencao_local . ".<br>";
       ?>
     </div>
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/bootstrap_body.php'; ?>

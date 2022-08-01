@@ -59,7 +59,7 @@
           <p>E-MAIL:<br>
           <input type="email" name="manutencao_email"></p>
           <p>CINEMA / CAFE:<br>
-            <select name="manutencao_cinema" id="manutencao_cinema">
+            <select name="manutencao_local" id="manutencao_local">
               <option value="" selected="selected">Selecione...</option>
               <option value="BOTcafe">BOTcafe</option>
               <option value="BOTcinema">BOTcinema</option>
@@ -73,22 +73,22 @@
 
             <div class="input-group input-group-sm mb-3">
               <label class="input-group-text">CINEMA2</label>
-              <select class="form-select" name="manutencao_cinema2" id="manutencao_cinema2">
+              <select class="form-select" name="manutencao_local2" id="manutencao_local2">
                 <option value="" selected="selected">novo...</option>
                 <?php
                   //selecao de dados
-                  $sql_cinema = "SELECT DISTINCT manutencao_cinema FROM bembos_manutencao ORDER BY manutencao_cinema ASC";
+                  $sql_cinema = "SELECT DISTINCT manutencao_local FROM bembos_manutencao ORDER BY manutencao_local ASC";
                   $result_cinema = mysqli_query($con, $sql_cinema);
 
                   while($row_cinema = mysqli_fetch_array($result_cinema)) { 
                 ?>
-                  <option value="<?php echo $row_cinema['manutencao_cinema'] ?>"><?php echo $row_cinema['manutencao_cinema'] ?></option>
+                  <option value="<?php echo $row_cinema['manutencao_local'] ?>"><?php echo $row_cinema['manutencao_local'] ?></option>
                 <?php } 
                 ?>
               </select>
             
               <label class="input-group-text">Qual?</label>
-              <input type="text" class="form-control" name="manutencao_cinema3" id="manutencao_cinema3">
+              <input type="text" class="form-control" name="manutencao_local3" id="manutencao_local3">
             </div>
             
 
@@ -107,12 +107,12 @@
               <br>
 
               <p>GERENTE:<br>
-                <input name="manutencao_gerente" type="text" id="manutencao_gerente" size="55" required="required">
+                <input name="manutencao_responsavel" type="text" id="manutencao_responsavel" size="55" required="required">
                 <br>
 
 
                 <p>TIPO DE SOLICITAÇÃO:<br>
-                  <select name="manutencao_tiposolicitacao" id="manutencao_tiposolicitacao">
+                  <select name="manutencao_tipo" id="manutencao_tipo">
                     <option value="" selected="selected">Selecione...</option>
                     <option value="poltrona">Poltronas de Cinema</option>
                     <option value="estoque">Estoque</option>
@@ -127,7 +127,7 @@
                 </p>
 
                   <p>LOCALIZAÇÃO:<br>
-                    <select name="manutencao_localizacao" id="manutencao_localizacao">
+                    <select name="manutencao_item" id="manutencao_item">
                       <option value="" selected="selected">Selecione...</option>
                       <option value="poltrona">Poltronas de Cinema</option>
                       <option value="estoque">Estoque</option>

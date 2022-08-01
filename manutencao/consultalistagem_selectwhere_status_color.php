@@ -85,10 +85,10 @@
                                 <th>DATA e HORA abertura</th>
                                 <th>ID PEDIDO</th>
                                 <th>URGENCIA</th>
-                                <th>CINEMA / CAFE</th>
+                                <th>LOCAL</th>
                                 <th>AREA</th>
-                                <th>LOCALIZACAO</th>
-                                <th>TIPO SOLICITACAO</th>
+                                <th>ITEM</th>
+                                <th>TIPO</th>
                                 <th>RELATO</th>
                                 <th>STATUS</th>
                                 <th>ANDAMENTO</th>
@@ -105,10 +105,10 @@
                         echo "      <td>" . $row['manutencao_timestamp'] . "</td>";
                         echo "      <td>" . $row['id_manutencao'] . "</td>";
                         echo "      <td><b>" . $row['manutencao_urgencia'] . "</b></td>";
-                        echo "      <td>" . $row['manutencao_cinema'] . "</td>";
+                        echo "      <td>" . $row['manutencao_local'] . "</td>";
                         echo "      <td>" . $row['manutencao_area'] . "</td>";
-                        echo "      <td>" . $row['manutencao_localizacao'] . "</td>";
-                        echo "      <td>" . $row['manutencao_tiposolicitacao'] . "</td>";
+                        echo "      <td>" . $row['manutencao_item'] . "</td>";
+                        echo "      <td>" . $row['manutencao_tipo'] . "</td>";
                         echo "      <td>" . $row['manutencao_relateproblema'] . "</td>";
                         echo "      <td>" . $row['manutencao_status'] . "</td>";
                         echo "      <td>" . $row['manutencao_andamento'] . "</td>";
