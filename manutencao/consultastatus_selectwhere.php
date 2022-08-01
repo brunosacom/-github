@@ -55,6 +55,7 @@
           <div class="input-group input-group-sm mb-3">
             <label class="input-group-text text-danger">RESPONSAVEL</label>
             <select class="form-select" name="manutencao_email" id="manutencao_email" required>
+              <option value="" selected>selecione...</option>
               <?php
                 //selecao de dados
                 $sql_local = "SELECT DISTINCT manutencao_email, manutencao_responsavel FROM bembos_manutencao ORDER BY manutencao_responsavel ASC";
