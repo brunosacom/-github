@@ -53,7 +53,7 @@
           <input name="empresa_sigla" type="hidden" id="empresa_sigla" value="<?php echo $empresa_sigla; ?>">
 
           <div class="input-group input-group-sm mb-3">
-            <label class="input-group-text text-danger">E-MAIL</label>
+            <label class="input-group-text text-danger">RESPONSAVEL</label>
             <select class="form-select" name="manutencao_email" id="manutencao_email" required>
               <?php
                 //selecao de dados
@@ -62,7 +62,7 @@
 
                 while($row_local = mysqli_fetch_array($result_local)) { 
               ?>
-                <option value="<?php echo $row_local['manutencao_email'] ?>"><?php echo $row_local['manutencao_email'] ?></option>
+                <option value="<?php echo $row_local['manutencao_email'] ?>"><?php echo $row_local['manutencao_responsavel']." - ".$row_local['manutencao_email'] ?></option>
               <?php } 
               ?>
             </select>
