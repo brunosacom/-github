@@ -66,9 +66,9 @@
 
           $manutencao_cinema = 
           if ($manutencao_cinema2 = "") {
-            $manutencao_cinema3
+            echo $manutencao_cinema3
           } else {
-            $manutencao_cinema2;
+            echo $manutencao_cinema2;
           }
 
 
