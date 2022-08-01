@@ -65,8 +65,8 @@
           <input type="email" class="form-control" name="manutencao_email" id="manutencao_email" required>
         </div>
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text">LOCAL</label>
-          <select class="form-select" name="manutencao_locallista" id="manutencao_locallista">
+          <label class="input-group-text text-danger">LOCAL</label>
+          <select class="form-select" name="manutencao_locallista" id="manutencao_locallista" required>
             <option value="" selected="selected">novo...</option>
             <?php
               //selecao de dados
@@ -103,11 +103,11 @@
           <input type="text" class="form-control" name="manutencao_areaqual" id="manutencao_areaqual">
         </div>   
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text">TIPO</label>
+          <label class="input-group-text text-danger">TIPO</label>
           <input type="text" class="form-control" name="manutencao_tipo" id="manutencao_tipo" required>
         </div> 
         <div class="input-group input-group-sm mb-3">
-          <label class="input-group-text">ITEM</label>
+          <label class="input-group-text text-danger">ITEM</label>
           <input type="text" class="form-control" name="manutencao_item" id="manutencao_item" required>
         </div>
         <div class="input-group input-group-sm mb-3">
@@ -117,7 +117,7 @@
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">URGENTE?</label> 
           <div class="form-control">
-            <input class="form-check-input" name="manutencao_urgencia" id="manutencao_urgencia"  type="checkbox" value="URGENTE" required> sim
+            <input class="form-check-input" name="manutencao_urgencia" id="manutencao_urgencia"  type="checkbox" value="URGENTE"> sim
           </div>
         </div>
         <hr style="height:5px;">
