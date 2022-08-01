@@ -70,16 +70,10 @@
           <div class="input-group input-group-sm mb-3">
             <label class="input-group-text text-danger">STATUS</label>
             <select class="form-select" name="manutencao_status" id="manutencao_status" required>
-              <?php
-                //selecao de dados
-                $sql_local = "SELECT DISTINCT manutencao_status FROM bembos_manutencao ORDER BY manutencao_status ASC";
-                $result_local = mysqli_query($con, $sql_local);
-
-                while($row_local = mysqli_fetch_array($result_local)) { 
-              ?>
-                <option value="<?php echo $row_local['manutencao_status'] ?>"><?php echo $row_local['manutencao_status'] ?></option>
-              <?php } 
-              ?>
+              <option value="aberto" selected="selected">aberto</option>
+              <option value="emandamento" selected="selected">em andamento</option>
+              <option value="aguardando" selected="selected">aguardando</option>
+              <option value="concluido" selected="selected">concluído</option>
             </select>
           </div>
           <hr style="height:5px;">
