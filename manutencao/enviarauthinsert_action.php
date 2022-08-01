@@ -66,10 +66,10 @@
 
           $manutencao_cinema = 
           if ($manutencao_cinema2 = "") {
-            echo $manutencao_cinema3
+            echo $manutencao_cinema3;
           } else {
             echo $manutencao_cinema2;
-          }
+          };
 
 
           $remetente = "form@bruno-sa.com"; // INSIRA AQUI UM EMAIL CRIADO EM SUA HOSPEDAGEM PARA QUE A MENSAGEM SEJA ENVIADA CORRETAMENTE.
