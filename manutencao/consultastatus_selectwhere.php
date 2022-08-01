@@ -70,10 +70,11 @@
           <div class="input-group input-group-sm mb-3">
             <label class="input-group-text text-danger">STATUS</label>
             <select class="form-select" name="manutencao_status" id="manutencao_status" required>
-              <option value="aberto" selected="selected">aberto</option>
-              <option value="emandamento" selected="selected">em andamento</option>
-              <option value="aguardando" selected="selected">aguardando</option>
-              <option value="concluido" selected="selected">concluído</option>
+              <option value="" selected>selecione...</option>
+              <option value="aberto">aberto</option>
+              <option value="emandamento">em andamento</option>
+              <option value="aguardando">aguardando</option>
+              <option value="concluido">concluído</option>
             </select>
           </div>
           <hr style="height:5px;">
