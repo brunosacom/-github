@@ -58,7 +58,7 @@
             <strong>Registre o pedido de manutenção</strong> </p>
           <p>E-MAIL:<br>
           <input type="email" name="manutencao_email"></p>
-          <p>CINEMA / CAFE:<br>
+          <p>LOCAL:<br>
             <select name="manutencao_local" id="manutencao_local">
               <option value="" selected="selected">Selecione...</option>
               <option value="BOTcafe">BOTcafe</option>
@@ -72,7 +72,7 @@
             </select>
 
             <div class="input-group input-group-sm mb-3">
-              <label class="input-group-text">CINEMA2</label>
+              <label class="input-group-text">LOCAL2</label>
               <select class="form-select" name="manutencao_local2" id="manutencao_local2">
                 <option value="" selected="selected">novo...</option>
                 <?php
@@ -106,12 +106,12 @@
 
               <br>
 
-              <p>GERENTE:<br>
+              <p>RESPONSAVEL:<br>
                 <input name="manutencao_responsavel" type="text" id="manutencao_responsavel" size="55" required="required">
                 <br>
 
 
-                <p>TIPO DE SOLICITAÇÃO:<br>
+                <p>TIPO:<br>
                   <select name="manutencao_tipo" id="manutencao_tipo">
                     <option value="" selected="selected">Selecione...</option>
                     <option value="poltrona">Poltronas de Cinema</option>
@@ -126,7 +126,7 @@
                   <br>
                 </p>
 
-                  <p>LOCALIZAÇÃO:<br>
+                  <p>ITEM:<br>
                     <select name="manutencao_item" id="manutencao_item">
                       <option value="" selected="selected">Selecione...</option>
                       <option value="poltrona">Poltronas de Cinema</option>
