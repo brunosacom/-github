@@ -66,8 +66,8 @@
           $manutencao_relateproblema = addslashes($_POST['manutencao_relateproblema']);
           
 
-          $manutencao_local = empty($manutencao_locallista) ? $manutencao_localqual : $manutencao_locallista;
-          $manutencao_area = empty($manutencao_arealista) ? $manutencao_areaqual : $manutencao_arealista;
+          $manutencao_local = $manutencao_locallista =="-novo-" ? $manutencao_localqual : $manutencao_locallista;
+          $manutencao_area = $manutencao_arealista =="-novo-" ? $manutencao_areaqual : $manutencao_arealista;
 
           $remetente = "form@bruno-sa.com"; // INSIRA AQUI UM EMAIL CRIADO EM SUA HOSPEDAGEM PARA QUE A MENSAGEM SEJA ENVIADA CORRETAMENTE.
           $nomeRemetente = "Form BEMBOS Manutenção"; // INSIRA AQUI O NOME PARA APARECER NO CAMPO FROM.
