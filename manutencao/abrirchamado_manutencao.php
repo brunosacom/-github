@@ -67,7 +67,6 @@
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">LOCAL</label>
           <select class="form-select" name="manutencao_locallista" id="manutencao_locallista" required>
-            <option value="-novo-" selected="selected">novo...</option>
             <?php
               //selecao de dados
               $sql_local = "SELECT DISTINCT manutencao_local FROM bembos_manutencao ORDER BY manutencao_local ASC";
@@ -78,6 +77,7 @@
               <option value="<?php echo $row_local['manutencao_local'] ?>"><?php echo $row_local['manutencao_local'] ?></option>
             <?php } 
             ?>
+            <option value="-novo-" selected="selected">novo...</option>
           </select>
         
           <label class="input-group-text">Qual?</label>
@@ -86,7 +86,6 @@
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text">ÁREA</label>
           <select class="form-select" name="manutencao_arealista" id="manutencao_arealista">
-            <option value="-novo-" selected="selected">novo...</option>
             <?php
               //selecao de dados
               $sql_area = "SELECT DISTINCT manutencao_area FROM bembos_manutencao ORDER BY manutencao_area ASC";
@@ -97,6 +96,7 @@
               <option value="<?php echo $row_area['manutencao_area'] ?>"><?php echo $row_area['manutencao_area'] ?></option>
             <?php } 
             ?>
+            <option value="-novo-" selected="selected">novo...</option>
           </select>
         
           <label class="input-group-text">Qual?</label>
