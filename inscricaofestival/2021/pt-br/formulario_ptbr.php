@@ -205,7 +205,7 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <label class="input-group-text text-danger">2.06 - Idioma  de exibição final</label>
           <select class="form-select" name="idioma1_dci" id="idioma1_dci" required>
             <option value="" selected="selected">selecione</option>
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/bembos/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
           </select>
           <input name="idioma2" id="idioma2" type="text" size="30" maxlength="100" placeholder="mais de um idioma? especifique">
         </div>
@@ -213,14 +213,14 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <label class="input-group-text text-danger">2.07 - Idioma da legenda na cópia de exibição</label>
           <select class="form-select" name="leg_copia_dci" id="leg_copia_dci" required>
             <option value="" selected="selected">selecione</option>
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/bembos/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
           </select>
         </div>
         <div class="input-group input-group-sm mb-3">
           <label class="input-group-text text-danger">2.08 - Idioma da legenda na cópia de seleção</label>
           <select class="form-select" name="leg_copiaselecao_dci" id="leg_copiaselecao_dci" required>
             <option value="" selected="selected">selecione</option>
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/php/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/bembos/mysql2form/option_idioma_natdci.php'; ?> <!-- DB idioma e codigos nativo -->
           </select>
         </div>
         <div class="input-group input-group-sm mb-3">
