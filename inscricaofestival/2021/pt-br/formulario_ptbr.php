@@ -75,19 +75,19 @@ while ($row_empresa = mysqli_fetch_array($result_empresa)) {
           <label class="input-group-text">1.05 - Países de Co-Produção</label>
           <select class="form-select" name="pais2_alpha3" id="pais2_alpha3">
             <option value="" selected="selected">selecione</option>
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/php/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/bembos/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
           </select>
           <select class="form-select" name="pais3_alpha3" id="pais3_alpha3">
             <option value="" selected="selected">selecione</option>
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/php/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/bembos/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
           </select>
           <select class="form-select" name="pais4_alpha3" id="pais4_alpha3">
             <option value="" selected="selected">selecione</option>
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/php/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/bembos/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
           </select>
           <select class="form-select" name="pais5_alpha3" id="pais5_alpha3">
             <option value="" selected="selected">selecione</option>
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/php/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/bembos/mysql2form/option_pais_ptbr.php'; ?> <!-- DB paises e codigos em QBP -->
           </select>
         </div>
         <div class="input-group input-group-sm mb-3">
