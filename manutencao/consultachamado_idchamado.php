@@ -25,6 +25,29 @@
     }
 ?>
 
+<?php
+    // URL EXEMPLO
+    //https://www.bruno-sa.com/-php/manutencao/consultachamado_idchamado.php?emp_sigla='BMB'&id_manutencao='15'
+
+    $id_manutencao = $_GET['id_manutencao'];
+
+    $sql_idmanutencao = "SELECT * FROM bembos_manutencao WHERE id_manutencao = $id_manutencao";
+    $result_idmanutencao = mysqli_query($con, $sql_idmanutencao);
+    while ($row_idmanutencao = mysqli_fetch_array($result_idmanutencao)) {
+
+        $manutencao_status = $row_idmanutencao['manutencao_status'];
+        $manutencao_responsavel = $row_idmanutencao['manutencao_responsavel'];
+        $manutencao_email = $row_idmanutencao['manutencao_email'];
+        $manutencao_local = $row_idmanutencao['manutencao_local'];
+        $manutencao_area = $row_idmanutencao['manutencao_area'];
+        $manutencao_tipo = $row_idmanutencao['manutencao_tipo'];
+        $manutencao_item = $row_idmanutencao['manutencao_item'];
+        $manutencao_urgencia = $row_idmanutencao['manutencao_urgencia'];
+        $manutencao_relateproblema = $row_idmanutencao['manutencao_relateproblema'];
+        
+    }
+?>
+
 <!DOCTYPE HTML>
 <html lang="pt-BR">
 
@@ -49,6 +72,7 @@
             </div>
             <div class="mb-3">
                 <h1>Manutenção</h1>
+                <h3>Chamado # <?php $id_manutencao ?></h3>
                 <div>
                     <small>Legenda Status
                         <small>
