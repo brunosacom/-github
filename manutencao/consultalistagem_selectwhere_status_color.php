@@ -103,7 +103,7 @@
                         $classtextcolor = classtextcolor($row["manutencao_status"]);
                         echo "  <tr class='$classtablecolor $classtextcolor'><small>";
                         echo "      <td>" . $row['manutencao_timestamp'] . "</td>";
-                        echo "      <td><a href='https://www.bruno-sa.com/-github/manutencao/consultachamado_idchamado.php?emp_sigla=\'BMB\'&id_manutencao=". $row['id_manutencao'] . "'>" . $row['id_manutencao'] . "</a></td>";
+                        echo "      <td><a href="."'https://www.bruno-sa.com/-github/manutencao/consultachamado_idchamado.php?emp_sigla="."'BMB'"."&id_manutencao=". $row['id_manutencao'] . "'>" . $row['id_manutencao'] . "</a></td>";
                         echo "      <td><b>" . $row['manutencao_urgencia'] . "</b></td>";
                         echo "      <td>" . $row['manutencao_local'] . "</td>";
                         echo "      <td>" . $row['manutencao_area'] . "</td>";
