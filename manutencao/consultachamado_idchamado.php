@@ -27,7 +27,7 @@
 
 <?php
     // URL EXEMPLO
-    //https://www.bruno-sa.com/-php/manutencao/consultachamado_idchamado.php?emp_sigla='BMB'&id_manutencao='15'
+    //https://www.bruno-sa.com/-github/manutencao/consultachamado_idchamado.php?emp_sigla='BMB'&id_manutencao='15'
 
     $id_manutencao = $_GET['id_manutencao'];
 
@@ -72,7 +72,7 @@
             </div>
             <div class="mb-3">
                 <h1>Manutenção</h1>
-                <h3>Chamado # <?php $id_manutencao ?></h3>
+                <h3>Chamado # <?php echo $id_manutencao ?></h3>
                 <div>
                     <small>Legenda Status
                         <small>
