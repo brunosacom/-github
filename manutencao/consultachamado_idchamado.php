@@ -27,7 +27,7 @@
 
 <?php
     // URL EXEMPLO
-    //https://www.bruno-sa.com/-github/manutencao/consultachamado_idchamado.php?emp_sigla='BMB'&id_manutencao='15'
+    //https://www.bruno-sa.com/-github/manutencao/consultachamado_idchamado.php?emp_sigla='BMB'&id_manutencao=15
 
     $id_manutencao = $_GET['id_manutencao'];
 
@@ -92,59 +92,28 @@
                     </small>
                     <hr>
                 </div>
+                <div>ID PEDIDO</div>
+                <div><?php echo $id_manutencao ?></div>
+                <div>DATA e HORA abertura</div>
+                <div><?php echo $manutencao_timestamp ?></div>
+                <div>URGÊNCIA</div>
+                <div><?php echo $manutencao_urgencia ?></div>
+                <div>AREA</div>
+                <div><?php echo $manutencao_area ?></div>
+                <div>ITEM</div>
+                <div><?php echo $manutencao_item ?></div>
+                <div>TIPO</div>
+                <div><?php echo $manutencao_tipo ?></div>
+                <div>RELATO</div>
+                <div><?php echo $manutencao_relateproblema ?></div>
+                <div>ANDAMENTO</div>
+                <div><?php echo $manutencao_andamento ?></div>
+                <div>DATA e HORA modificação</div>
+                <div><?php echo $manutencao_updatetimestamp ?></div>
+
 
 
                 <?php
-
-
-                $sql = "SELECT * FROM bembos_manutencao WHERE manutencao_status='aberto' OR manutencao_status='emandamento' OR manutencao_status='aguardando' OR manutencao_status='concluido' ORDER BY manutencao_timestamp DESC";
-                $result = mysqli_query($con, $sql);
-
-                if (mysqli_num_rows($result) > 0) {
-
-                    echo 
-                    "<table class='table table-light'>
-                        <thead>
-                            <tr>
-                                <th>DATA e HORA abertura</th>
-                                <th>ID PEDIDO</th>
-                                <th>URGÊNCIA</th>
-                                <th>LOCAL</th>
-                                <th>AREA</th>
-                                <th>ITEM</th>
-                                <th>TIPO</th>
-                                <th>RELATO</th>
-                                <th>STATUS</th>
-                                <th>ANDAMENTO</th>
-                                <th>DATA e HORA modificação</th>
-                            </tr>
-                        </thead>
-                        <tbody>";
-                    // output data of each row
-                    while($row = mysqli_fetch_assoc($result)) {
-
-                        $classtablecolor = classtablecolor($row["manutencao_urgencia"]);
-                        $classtextcolor = classtextcolor($row["manutencao_status"]);
-                        echo "  <tr class='$classtablecolor $classtextcolor'><small>";
-                        echo "      <td>" . $row['manutencao_timestamp'] . "</td>";
-                        echo "      <td>" . $row['id_manutencao'] . "</td>";
-                        echo "      <td><b>" . $row['manutencao_urgencia'] . "</b></td>";
-                        echo "      <td>" . $row['manutencao_local'] . "</td>";
-                        echo "      <td>" . $row['manutencao_area'] . "</td>";
-                        echo "      <td>" . $row['manutencao_item'] . "</td>";
-                        echo "      <td>" . $row['manutencao_tipo'] . "</td>";
-                        echo "      <td>" . $row['manutencao_relateproblema'] . "</td>";
-                        echo "      <td>" . $row['manutencao_status'] . "</td>";
-                        echo "      <td>" . $row['manutencao_andamento'] . "</td>";
-                        echo "      <td>" . $row['manutencao_updatetimestamp'] . "</td>";
-                        echo "  </small></tr>";
-                    }
-                    echo 
-                    "   </tbody>
-                    </table>";
-                } else {
-                    echo "0 results";
-                }
 
                 function classtablecolor($cod) {
 
