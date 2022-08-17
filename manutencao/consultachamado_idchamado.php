@@ -35,6 +35,7 @@
     $result_idmanutencao = mysqli_query($con, $sql_idmanutencao);
     while ($row_idmanutencao = mysqli_fetch_array($result_idmanutencao)) {
 
+        $manutencao_timestamp = $row_idmanutencao['manutencao_timestamp'];
         $manutencao_status = $row_idmanutencao['manutencao_status'];
         $manutencao_responsavel = $row_idmanutencao['manutencao_responsavel'];
         $manutencao_email = $row_idmanutencao['manutencao_email'];
@@ -44,6 +45,8 @@
         $manutencao_item = $row_idmanutencao['manutencao_item'];
         $manutencao_urgencia = $row_idmanutencao['manutencao_urgencia'];
         $manutencao_relateproblema = $row_idmanutencao['manutencao_relateproblema'];
+        $manutencao_andamento = $row_idmanutencao['manutencao_andamento'];
+        $manutencao_updatetimestamp = $row_idmanutencao['manutencao_updatetimestamp'];
         
     }
 ?>
