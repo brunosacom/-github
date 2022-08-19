@@ -49,6 +49,9 @@
         $manutencao_updatetimestamp = $row_idmanutencao['manutencao_updatetimestamp'];
         
     }
+
+    $classtablecolor = classtablecolor($row["manutencao_urgencia"]);
+    $classtextcolor = classtextcolor($row["manutencao_status"]);
 ?>
 
 <!DOCTYPE HTML>
@@ -75,7 +78,7 @@
             </div>
             <div class="mb-3">
                 <h1>Manutenção</h1>
-                <h3>Chamado # <?php echo $id_manutencao ?> <span class="<?php echo $classtablecolor $classtextcolor ?>"><small><?php echo $manutencao_urgencia ?></small></span></h3>
+                <h3>Chamado # <?php echo $id_manutencao ?> <span class="<?php echo $classtablecolor . $classtextcolor ?>"><small><?php echo $manutencao_urgencia ?></small></span></h3>
                 <div>
                     <small>Legenda Status
                         <small>
