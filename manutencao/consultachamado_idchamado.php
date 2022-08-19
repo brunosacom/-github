@@ -95,22 +95,18 @@
                     </small>
                     <hr>
                 </div>
-                <div>ID PEDIDO</div>
-                <div><?php echo $id_manutencao ?></div>
-                <div>DATA e HORA abertura</div>
-                <div><?php echo $manutencao_timestamp ?></div>
-                <div>URGÊNCIA</div>
-                <div><?php echo $manutencao_urgencia ?></div>
+                <div><small>ID PEDIDO: </small><?php echo $id_manutencao . " " . $manutencao_urgencia ?></div>
+                <div><small>DATA e HORA abertura: </small><?php echo $manutencao_timestamp ?><br></div>
+                <div><small>ANDAMENTO: </small><?php echo $manutencao_andamento ?></div>
                 <div>AREA</div>
-                <div><?php echo $manutencao_area ?></div>
+                <div><?php echo $manutencao_area ?><br></div>
                 <div>ITEM</div>
-                <div><?php echo $manutencao_item ?></div>
+                <div><?php echo $manutencao_item ?><br></div>
                 <div>TIPO</div>
-                <div><?php echo $manutencao_tipo ?></div>
+                <div><?php echo $manutencao_tipo ?><br></div>
                 <div>RELATO</div>
-                <div><?php echo $manutencao_relateproblema ?></div>
-                <div>ANDAMENTO</div>
-                <div><?php echo $manutencao_andamento ?></div>
+                <div><?php echo $manutencao_relateproblema ?><br></div>
+                
                 <div>DATA e HORA modificação</div>
                 <div><?php echo $manutencao_updatetimestamp ?></div>
 
