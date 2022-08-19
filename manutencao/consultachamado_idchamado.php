@@ -78,8 +78,6 @@
             </div>
             <div class="mb-3">
                 <h1>Manutenção</h1>
-                <h3>Chamado # <?php echo $id_manutencao ?> <small><small><small><span class="<?php echo $classbgcolor . " " . $classtextcolor ?>"><?php echo $manutencao_urgencia ?></span></small></small></small></h3>
-                <div><small>DATA e HORA abertura / modificação: </small><?php echo $manutencao_timestamp ?> / <?php echo $manutencao_updatetimestamp ?><br></div>
                 <div>
                     <small>Legenda Status
                         <small>
@@ -99,6 +97,8 @@
                     </small>
                     <hr>
                 </div>
+                <h3>Chamado # <?php echo $id_manutencao ?> <small><small><small><span class="<?php echo $classbgcolor . " " . $classtextcolor ?>"><?php echo $manutencao_urgencia ?></span></small></small></small></h3>
+                <div><small>DATA e HORA abertura / modificação: </small><?php echo $manutencao_timestamp ?> / <?php echo $manutencao_updatetimestamp ?><br></div>
                 <div><small>ANDAMENTO: </small><?php echo $manutencao_andamento ?></div>
                 <div>AREA</div>
                 <div><?php echo $manutencao_area ?><br></div>
