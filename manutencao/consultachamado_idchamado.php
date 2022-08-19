@@ -140,7 +140,7 @@
                             break;
                     }
 
-                    return $classtablecolor;
+                    return $classbgcolor;
                 }
                 
                 function classtextcolor($cod) {
