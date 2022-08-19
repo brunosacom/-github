@@ -50,7 +50,7 @@
         
     }
 
-    $classtablecolor = classtablecolor($manutencao_urgencia);
+    $classbgcolor = classbgcolor($manutencao_urgencia);
     $classtextcolor = classtextcolor($manutencao_status);
 ?>
 
@@ -78,7 +78,7 @@
             </div>
             <div class="mb-3">
                 <h1>Manutenção</h1>
-                <h3>Chamado # <?php echo $id_manutencao ?> <span class="<?php echo $classtablecolor . ";" . $classtextcolor ?>"><small><small><small><?php echo $manutencao_urgencia ?></small></small></small></span></h3>
+                <h3>Chamado # <?php echo $id_manutencao ?> <span class="<?php echo $classbgcolor . ";" . $classtextcolor ?>"><small><small><small><?php echo $manutencao_urgencia ?></small></small></small></span></h3>
                 <div>
                     <small>Legenda Status
                         <small>
@@ -98,7 +98,7 @@
                     </small>
                     <hr>
                 </div>
-                <div><small>ID PEDIDO: </small><?php echo $id_manutencao ?> <span class="<?php echo $classtablecolor . ";" . $classtextcolor ?>"><small><?php echo $manutencao_urgencia ?></small></span></div>
+                <div><small>ID PEDIDO: </small><?php echo $id_manutencao ?> <span class="<?php echo $classbgcolor . ";" . $classtextcolor ?>"><small><?php echo $manutencao_urgencia ?></small></span></div>
                 <div><small>DATA e HORA abertura / modificação: </small><?php echo $manutencao_timestamp ?> / <?php echo $manutencao_updatetimestamp ?><br></div>
                 <div><small>ANDAMENTO: </small><?php echo $manutencao_andamento ?></div>
                 <div>AREA</div>
@@ -116,27 +116,27 @@
 
                 <?php
 
-                function classtablecolor($cod) {
+                function classbgcolor($cod) {
 
                     switch ($cod) {
                         default:
-                            $classtablecolor = "table-light";
+                            $classbgcolor = "bg-light";
                             break;
 
                         case 'URGENTE':
-                            $classtablecolor = "table-warning";
+                            $classbgcolor = "bg-warning";
                             break;
 
                         case 'NORMAL':
-                            $classtablecolor = "table-light";
+                            $classbgcolor = "bg-light";
                             break;
 
                         case 'MAXIMA':
-                            $classtablecolor = "table-danger";
+                            $classbgcolor = "bg-danger";
                             break;
 
                         case 'ADIAVEL':
-                            $classtablecolor = "table-success";
+                            $classbgcolor = "bg-success";
                             break;
                     }
 
