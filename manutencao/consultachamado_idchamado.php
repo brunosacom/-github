@@ -95,7 +95,7 @@
                     </small>
                     <hr>
                 </div>
-                <div><small>ID PEDIDO: </small><?php echo $id_manutencao ?> <span class="bg-danger text-body"><small><?php echo $manutencao_urgencia ?></small></span></div>
+                <div><small>ID PEDIDO: </small><?php echo $id_manutencao ?> <span class="<?php echo $classtablecolor $classtextcolor ?>"><small><?php echo $manutencao_urgencia ?></small></span></div>
                 <div><small>DATA e HORA abertura / modificação: </small><?php echo $manutencao_timestamp ?> / <?php echo $manutencao_updatetimestamp ?><br></div>
                 <div><small>ANDAMENTO: </small><?php echo $manutencao_andamento ?></div>
                 <div>AREA</div>
