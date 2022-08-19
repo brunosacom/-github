@@ -50,8 +50,8 @@
         
     }
 
-    $classtablecolor = classtablecolor($row["manutencao_urgencia"]);
-    $classtextcolor = classtextcolor($row["manutencao_status"]);
+    $classtablecolor = classtablecolor($manutencao_urgencia);
+    $classtextcolor = classtextcolor($manutencao_status);
 ?>
 
 <!DOCTYPE HTML>
