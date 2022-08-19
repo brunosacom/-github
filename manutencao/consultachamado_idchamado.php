@@ -75,7 +75,7 @@
             </div>
             <div class="mb-3">
                 <h1>Manutenção</h1>
-                <h3>Chamado # <?php echo $id_manutencao ?></h3>
+                <h3>Chamado # <?php echo $id_manutencao ?> <span class="<?php echo $classtablecolor $classtextcolor ?>"><small><?php echo $manutencao_urgencia ?></small></span></h3>
                 <div>
                     <small>Legenda Status
                         <small>
