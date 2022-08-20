@@ -53,13 +53,14 @@
         if (isset($_POST['submit'])) {
 
           $id_manutencao = $_POST['id_manutencao'];
+          $manutencao_urgencia = addslashes($_POST['manutencao_urgencia']);
           $manutencao_status = addslashes($_POST['manutencao_status']);
           $manutencao_andamento = addslashes($_POST['manutencao_andamento']);
 
         }
 
 
-        $sql = "UPDATE bembos_manutencao SET manutencao_status = $manutencao_status, manutencao_andamento = $manutencao_andamento WHERE id = $id_manutencao";
+        $sql = "UPDATE bembos_manutencao SET manutencao_status = $manutencao_status, manutencao_andamento = $manutencao_andamento WHERE id_manutencao = $id_manutencao";
 
         if (!mysqli_query($con, $sql)) {
           die('Error: ' . mysqli_error($con));

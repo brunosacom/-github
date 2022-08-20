@@ -115,7 +115,7 @@
                 <form action="update_action.php?emp_sigla='<?php echo $empresa_sigla; ?>'" method="post" name="bembos_manutencao" id="bembos_manutencao">
                     <input name="manutencao_charset" type="hidden" value="utf-8">
                     <input name="empresa_sigla" type="hidden" id="empresa_sigla" value="<?php echo $empresa_sigla; ?>">
-                    <input name="manutencao_status" type="hidden" value="aberto">
+                    <input name="id_manutencao" type="hidden" value="<?php echo $id_manutencao ?>">
                     <div class="input-group input-group-sm mb-3">
                         <label class="input-group-text">URGÊNCIA</label>
                         <select class="form-select <?php echo $classbgcolor . " " . $classtextcolor ?>" name="manutencao_urgencia" id="manutencao_urgencia">
