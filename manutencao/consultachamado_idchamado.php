@@ -98,7 +98,7 @@
                     <hr>
                 </div>
                 <h3>Chamado # <?php echo $id_manutencao ?> <small><small><small><span class="<?php echo $classbgcolor . " " . $classtextcolor ?>"><?php echo $manutencao_urgencia ?></span></small></small></small></h3>
-                <div><small><small>DATA e HORA abertura / modificação: </small></small><?php echo $manutencao_timestamp ?> / <?php echo $manutencao_updatetimestamp ?><br></div>
+                <div><small><small>DATA e HORA abertura / modificação: </small></small><?php echo $manutencao_timestamp ?> / <?php echo $manutencao_updatetimestamp ?><br><br></div>
                 <div><small><small>AREA:</small></small></div>
                 <div><?php echo $manutencao_area ?><br><br></div>
                 <div><small><small>ITEM:</small></small></div>
@@ -111,15 +111,29 @@
                 <div><?php echo $manutencao_andamento ?><br><br></div>
                 <hr>
 
+                <div>ATUALIZAR INFOS:</div>
                 <form action="update_action.php?emp_sigla='<?php echo $empresa_sigla; ?>'" method="post" name="bembos_manutencao" id="bembos_manutencao">
+                    <input name="manutencao_charset" type="hidden" value="utf-8">
+                    <input name="empresa_sigla" type="hidden" id="empresa_sigla" value="<?php echo $empresa_sigla; ?>">
+                    <input name="manutencao_status" type="hidden" value="aberto">
                     <div class="input-group input-group-sm mb-3">
-                        <label class="input-group-text">ÁREA</label>
+                        <label class="input-group-text">URGÊNCIA</label>
                         <select class="form-select" name="manutencao_urgencia" id="manutencao_urgencia">
                         <option value="<?php echo $manutencao_urgencia ?>" selected><?php echo $manutencao_urgencia ?></option>
                         <option value="NORMAL">NORMAL</option>
                         <option value="URGENTE">URGENTE</option>
                         <option value="URGENCIA MAXIMA">URGENCIA MAXIMA</option>
                         <option value="ADIAVEL">ADIAVEL</option>
+                        </select>
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <label class="input-group-text">STATUS</label>
+                        <select class="form-select" name="manutencao_status" id="manutencao_status">
+                        <option value="<?php echo $manutencao_status ?>" selected><?php echo $manutencao_status ?></option>
+                        <option value="ABERTO">ABERTO</option>
+                        <option value="EM ANDAMENTO">EM ANDAMENTO</option>
+                        <option value="AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO">AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO</option>
+                        <option value="CONCLUIDO">CONCLUIDO</option>
                         </select>
                     </div>
 
