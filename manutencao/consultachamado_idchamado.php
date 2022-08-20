@@ -122,7 +122,7 @@
                         <option value="<?php echo $manutencao_urgencia ?>" selected><?php echo $manutencao_urgencia ?></option>
                         <option value="NORMAL" class="bg-light text-body">NORMAL</option>
                         <option value="URGENTE" class="bg-warning text-body">URGENTE</option>
-                        <option value="URGENCIA MAXIMA" class="bg-danger text-body">URGENCIA MAXIMA</option>
+                        <option value="MAXIMA" class="bg-danger text-body">URGENCIA MAXIMA</option>
                         <option value="ADIAVEL" class="bg-success text-body">ADIAVEL</option>
                         </select>
                     </div>
@@ -130,10 +130,10 @@
                         <label class="input-group-text">STATUS</label>
                         <select class="form-select" name="manutencao_status" id="manutencao_status" class="<?php echo $classbgcolor . " " . $classtextcolor ?>">
                         <option value="<?php echo $manutencao_status ?>" selected><?php echo $manutencao_status ?></option>
-                        <option value="ABERTO" class="bg-light text-body">ABERTO</option>
-                        <option value="EM ANDAMENTO" class="bg-light text-success">EM ANDAMENTO</option>
-                        <option value="AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO" class="bg-light text-danger">AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO</option>
-                        <option value="CONCLUIDO" class="bg-light text-secondary">CONCLUIDO</option>
+                        <option value="aberto" class="bg-light text-body">ABERTO</option>
+                        <option value="emandamento" class="bg-light text-success">EM ANDAMENTO</option>
+                        <option value="aguardando" class="bg-light text-danger">AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO</option>
+                        <option value="concluido" class="bg-light text-secondary">CONCLUIDO</option>
                         </select>
                     </div>
 
