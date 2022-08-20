@@ -98,18 +98,41 @@
                     <hr>
                 </div>
                 <h3>Chamado # <?php echo $id_manutencao ?> <small><small><small><span class="<?php echo $classbgcolor . " " . $classtextcolor ?>"><?php echo $manutencao_urgencia ?></span></small></small></small></h3>
-                <div><small>DATA e HORA abertura / modificação: </small><?php echo $manutencao_timestamp ?> / <?php echo $manutencao_updatetimestamp ?><br></div>
-                <div><small>ANDAMENTO: </small><?php echo $manutencao_andamento ?></div>
-                <div>AREA</div>
-                <div><?php echo $manutencao_area ?><br></div>
-                <div>ITEM</div>
-                <div><?php echo $manutencao_item ?><br></div>
-                <div>TIPO</div>
-                <div><?php echo $manutencao_tipo ?><br></div>
-                <div>RELATO</div>
-                <div><?php echo $manutencao_relateproblema ?><br></div>
-                
-                
+                <div><small><small>DATA e HORA abertura / modificação: </small></small><?php echo $manutencao_timestamp ?> / <?php echo $manutencao_updatetimestamp ?><br></div>
+                <div><small><small>AREA:</small></small></div>
+                <div><?php echo $manutencao_area ?><br><br></div>
+                <div><small><small>ITEM:</small></small></div>
+                <div><?php echo $manutencao_item ?><br><br></div>
+                <div><small><small>TIPO:</small></small></div>
+                <div><?php echo $manutencao_tipo ?><br><br></div>
+                <div><small><small>RELATO:</small></small></div>
+                <div><?php echo $manutencao_relateproblema ?><br><br></div>
+                <div><small><small>ANDAMENTO: </small></small></div>
+                <div><?php echo $manutencao_andamento ?><br><br></div>
+                <hr>
+
+                <form action="update_action.php?emp_sigla='<?php echo $empresa_sigla; ?>'" method="post" name="bembos_manutencao" id="bembos_manutencao">
+                    <div class="input-group input-group-sm mb-3">
+                        <label class="input-group-text">ÁREA</label>
+                        <select class="form-select" name="manutencao_urgencia" id="manutencao_urgencia">
+                        <option value="<?php echo $manutencao_urgencia ?>" selected><?php echo $manutencao_urgencia ?></option>
+                        <option value="NORMAL">NORMAL</option>
+                        <option value="URGENTE">URGENTE</option>
+                        <option value="URGENCIA MAXIMA">URGENCIA MAXIMA</option>
+                        <option value="ADIAVEL">ADIAVEL</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group input-group-sm mb-3">
+                        <label class="input-group-text">ANDAMENTO</label>
+                        <textarea class="form-control" name="manutencao_andamento" id="manutencao_andamento" rows="5" placeholder="<?php echo $manutencao_andamento ?>"></textarea>
+                    </div>
+                    <hr style="height:5px;">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="submit" class="btn btn-primary btn-sm" name="submit" id="submit" value="Enviar">enviar</button>
+                        <button type="reset" class="btn btn-outline-secondary btn-sm" name="reset" id="reset" value="Limpar">limpar</button>
+                    </div>
+                </form>
 
 
 
