@@ -118,7 +118,7 @@
                     <input name="manutencao_status" type="hidden" value="aberto">
                     <div class="input-group input-group-sm mb-3">
                         <label class="input-group-text">URGÊNCIA</label>
-                        <select class="form-select" name="manutencao_urgencia" id="manutencao_urgencia">
+                        <select class="form-select" name="manutencao_urgencia" id="manutencao_urgencia" class="<?php echo $classbgcolor . " " . $classtextcolor ?>">
                         <option value="<?php echo $manutencao_urgencia ?>" selected><?php echo $manutencao_urgencia ?></option>
                         <option value="NORMAL" class="bg-light text-body">NORMAL</option>
                         <option value="URGENTE" class="bg-warning text-body">URGENTE</option>
@@ -128,8 +128,8 @@
                     </div>
                     <div class="input-group input-group-sm mb-3">
                         <label class="input-group-text">STATUS</label>
-                        <select class="form-select" name="manutencao_status" id="manutencao_status">
-                        <option value="<?php echo $manutencao_status ?>" class="<?php echo $classbgcolor . " " . $classtextcolor ?>" selected><?php echo $manutencao_status ?></option>
+                        <select class="form-select" name="manutencao_status" id="manutencao_status" class="<?php echo $classbgcolor . " " . $classtextcolor ?>">
+                        <option value="<?php echo $manutencao_status ?>" selected><?php echo $manutencao_status ?></option>
                         <option value="ABERTO" class="bg-light text-body">ABERTO</option>
                         <option value="EM ANDAMENTO" class="bg-light text-success">EM ANDAMENTO</option>
                         <option value="AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO" class="bg-light text-danger">AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO</option>
