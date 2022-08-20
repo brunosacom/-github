@@ -120,20 +120,20 @@
                         <label class="input-group-text">URGÊNCIA</label>
                         <select class="form-select" name="manutencao_urgencia" id="manutencao_urgencia">
                         <option value="<?php echo $manutencao_urgencia ?>" selected><?php echo $manutencao_urgencia ?></option>
-                        <option value="NORMAL">NORMAL</option>
-                        <option value="URGENTE">URGENTE</option>
-                        <option value="URGENCIA MAXIMA">URGENCIA MAXIMA</option>
-                        <option value="ADIAVEL">ADIAVEL</option>
+                        <option value="NORMAL" class="bg-light text-body">NORMAL</option>
+                        <option value="URGENTE" class="bg-warning text-body">URGENTE</option>
+                        <option value="URGENCIA MAXIMA" class="bg-danger text-body">URGENCIA MAXIMA</option>
+                        <option value="ADIAVEL" class="bg-success text-body">ADIAVEL</option>
                         </select>
                     </div>
                     <div class="input-group input-group-sm mb-3">
                         <label class="input-group-text">STATUS</label>
                         <select class="form-select" name="manutencao_status" id="manutencao_status">
-                        <option value="<?php echo $manutencao_status ?>" selected><?php echo $manutencao_status ?></option>
-                        <option value="ABERTO">ABERTO</option>
-                        <option value="EM ANDAMENTO">EM ANDAMENTO</option>
-                        <option value="AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO">AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO</option>
-                        <option value="CONCLUIDO">CONCLUIDO</option>
+                        <option value="<?php echo $manutencao_status ?>" class="<?php echo $classbgcolor . " " . $classtextcolor ?>" selected><?php echo $manutencao_status ?></option>
+                        <option value="ABERTO" class="bg-light text-body">ABERTO</option>
+                        <option value="EM ANDAMENTO" class="bg-light text-success">EM ANDAMENTO</option>
+                        <option value="AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO" class="bg-light text-danger">AGUARDANDO MATERIAL, PEÇA OU ORÇAMENTO</option>
+                        <option value="CONCLUIDO" class="bg-light text-secondary">CONCLUIDO</option>
                         </select>
                     </div>
 
