@@ -118,7 +118,7 @@
                     <input name="manutencao_status" type="hidden" value="aberto">
                     <div class="input-group input-group-sm mb-3">
                         <label class="input-group-text">URGÊNCIA</label>
-                        <select class="form-select" name="manutencao_urgencia" id="manutencao_urgencia" class="<?php echo $classbgcolor . " " . $classtextcolor ?>">
+                        <select class="form-select <?php echo $classbgcolor . " " . $classtextcolor ?>" name="manutencao_urgencia" id="manutencao_urgencia">
                         <option value="<?php echo $manutencao_urgencia ?>" selected><?php echo $manutencao_urgencia ?></option>
                         <option value="NORMAL" class="bg-light text-body">NORMAL</option>
                         <option value="URGENTE" class="bg-warning text-body">URGENTE</option>
@@ -128,7 +128,7 @@
                     </div>
                     <div class="input-group input-group-sm mb-3">
                         <label class="input-group-text">STATUS</label>
-                        <select class="form-select" name="manutencao_status" id="manutencao_status" class="<?php echo $classbgcolor . " " . $classtextcolor ?>">
+                        <select class="form-select <?php echo $classbgcolor . " " . $classtextcolor ?>" name="manutencao_status" id="manutencao_status">
                         <option value="<?php echo $manutencao_status ?>" selected><?php echo $manutencao_status ?></option>
                         <option value="aberto" class="bg-light text-body">ABERTO</option>
                         <option value="emandamento" class="bg-light text-success">EM ANDAMENTO</option>
