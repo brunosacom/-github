@@ -139,7 +139,7 @@
 
                     <div class="input-group input-group-sm mb-3">
                         <label class="input-group-text">ANDAMENTO</label>
-                        <textarea class="form-control" name="manutencao_andamento" id="manutencao_andamento" rows="5" placeholder="<?php echo $manutencao_andamento ?>"></textarea>
+                        <textarea class="form-control" name="manutencao_andamento" id="manutencao_andamento" rows="5"><?php echo $manutencao_andamento ?></textarea>
                     </div>
                     <hr style="height:5px;">
                     <div class="btn-group" role="group" aria-label="Basic example">
