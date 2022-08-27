@@ -46,10 +46,6 @@
     <!-- Content here -->
 
       <?php
-      // inclui as classes do PHPMailer
-      use PHPMailer\PHPMailer\PHPMailer;
-      use PHPMailer\PHPMailer\Exception;
-
         if (isset($_POST['submit'])) {
 
           $id_manutencao = $_POST['id_manutencao'];
