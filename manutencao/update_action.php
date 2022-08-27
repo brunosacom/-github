@@ -56,6 +56,9 @@
         }
 
 
+      ?>
+      <p><?php echo $id_manutencao, $manutencao_andamento, $manutencao_status, $manutencao_urgencia ?></p>
+      <?php  
         $sql = "UPDATE bembos_manutencao SET manutencao_urgencia = $manutencao_urgencia, manutencao_status = $manutencao_status, manutencao_andamento = $manutencao_andamento WHERE id_manutencao = $id_manutencao";
 
         if (!mysqli_query($con, $sql)) {
@@ -63,7 +66,7 @@
         }
         echo "<br>Obrigado por atualizar a solicitacao/manutencao ID: " . $id_manutencao . ".<br>";
       ?>
-      <p><?php echo $id_manutencao, $manutencao_andamento, $manutencao_status, $manutencao_urgencia ?></p>
+      
     </div>
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/bootstrap_body.php'; ?>
   </body>
