@@ -44,7 +44,7 @@
   <body style="font-family: Didact Gothic; color:#FFF; background-color:#333;">
     <div class="container">
     <!-- Content here -->
-
+    
       <?php
         if (isset($_POST['submit'])) {
 
@@ -63,6 +63,7 @@
         }
         echo "<br>Obrigado por atualizar a solicitacao/manutencao ID: " . $id_manutencao . ".<br>";
       ?>
+      <p><?php echo $id_manutencao, $manutencao_andamento, $manutencao_status, $manutencao_urgencia ?></p>
     </div>
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/bootstrap_body.php'; ?>
   </body>
