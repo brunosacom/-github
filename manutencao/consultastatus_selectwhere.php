@@ -53,7 +53,7 @@
           <input name="empresa_sigla" type="hidden" id="empresa_sigla" value="<?php echo $empresa_sigla; ?>">
 
           <div class="input-group input-group-sm mb-3">
-            <label class="input-group-text text-danger">RESPONSAVEL</label>
+            <label class="input-group-text">RESPONSAVEL</label>
             <select class="form-select" name="manutencao_email" id="manutencao_email" required>
               <option value="" selected>selecione...</option>
               <?php
@@ -69,7 +69,7 @@
             </select>
           </div>
           <div class="input-group input-group-sm mb-3">
-            <label class="input-group-text text-danger">STATUS</label>
+            <label class="input-group-text">STATUS</label>
             <select class="form-select" name="manutencao_status" id="manutencao_status" required>
               <option value="" selected>selecione...</option>
               <option value="aberto">aberto</option>
