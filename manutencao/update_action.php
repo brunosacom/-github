@@ -59,7 +59,7 @@
       ?>
       <p><?php echo $id_manutencao, $manutencao_urgencia, $manutencao_status, $manutencao_andamento  ?></p>
       <?php  
-        $sql = "UPDATE bembos_manutencao SET manutencao_urgencia = $manutencao_urgencia, manutencao_status = $manutencao_status, manutencao_andamento = $manutencao_andamento WHERE id_manutencao = $id_manutencao";
+        $sql = "UPDATE bembos_manutencao SET manutencao_urgencia = '$manutencao_urgencia', manutencao_status = '$manutencao_status', manutencao_andamento = '$manutencao_andamento' WHERE id_manutencao = $id_manutencao";
 
         if (!mysqli_query($con, $sql)) {
           die('Error: ' . mysqli_error($con));
