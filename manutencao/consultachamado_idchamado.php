@@ -55,7 +55,7 @@
 ?>
 
 <!DOCTYPE HTML>
-<html lang="pt-BR">
+<html lang="pt-BR" data-bs-theme="dark">
 
     <head>
         <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/analyticstracking.php'; ?>
@@ -67,7 +67,7 @@
         <?php include_once $_SERVER['DOCUMENT_ROOT'].'/php/bootstrap_head.php'; ?>
     </head>
 
-    <body style="font-family: Didact Gothic; color:#FFF; background-color:#333;">
+    <body style="font-family: Didact Gothic;">
         <div class="container">
             <!-- Content here -->
             <br>
