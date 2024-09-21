@@ -1,3 +1,3 @@
 # uhgithub
-Integração com o UOLHost
+Integração com o Hostinger
 Um playground de aprendizado de códigos.
